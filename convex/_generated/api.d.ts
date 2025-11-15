@@ -8,6 +8,7 @@
  * @module
  */
 
+import type * as elevenlabs from "../elevenlabs.js";
 import type * as carfax from "../carfax.js";
 
 import type {
@@ -17,6 +18,7 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  elevenlabs: typeof elevenlabs;
   carfax: typeof carfax;
 }>;
 

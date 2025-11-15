@@ -1,10 +1,10 @@
 import { ConvexProvider, ConvexReactClient } from 'convex/react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import './index.css';
 import { Suspense } from 'react';
 import { BrowserRouter, useRoutes } from 'react-router-dom';
 import routes from '~react-pages';
+import './index.css';
 import { SolanaWalletProvider } from './contexts/SolanaWalletProvider';
 import { Toaster } from '@/components/ui/sonner';
 

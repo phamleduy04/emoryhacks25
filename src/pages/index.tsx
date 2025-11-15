@@ -128,11 +128,7 @@ function CallDealerButton({
 }
 
 // Component to handle video generation button
-function GenerateVideoButton({
-  car,
-}: {
-  car: FilteredListing;
-}) {
+function GenerateVideoButton({ car }: { car: FilteredListing }) {
   const [isGenerating, setIsGenerating] = useState(false);
   const generateVideo = useAction(api.gemini.generateVideo);
   const existingVideo = useQuery(api.gemini.getVideoByVin, {
@@ -156,9 +152,7 @@ function GenerateVideoButton({
     } catch (error) {
       console.error('Error generating video:', error);
       toast.error(
-        error instanceof Error
-          ? error.message
-          : 'Failed to generate video',
+        error instanceof Error ? error.message : 'Failed to generate video',
       );
     } finally {
       setIsGenerating(false);
@@ -190,6 +184,7 @@ function GenerateVideoButton({
             className="w-full rounded-lg"
             style={{ maxHeight: '300px' }}
           >
+            <track kind="captions" />
             Your browser does not support the video tag.
           </video>
         </div>

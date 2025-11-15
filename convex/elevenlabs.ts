@@ -14,7 +14,7 @@ export const requestCall = action({
     phone_number: v.string(),
   },
   handler: async (_ctx, args) => {
-    await fetch('https://api.elevenlabs.io/v1/convai/twilio/outbound-call', {
+    const data = await fetch('https://api.elevenlabs.io/v1/convai/twilio/outbound-call', {
       method: 'POST',
       headers: {
         'xi-api-key': process.env.ELEVENLABS_API_KEY || '',
@@ -40,7 +40,7 @@ export const requestCall = action({
     });
 
     return {
-      success: true,
+      data: data
     };
   },
 });

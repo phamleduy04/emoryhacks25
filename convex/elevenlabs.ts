@@ -18,7 +18,7 @@ export const requestCall = action({
     phone_number: v.string(),
   },
   handler: async (_ctx, args) => {
-    const data = await fetch(
+    const res = await fetch(
       'https://api.elevenlabs.io/v1/convai/twilio/outbound-call',
       {
         method: 'POST',
@@ -45,6 +45,8 @@ export const requestCall = action({
         }),
       },
     );
+
+    const data = await res.json();
 
     return {
       data: data,

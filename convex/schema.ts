@@ -28,6 +28,7 @@ export const callFields = {
   ),
   transcript_summary: v.optional(v.string()),
   call_successful: v.optional(v.boolean()),
+  confirmed_price: v.optional(v.number()),
 };
 
 export const videoFields = {

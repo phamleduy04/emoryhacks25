@@ -17,13 +17,17 @@ export const callFields = {
   dealer_name: v.string(),
   msrp: v.number(),
   listing_price: v.number(),
-  stock_number: v.number(),
+  stock_number: v.string(),
   phone_number: v.string(),
+  vin: v.string(),
   status: v.union(
     v.literal('pending'),
     v.literal('completed'),
     v.literal('failed'),
+    v.literal('quoted'),
   ),
+  transcript_summary: v.optional(v.string()),
+  call_successful: v.optional(v.boolean()),
 };
 
 export const videoFields = {
@@ -34,4 +38,7 @@ export const videoFields = {
 export default defineSchema({
   calls: defineTable(callFields),
   videos: defineTable(videoFields),
+  calls: defineTable(callFields)
+    .index('by_vin', ['vin'])
+    .index('by_conversation_id', ['conversation_id']),
 });

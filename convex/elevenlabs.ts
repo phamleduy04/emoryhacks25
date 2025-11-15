@@ -1,7 +1,7 @@
 import type { Readable } from 'node:stream';
 import { v } from 'convex/values';
 import FormData from 'form-data';
-import { action, mutation } from './_generated/server';
+import { action, mutation, query } from './_generated/server';
 import { callFields } from './schema';
 import { api } from './_generated/api';
 
@@ -15,11 +15,13 @@ export const requestCall = action({
     zipcode: v.number(),
     dealer_name: v.string(),
     msrp: v.number(),
+    vin: v.string(),
     listing_price: v.number(),
-    stock_number: v.number(),
+    stock_number: v.string(),
     phone_number: v.string(),
   },
   handler: async (_ctx, args) => {
+    console.log('requestCall', args);
     const res = await fetch(`${BASE_URL}/convai/twilio/outbound-call`, {
       method: 'POST',
       headers: {
@@ -37,6 +39,7 @@ export const requestCall = action({
             model: args.model,
             zipcode: args.zipcode,
             dealer_name: args.dealer_name,
+            vin: args.vin,
             msrp: args.msrp,
             listing_price: args.listing_price,
             stock_number: args.stock_number,
@@ -56,9 +59,12 @@ export const requestCall = action({
       dealer_name: args.dealer_name,
       msrp: args.msrp,
       listing_price: args.listing_price,
+      vin: args.vin,
       stock_number: args.stock_number,
       phone_number: args.phone_number,
       status: 'pending',
+      transcript_summary: undefined,
+      call_successful: undefined,
     });
     return data;
   },
@@ -69,6 +75,87 @@ export const saveCall = mutation({
   returns: v.null(),
   handler: async (_ctx, args) => {
     await _ctx.db.insert('calls', args);
+  },
+});
+
+export const updateCallStatus = mutation({
+  args: {
+    conversation_id: v.string(),
+    status: v.union(
+      v.literal('pending'),
+      v.literal('completed'),
+      v.literal('failed'),
+      v.literal('quoted'),
+    ),
+    transcript_summary: v.optional(v.string()),
+    call_successful: v.optional(v.boolean()),
+  },
+  returns: v.null(),
+  handler: async (ctx, args) => {
+    // Find the call by conversation_id
+    const call = await ctx.db
+      .query('calls')
+      .withIndex('by_conversation_id', (q) =>
+        q.eq('conversation_id', args.conversation_id),
+      )
+      .first();
+
+    if (!call) {
+      console.error(
+        `Call not found for conversation_id: ${args.conversation_id}`,
+      );
+      return null;
+    }
+
+    // Update the call with new status and transcript data
+    await ctx.db.patch(call._id, {
+      status: args.status,
+      transcript_summary: args.transcript_summary,
+      call_successful: args.call_successful,
+    });
+
+    console.log(`Updated call ${call._id} to status ${args.status}`);
+    return null;
+  },
+});
+
+export const checkExistingCall = query({
+  args: {
+    vin: v.string(),
+  },
+  returns: v.union(
+    v.null(),
+    v.object({
+      _id: v.id('calls'),
+      status: v.union(
+        v.literal('pending'),
+        v.literal('completed'),
+        v.literal('failed'),
+        v.literal('quoted'),
+      ),
+    }),
+  ),
+  handler: async (ctx, args) => {
+    const existingCall = await ctx.db
+      .query('calls')
+      .withIndex('by_vin', (q) => q.eq('vin', args.vin))
+      .filter((q) =>
+        q.or(
+          q.eq(q.field('status'), 'pending'),
+          q.eq(q.field('status'), 'completed'),
+          q.eq(q.field('status'), 'quoted'),
+        ),
+      )
+      .first();
+
+    if (!existingCall) {
+      return null;
+    }
+
+    return {
+      _id: existingCall._id,
+      status: existingCall.status,
+    };
   },
 });
 

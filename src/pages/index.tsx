@@ -1,6 +1,6 @@
 'use client';
 
-import { useAction } from 'convex/react';
+import { useAction, useQuery } from 'convex/react';
 import { useState } from 'react';
 import { ExternalLink, Phone } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
@@ -27,25 +27,52 @@ import {
 import { Slider } from '@/components/ui/slider';
 import { carModels, otherMakes, popularMakes } from '@/data/carData';
 import { api } from '../../convex/_generated/api';
+import type { FilteredListing } from '../../convex/carfax';
 
-interface CarListing {
-  year: number;
-  msrp: number;
-  price: number;
-  images: string[];
-  dealer: {
-    name: string | undefined;
-    phone: string | undefined;
-    address: string | undefined;
-    latitude: string | undefined;
-    longitude: string | undefined;
+// Component to handle call dealer button with database check
+function CallDealerButton({
+  car,
+  isLoading,
+  onCallRequest,
+}: {
+  car: FilteredListing;
+  isLoading: boolean;
+  onCallRequest: () => Promise<void>;
+}) {
+  const existingCall = useQuery(api.elevenlabs.checkExistingCall, {
+    vin: car.vin,
+  });
+
+  const isDisabled = isLoading || existingCall !== null;
+
+  const getButtonText = () => {
+    if (isLoading) return 'Calling...';
+    if (existingCall?.status === 'pending') return 'Call Pending';
+    if (existingCall?.status === 'completed') return 'Already Called';
+    if (existingCall?.status === 'quoted') return 'Quote Received';
+    return 'Call Dealer using AI';
   };
-  listingUrl: string;
-  color: string;
-  trim: string;
-  vin: string;
-  stockNumber: string;
-  model: string;
+
+  const getButtonClass = () => {
+    if (existingCall?.status === 'pending')
+      return 'flex-1 bg-yellow-600 hover:bg-yellow-600';
+    if (existingCall?.status === 'completed')
+      return 'flex-1 bg-gray-600 hover:bg-gray-600';
+    if (existingCall?.status === 'quoted')
+      return 'flex-1 bg-green-600 hover:bg-green-600';
+    return 'flex-1 bg-blue-600 hover:bg-blue-700';
+  };
+
+  return (
+    <Button
+      className={getButtonClass()}
+      onClick={onCallRequest}
+      disabled={isDisabled}
+    >
+      <Phone className="w-4 h-4 mr-2" />
+      {getButtonText()}
+    </Button>
+  );
 }
 
 export default function App() {
@@ -54,7 +81,10 @@ export default function App() {
   const [zipCode, setZipCode] = useState<string>('');
   const [radius, setRadius] = useState<number[]>([50]);
   const [isLoading, setIsLoading] = useState(false);
-  const [results, setResults] = useState<any[]>([]);
+  const [results, setResults] = useState<FilteredListing[]>([]);
+  const [callLoadingStates, setCallLoadingStates] = useState<
+    Record<string, boolean>
+  >({});
   const [errors, setErrors] = useState({
     make: '',
     model: '',
@@ -62,6 +92,7 @@ export default function App() {
   });
 
   const getCarfax = useAction(api.carfax.getCarfax);
+  const requestCall = useAction(api.elevenlabs.requestCall);
 
   const validateForm = () => {
     const newErrors = {
@@ -354,16 +385,35 @@ export default function App() {
                               View Details
                             </Button>
                           )}
-                          <Button
-                            className="flex-1 bg-blue-600 hover:bg-blue-700"
-                            onClick={() => {
-                              // TODO: Implement AI call functionality
-                              console.log('Call dealer using AI', car.dealer);
+                          <CallDealerButton
+                            car={car}
+                            isLoading={callLoadingStates[car.vin] || false}
+                            onCallRequest={async () => {
+                              setCallLoadingStates((prev) => ({
+                                ...prev,
+                                [car.vin]: true,
+                              }));
+                              try {
+                                await requestCall({
+                                  year: car.year,
+                                  make: car.make,
+                                  model: car.model,
+                                  zipcode: parseInt(zipCode, 10),
+                                  dealer_name: car.dealer.name || '',
+                                  msrp: car.msrp,
+                                  listing_price: car.price,
+                                  stock_number: car.stockNumber,
+                                  phone_number: '+14695963483',
+                                  vin: car.vin,
+                                });
+                              } finally {
+                                setCallLoadingStates((prev) => ({
+                                  ...prev,
+                                  [car.vin]: false,
+                                }));
+                              }
                             }}
-                          >
-                            <Phone className="w-4 h-4 mr-2" />
-                            Call Dealer using AI
-                          </Button>
+                          />
                         </div>
                       </div>
                     </div>

@@ -3,6 +3,7 @@ import { action } from './_generated/server';
 
 interface CarfaxListing {
   year: number;
+  make: string;
   msrp: number;
   currentPrice: number;
   images?: {
@@ -27,7 +28,7 @@ interface CarfaxResponse {
   listings: CarfaxListing[];
 }
 
-interface FilteredListing {
+export interface FilteredListing {
   year: number;
   msrp: number;
   price: number;
@@ -45,6 +46,7 @@ interface FilteredListing {
   vin: string;
   stockNumber: string;
   model: string;
+  make: string;
 }
 
 export const getCarfax = action({
@@ -78,6 +80,7 @@ export const getCarfax = action({
         color: listing.exteriorColor,
         trim: listing.trim,
         vin: listing.vin,
+        make: listing.make,
         stockNumber: listing.stockNumber,
         model: listing.model,
       }));

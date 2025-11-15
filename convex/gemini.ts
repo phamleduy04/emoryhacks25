@@ -1,7 +1,7 @@
 import { GoogleGenAI } from '@google/genai';
 import { v } from 'convex/values';
 import { api } from './_generated/api';
-import { action, mutation } from './_generated/server';
+import { action, mutation, query } from './_generated/server';
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GOOGLE_GENAI_API_KEY || '',
@@ -133,5 +133,28 @@ export const saveVideoMetadata = mutation({
       storageId: args.storageId,
       vin: args.vin,
     });
+  },
+});
+
+export const getVideoByVin = query({
+  args: {
+    vin: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const video = await ctx.db
+      .query('videos')
+      .filter((q) => q.eq(q.field('vin'), args.vin))
+      .first();
+
+    if (!video) {
+      return null;
+    }
+
+    const url = await ctx.storage.getUrl(video.storageId);
+
+    return {
+      ...video,
+      url,
+    };
   },
 });

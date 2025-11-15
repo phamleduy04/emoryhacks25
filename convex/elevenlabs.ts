@@ -1,9 +1,11 @@
-'use node';
-
 import type { Readable } from 'node:stream';
 import { v } from 'convex/values';
 import FormData from 'form-data';
-import { action } from './_generated/server';
+import { action, mutation } from './_generated/server';
+import { callFields } from './schema';
+import { api } from './_generated/api';
+
+const BASE_URL = 'https://api.elevenlabs.io/v1';
 
 export const requestCall = action({
   args: {
@@ -18,39 +20,55 @@ export const requestCall = action({
     phone_number: v.string(),
   },
   handler: async (_ctx, args) => {
-    const res = await fetch(
-      'https://api.elevenlabs.io/v1/convai/twilio/outbound-call',
-      {
-        method: 'POST',
-        headers: {
-          'xi-api-key': process.env.ELEVENLABS_API_KEY || '',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          agent_id: process.env.ELEVENLABS_AGENT_ID || '',
-          agent_phone_number_id: process.env.ELEVENLABS_PHONE_NUMBER_ID || '',
-          to_number: args.phone_number,
-          conversation_initiation_client_data: {
-            dynamic_variables: {
-              year: args.year,
-              make: args.make,
-              model: args.model,
-              zipcode: args.zipcode,
-              dealer_name: args.dealer_name,
-              msrp: args.msrp,
-              listing_price: args.listing_price,
-              stock_number: args.stock_number,
-            },
-          },
-        }),
+    const res = await fetch(`${BASE_URL}/convai/twilio/outbound-call`, {
+      method: 'POST',
+      headers: {
+        'xi-api-key': process.env.ELEVENLABS_API_KEY || '',
+        'Content-Type': 'application/json',
       },
-    );
+      body: JSON.stringify({
+        agent_id: process.env.ELEVENLABS_AGENT_ID || '',
+        agent_phone_number_id: process.env.ELEVENLABS_PHONE_NUMBER_ID || '',
+        to_number: args.phone_number,
+        conversation_initiation_client_data: {
+          dynamic_variables: {
+            year: args.year,
+            make: args.make,
+            model: args.model,
+            zipcode: args.zipcode,
+            dealer_name: args.dealer_name,
+            msrp: args.msrp,
+            listing_price: args.listing_price,
+            stock_number: args.stock_number,
+          },
+        },
+      }),
+    });
 
     const data = await res.json();
+    await _ctx.runMutation(api.elevenlabs.saveCall, {
+      callSid: data.callSid,
+      conversation_id: data.conversation_id,
+      year: args.year,
+      make: args.make,
+      model: args.model,
+      zipcode: args.zipcode,
+      dealer_name: args.dealer_name,
+      msrp: args.msrp,
+      listing_price: args.listing_price,
+      stock_number: args.stock_number,
+      phone_number: args.phone_number,
+      status: 'pending',
+    });
+    return data;
+  },
+});
 
-    return {
-      data: data,
-    };
+export const saveCall = mutation({
+  args: callFields,
+  returns: v.null(),
+  handler: async (_ctx, args) => {
+    await _ctx.db.insert('calls', args);
   },
 });
 
@@ -92,7 +110,7 @@ export const createVoice = action({
 
     const bodyBuffer = Buffer.concat(chunks);
 
-    const res = await fetch('https://api.elevenlabs.io/v1/voices/add', {
+    const res = await fetch(`${BASE_URL}/voices/add`, {
       method: 'POST',
       headers: {
         'xi-api-key': process.env.ELEVENLABS_API_KEY || '',

@@ -10,6 +10,7 @@
 
 import type * as carfax from "../carfax.js";
 import type * as elevenlabs from "../elevenlabs.js";
+import type * as http from "../http.js";
 
 import type {
   ApiFromModules,
@@ -20,6 +21,7 @@ import type {
 declare const fullApi: ApiFromModules<{
   carfax: typeof carfax;
   elevenlabs: typeof elevenlabs;
+  http: typeof http;
 }>;
 
 /**

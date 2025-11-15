@@ -6,8 +6,26 @@ import { v } from 'convex/values';
 // app will continue to work.
 // The schema provides more precise TypeScript types.
 
+// Shared validator for call fields - reusable across schema and mutations
+export const callFields = {
+  callSid: v.string(),
+  conversation_id: v.string(),
+  year: v.number(),
+  make: v.string(),
+  model: v.string(),
+  zipcode: v.number(),
+  dealer_name: v.string(),
+  msrp: v.number(),
+  listing_price: v.number(),
+  stock_number: v.number(),
+  phone_number: v.string(),
+  status: v.union(
+    v.literal('pending'),
+    v.literal('completed'),
+    v.literal('failed'),
+  ),
+};
+
 export default defineSchema({
-  numbers: defineTable({
-    value: v.number(),
-  }),
+  calls: defineTable(callFields),
 });

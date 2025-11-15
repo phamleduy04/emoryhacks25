@@ -5,6 +5,8 @@ import './index.css';
 import { Suspense } from 'react';
 import { BrowserRouter, useRoutes } from 'react-router-dom';
 import routes from '~react-pages';
+import { SolanaWalletProvider } from './contexts/SolanaWalletProvider';
+import { Toaster } from '@/components/ui/sonner';
 
 const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL as string);
 
@@ -17,9 +19,12 @@ function App() {
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
     <ConvexProvider client={convex}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <SolanaWalletProvider>
+        <BrowserRouter>
+          <App />
+          <Toaster />
+        </BrowserRouter>
+      </SolanaWalletProvider>
     </ConvexProvider>
   </StrictMode>,
 );

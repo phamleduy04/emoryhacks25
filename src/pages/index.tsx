@@ -4,7 +4,7 @@ import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import type { Connection } from '@solana/web3.js';
 import { useAction, useQuery } from 'convex/react';
-import { ExternalLink, Phone } from 'lucide-react';
+import { ExternalLink, Phone, Video } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { toast } from 'sonner';
 import { VoiceCloning } from '@/_components/VoiceCloning';
@@ -121,6 +121,72 @@ function CallDealerButton({
           <p className="text-sm font-semibold text-purple-600">
             Negotiated Price: ${existingCall.confirmed_price.toLocaleString()}
           </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Component to handle video generation button
+function GenerateVideoButton({ car }: { car: FilteredListing }) {
+  const [isGenerating, setIsGenerating] = useState(false);
+  const generateVideo = useAction(api.gemini.generateVideo);
+  const existingVideo = useQuery(api.gemini.getVideoByVin, {
+    vin: car.vin,
+  });
+
+  const handleGenerateVideo = async () => {
+    if (!car.images || car.images.length === 0) {
+      toast.error('No images available for video generation');
+      return;
+    }
+
+    setIsGenerating(true);
+    try {
+      toast.info('Generating video... This may take a few minutes.');
+      await generateVideo({
+        vin: car.vin,
+        images: car.images,
+      });
+      toast.success('Video generated successfully!');
+    } catch (error) {
+      console.error('Error generating video:', error);
+      toast.error(
+        error instanceof Error ? error.message : 'Failed to generate video',
+      );
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  const videoUrl = existingVideo?.url || null;
+  const hasVideo = videoUrl !== null;
+
+  return (
+    <div className="flex flex-col gap-2">
+      <Button
+        className="flex-1 bg-purple-600 hover:bg-purple-700"
+        onClick={handleGenerateVideo}
+        disabled={isGenerating || hasVideo}
+      >
+        <Video className="w-4 h-4 mr-2" />
+        {isGenerating
+          ? 'Generating...'
+          : hasVideo
+            ? 'Video Ready'
+            : 'Generate Video'}
+      </Button>
+      {videoUrl && (
+        <div className="mt-2">
+          <video
+            src={videoUrl}
+            controls
+            className="w-full rounded-lg"
+            style={{ maxHeight: '300px' }}
+          >
+            <track kind="captions" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       )}
     </div>
@@ -555,6 +621,9 @@ export default function App() {
                               }
                             }}
                           />
+                        </div>
+                        <div className="mt-4">
+                          <GenerateVideoButton car={car} />
                         </div>
                       </div>
                     </div>

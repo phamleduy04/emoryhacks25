@@ -31,7 +31,13 @@ export const callFields = {
   confirmed_price: v.optional(v.number()),
 };
 
+export const videoFields = {
+  storageId: v.id('_storage'),
+  vin: v.string(),
+};
+
 export default defineSchema({
+  videos: defineTable(videoFields),
   calls: defineTable(callFields)
     .index('by_vin', ['vin'])
     .index('by_conversation_id', ['conversation_id']),

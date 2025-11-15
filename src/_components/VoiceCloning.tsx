@@ -1,6 +1,6 @@
 import { useAction } from 'convex/react';
-import { Mic, Upload, Check, AlertCircle } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { AlertCircle, Check, Mic, Upload } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { useReactMediaRecorder } from 'react-media-recorder';
 import { toast } from 'sonner';
 import {
@@ -23,37 +23,35 @@ export function VoiceCloning() {
   const [uploadSuccess, setUploadSuccess] = useState(false);
   const createVoice = useAction(api.elevenlabsActions.createVoice);
 
-  const {
-    status,
-    startRecording,
-    stopRecording,
-    mediaBlobUrl,
-    clearBlobUrl,
-  } = useReactMediaRecorder({
-    audio: true,
-    onStop: async (blobUrl, blob) => {
-      console.log('Recording stopped', { blobUrl, duration: recordingDuration });
-      
-      // Get actual duration from the audio blob
-      const audio = new Audio(blobUrl);
-      audio.addEventListener('loadedmetadata', () => {
-        const actualDuration = Math.floor(audio.duration);
-        console.log('Actual audio duration:', actualDuration);
-        setRecordingDuration(actualDuration);
-        
-        // Show feedback based on actual duration
-        if (actualDuration < 10) {
-          toast.warning('Recording processed', {
-            description: `Duration: ${actualDuration}s - Need at least 10s for voice cloning`,
-          });
-        } else {
-          toast.success('Recording ready!', {
-            description: `${actualDuration} seconds recorded - Ready to upload`,
-          });
-        }
-      });
-    },
-  });
+  const { status, startRecording, stopRecording, mediaBlobUrl, clearBlobUrl } =
+    useReactMediaRecorder({
+      audio: true,
+      onStop: async (blobUrl, _blob) => {
+        console.log('Recording stopped', {
+          blobUrl,
+          duration: recordingDuration,
+        });
+
+        // Get actual duration from the audio blob
+        const audio = new Audio(blobUrl);
+        audio.addEventListener('loadedmetadata', () => {
+          const actualDuration = Math.floor(audio.duration);
+          console.log('Actual audio duration:', actualDuration);
+          setRecordingDuration(actualDuration);
+
+          // Show feedback based on actual duration
+          if (actualDuration < 10) {
+            toast.warning('Recording processed', {
+              description: `Duration: ${actualDuration}s - Need at least 10s for voice cloning`,
+            });
+          } else {
+            toast.success('Recording ready!', {
+              description: `${actualDuration} seconds recorded - Ready to upload`,
+            });
+          }
+        });
+      },
+    });
 
   // Timer for recording duration
   useEffect(() => {
@@ -147,7 +145,8 @@ export function VoiceCloning() {
         } catch (error) {
           console.error('Error creating voice:', error);
           toast.error('Failed to clone voice', {
-            description: error instanceof Error ? error.message : 'Unknown error',
+            description:
+              error instanceof Error ? error.message : 'Unknown error',
           });
         } finally {
           setIsUploading(false);
@@ -182,7 +181,8 @@ export function VoiceCloning() {
   };
 
   const isRecordingValid = recordingDuration >= 10;
-  const canUpload = mediaBlobUrl && isRecordingValid && voiceName.trim() && !isUploading;
+  const canUpload =
+    mediaBlobUrl && isRecordingValid && voiceName.trim() && !isUploading;
 
   return (
     <Card className="shadow-lg">
@@ -196,135 +196,142 @@ export function VoiceCloning() {
           </AccordionTrigger>
           <AccordionContent>
             <CardContent className="space-y-6 pt-0">
-        {/* Voice Name Input */}
-        <div className="space-y-2">
-          <Label htmlFor="voiceName">Voice Name</Label>
-          <Input
-            id="voiceName"
-            type="text"
-            placeholder="e.g., My Voice"
-            value={voiceName}
-            onChange={(e) => setVoiceName(e.target.value)}
-            disabled={status === 'recording'}
-          />
-        </div>
+              {/* Voice Name Input */}
+              <div className="space-y-2">
+                <Label htmlFor="voiceName">Voice Name</Label>
+                <Input
+                  id="voiceName"
+                  type="text"
+                  placeholder="e.g., My Voice"
+                  value={voiceName}
+                  onChange={(e) => setVoiceName(e.target.value)}
+                  disabled={status === 'recording'}
+                />
+              </div>
 
-        {/* Recording Controls */}
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <div className="space-y-1">
-              <p className="text-sm font-medium">Recording Status</p>
-              <p className="text-xs text-slate-600 capitalize flex items-center gap-2">
+              {/* Recording Controls */}
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="space-y-1">
+                    <p className="text-sm font-medium">Recording Status</p>
+                    <p className="text-xs text-slate-600 capitalize flex items-center gap-2">
+                      {status === 'recording' && (
+                        <span className="flex h-2 w-2">
+                          <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-red-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                        </span>
+                      )}
+                      {status}
+                    </p>
+                  </div>
+                  <div className="text-right space-y-1">
+                    <p className="text-sm font-medium">Duration</p>
+                    <p
+                      className={`text-2xl font-mono ${recordingDuration >= 10 ? 'text-green-600' : 'text-slate-600'}`}
+                    >
+                      {formatDuration(recordingDuration)}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Progress Bar */}
                 {status === 'recording' && (
-                  <span className="flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-red-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-                  </span>
+                  <div className="space-y-2">
+                    <Progress
+                      value={Math.min((recordingDuration / 10) * 100, 100)}
+                    />
+                    <p className="text-xs text-slate-500 text-center">
+                      {recordingDuration < 10
+                        ? `Record at least ${10 - recordingDuration} more seconds`
+                        : 'Minimum recording length reached ✓'}
+                    </p>
+                  </div>
                 )}
-                {status}
-              </p>
-            </div>
-            <div className="text-right space-y-1">
-              <p className="text-sm font-medium">Duration</p>
-              <p className={`text-2xl font-mono ${recordingDuration >= 10 ? 'text-green-600' : 'text-slate-600'}`}>
-                {formatDuration(recordingDuration)}
-              </p>
-            </div>
-          </div>
 
-          {/* Progress Bar */}
-          {status === 'recording' && (
-            <div className="space-y-2">
-              <Progress value={Math.min((recordingDuration / 10) * 100, 100)} />
-              <p className="text-xs text-slate-500 text-center">
-                {recordingDuration < 10 
-                  ? `Record at least ${10 - recordingDuration} more seconds`
-                  : 'Minimum recording length reached ✓'}
-              </p>
-            </div>
-          )}
+                {/* Validation Message */}
+                {mediaBlobUrl && !isRecordingValid && (
+                  <div className="flex items-center gap-2 p-3 bg-yellow-50 border border-yellow-200 rounded-md">
+                    <AlertCircle className="w-4 h-4 text-yellow-600" />
+                    <p className="text-sm text-yellow-800">
+                      Recording is too short. Please record at least 10 seconds.
+                    </p>
+                  </div>
+                )}
 
-          {/* Validation Message */}
-          {mediaBlobUrl && !isRecordingValid && (
-            <div className="flex items-center gap-2 p-3 bg-yellow-50 border border-yellow-200 rounded-md">
-              <AlertCircle className="w-4 h-4 text-yellow-600" />
-              <p className="text-sm text-yellow-800">
-                Recording is too short. Please record at least 10 seconds.
-              </p>
-            </div>
-          )}
+                {/* Success Message */}
+                {uploadSuccess && (
+                  <div className="flex items-center gap-2 p-3 bg-green-50 border border-green-200 rounded-md">
+                    <Check className="w-4 h-4 text-green-600" />
+                    <p className="text-sm text-green-800">
+                      Voice successfully cloned!
+                    </p>
+                  </div>
+                )}
 
-          {/* Success Message */}
-          {uploadSuccess && (
-            <div className="flex items-center gap-2 p-3 bg-green-50 border border-green-200 rounded-md">
-              <Check className="w-4 h-4 text-green-600" />
-              <p className="text-sm text-green-800">
-                Voice successfully cloned!
-              </p>
-            </div>
-          )}
+                {/* Recording Buttons */}
+                <div className="flex gap-2">
+                  {status !== 'recording' && !mediaBlobUrl && (
+                    <Button
+                      onClick={handleStartRecording}
+                      className="flex-1 bg-red-600 hover:bg-red-700"
+                      disabled={!voiceName.trim()}
+                    >
+                      <Mic className="w-4 h-4 mr-2" />
+                      Start Recording
+                    </Button>
+                  )}
 
-          {/* Recording Buttons */}
-          <div className="flex gap-2">
-            {status !== 'recording' && !mediaBlobUrl && (
-              <Button
-                onClick={handleStartRecording}
-                className="flex-1 bg-red-600 hover:bg-red-700"
-                disabled={!voiceName.trim()}
-              >
-                <Mic className="w-4 h-4 mr-2" />
-                Start Recording
-              </Button>
-            )}
+                  {status === 'recording' && (
+                    <Button
+                      onClick={handleStopRecording}
+                      className="flex-1 bg-slate-600 hover:bg-slate-700"
+                    >
+                      Stop Recording
+                    </Button>
+                  )}
 
-            {status === 'recording' && (
-              <Button
-                onClick={handleStopRecording}
-                className="flex-1 bg-slate-600 hover:bg-slate-700"
-              >
-                Stop Recording
-              </Button>
-            )}
-
-            {mediaBlobUrl && status !== 'recording' && (
-              <>
-                <Button
-                  onClick={handleClear}
-                  variant="outline"
-                  className="flex-1"
-                  disabled={isUploading}
-                >
-                  Clear & Re-record
-                </Button>
-                <Button
-                  onClick={handleUpload}
-                  className="flex-1 bg-blue-600 hover:bg-blue-700"
-                  disabled={!canUpload}
-                >
-                  {isUploading ? (
+                  {mediaBlobUrl && status !== 'recording' && (
                     <>
-                      <span className="animate-spin mr-2">⏳</span>
-                      Uploading...
-                    </>
-                  ) : (
-                    <>
-                      <Upload className="w-4 h-4 mr-2" />
-                      Upload Voice
+                      <Button
+                        onClick={handleClear}
+                        variant="outline"
+                        className="flex-1"
+                        disabled={isUploading}
+                      >
+                        Clear & Re-record
+                      </Button>
+                      <Button
+                        onClick={handleUpload}
+                        className="flex-1 bg-blue-600 hover:bg-blue-700"
+                        disabled={!canUpload}
+                      >
+                        {isUploading ? (
+                          <>
+                            <span className="animate-spin mr-2">⏳</span>
+                            Uploading...
+                          </>
+                        ) : (
+                          <>
+                            <Upload className="w-4 h-4 mr-2" />
+                            Upload Voice
+                          </>
+                        )}
+                      </Button>
                     </>
                   )}
-                </Button>
-              </>
-            )}
-          </div>
-        </div>
+                </div>
+              </div>
 
-        {/* Audio Preview */}
-        {mediaBlobUrl && (
-          <div className="space-y-2">
-            <Label>Preview Recording</Label>
-            <audio src={mediaBlobUrl} controls className="w-full" />
-          </div>
-        )}
+              {/* Audio Preview */}
+              {mediaBlobUrl && (
+                <div className="space-y-2">
+                  <Label>Preview Recording</Label>
+                  <audio controls className="w-full">
+                    <source src={mediaBlobUrl} />
+                    <track kind="captions" />
+                  </audio>
+                </div>
+              )}
             </CardContent>
           </AccordionContent>
         </AccordionItem>
@@ -332,4 +339,3 @@ export function VoiceCloning() {
     </Card>
   );
 }
-

@@ -1,9 +1,9 @@
-"use node";
+'use node';
 
-import { Connection, PublicKey, LAMPORTS_PER_SOL } from '@solana/web3.js';
+import { Connection, LAMPORTS_PER_SOL, PublicKey } from '@solana/web3.js';
+import { v } from 'convex/values';
 import { api } from './_generated/api';
 import { action } from './_generated/server';
-import { v } from 'convex/values';
 
 // Devnet RPC endpoint
 const DEVNET_RPC_URL = 'https://api.devnet.solana.com';
@@ -43,7 +43,7 @@ export const verifyPayment = action({
       let merchantPubkey: PublicKey;
       try {
         merchantPubkey = new PublicKey(args.merchantAddress);
-      } catch (error) {
+      } catch (_error) {
         return {
           valid: false,
           message: 'Invalid merchant address format',
@@ -97,7 +97,7 @@ export const verifyPayment = action({
       // Verify payment amount and recipient
       const preBalances = transaction.meta.preBalances;
       const postBalances = transaction.meta.postBalances;
-      
+
       // Handle both legacy and versioned transactions
       // Since we're using maxSupportedTransactionVersion: 0, we should only get legacy transactions
       // But TypeScript doesn't know that, so we need to handle both cases
@@ -107,7 +107,8 @@ export const verifyPayment = action({
         accountKeys = transaction.transaction.message.accountKeys;
       } else {
         // Versioned transaction - use getAccountKeys().staticAccountKeys
-        const loadedAddresses = transaction.transaction.message.getAccountKeys();
+        const loadedAddresses =
+          transaction.transaction.message.getAccountKeys();
         accountKeys = loadedAddresses.staticAccountKeys;
       }
 

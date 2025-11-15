@@ -1,18 +1,15 @@
+import type { WalletContextState } from '@solana/wallet-adapter-react';
 import {
-  Connection,
+  type Connection,
+  LAMPORTS_PER_SOL,
   PublicKey,
   SystemProgram,
   Transaction,
-  LAMPORTS_PER_SOL,
 } from '@solana/web3.js';
-import type { WalletContextState } from '@solana/wallet-adapter-react';
 
 // Payment amount in SOL (0.001 SOL)
 export const PAYMENT_AMOUNT_SOL = 0.001;
 export const PAYMENT_AMOUNT_LAMPORTS = PAYMENT_AMOUNT_SOL * LAMPORTS_PER_SOL;
-
-// Devnet RPC endpoint
-const DEVNET_RPC_URL = 'https://api.devnet.solana.com';
 
 /**
  * Send a payment transaction to the merchant address

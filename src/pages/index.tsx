@@ -1,11 +1,13 @@
 'use client';
 
-import { useAction, useQuery } from 'convex/react';
-import { ExternalLink, Phone } from 'lucide-react';
-import { useState, useEffect } from 'react';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
-import { Connection } from '@solana/web3.js';
+import type { Connection } from '@solana/web3.js';
+import { useAction, useQuery } from 'convex/react';
+import { ExternalLink, Phone } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { toast } from 'sonner';
+import { VoiceCloning } from '@/_components/VoiceCloning';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -28,13 +30,11 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Slider } from '@/components/ui/slider';
-import { VoiceCloning } from '@/_components/VoiceCloning';
+import { WalletBalance } from '@/components/WalletBalance';
 import { carModels, otherMakes, popularMakes } from '@/data/carData';
+import { PAYMENT_AMOUNT_SOL, sendPayment } from '@/lib/solanaPayment';
 import { api } from '../../convex/_generated/api';
 import type { FilteredListing } from '../../convex/carfax';
-import { sendPayment, PAYMENT_AMOUNT_SOL } from '@/lib/solanaPayment';
-import { toast } from 'sonner';
-import { WalletBalance } from '@/components/WalletBalance';
 
 // Component to handle call dealer button with database check and payment
 function CallDealerButton({

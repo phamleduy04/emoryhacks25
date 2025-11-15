@@ -1,5 +1,5 @@
-import { mutation, query } from './_generated/server';
 import { v } from 'convex/values';
+import { mutation, query } from './_generated/server';
 
 /**
  * Get the merchant address for payments
@@ -11,8 +11,7 @@ export const getMerchantAddress = query({
     // Get merchant address from environment variable
     // This should be set in Convex dashboard
     return (
-      process.env.SOLANA_MERCHANT_ADDRESS ||
-      '11111111111111111111111111111111' // Default fallback
+      process.env.SOLANA_MERCHANT_ADDRESS || '11111111111111111111111111111111' // Default fallback
     );
   },
 });

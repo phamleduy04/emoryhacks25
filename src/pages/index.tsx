@@ -1,9 +1,17 @@
 'use client';
 
-import { useState } from 'react';
 import { useAction } from 'convex/react';
-import { api } from '../../convex/_generated/api';
+import { useState } from 'react';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import {
@@ -16,16 +24,8 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Slider } from '@/components/ui/slider';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
-import { Badge } from '@/components/ui/badge';
-import { popularMakes, otherMakes, carModels } from '@/data/carData';
+import { carModels, otherMakes, popularMakes } from '@/data/carData';
+import { api } from '../../convex/_generated/api';
 
 export default function App() {
   const [make, setMake] = useState<string>('');
@@ -101,9 +101,7 @@ export default function App() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">
-            CarMommy
-          </h1>
+          <h1 className="text-4xl font-bold text-slate-900 mb-2">CarMommy</h1>
         </div>
 
         <Card className="mb-8 shadow-lg">
@@ -123,7 +121,10 @@ export default function App() {
                     setErrors({ ...errors, make: '' });
                   }}
                 >
-                  <SelectTrigger id="make" className={errors.make ? 'border-red-500' : ''}>
+                  <SelectTrigger
+                    id="make"
+                    className={errors.make ? 'border-red-500' : ''}
+                  >
                     <SelectValue placeholder="Select a make" />
                   </SelectTrigger>
                   <SelectContent>
@@ -161,7 +162,10 @@ export default function App() {
                   }}
                   disabled={!make}
                 >
-                  <SelectTrigger id="model" className={errors.model ? 'border-red-500' : ''}>
+                  <SelectTrigger
+                    id="model"
+                    className={errors.model ? 'border-red-500' : ''}
+                  >
                     <SelectValue
                       placeholder={
                         make ? 'Select a model' : 'Select a make first'
@@ -265,61 +269,69 @@ export default function App() {
                   )}
                   <CardContent className="p-0">
                     <div className="p-6">
-                    <div className="flex items-start justify-between mb-2">
-                      <h3 className="text-xl font-bold text-slate-900">
-                        {car.year} {car.model}
-                      </h3>
-                      {car.msrp > 0 && car.price < car.msrp && (
-                        <Badge variant="default" className="bg-green-600 hover:bg-green-700">
-                          Good Price
-                        </Badge>
-                      )}
-                    </div>
-                    <div className="space-y-2 text-sm">
-                      <p className="text-slate-600">
-                        <span className="font-semibold">Trim:</span> {car.trim}
-                      </p>
-                      <p className="text-slate-600">
-                        <span className="font-semibold">Color:</span>{' '}
-                        {car.color}
-                      </p>
-                      <p className="text-slate-600">
-                        <span className="font-semibold">VIN:</span> {car.vin}
-                      </p>
-                      <p className="text-slate-600">
-                        <span className="font-semibold">Stock #:</span>{' '}
-                        {car.stockNumber}
-                      </p>
-                      <div className="pt-2 border-t">
-                        <p className="text-2xl font-bold text-green-600">
-                          ${car.price.toLocaleString()}
+                      <div className="flex items-start justify-between mb-2">
+                        <h3 className="text-xl font-bold text-slate-900">
+                          {car.year} {car.model}
+                        </h3>
+                        {car.msrp > 0 && car.price < car.msrp && (
+                          <Badge
+                            variant="default"
+                            className="bg-green-600 hover:bg-green-700"
+                          >
+                            Good Price
+                          </Badge>
+                        )}
+                      </div>
+                      <div className="space-y-2 text-sm">
+                        <p className="text-slate-600">
+                          <span className="font-semibold">Trim:</span>{' '}
+                          {car.trim}
                         </p>
-                        {car.msrp && (
-                          <p className="text-sm text-slate-500">
-                            MSRP: ${car.msrp.toLocaleString()}
+                        <p className="text-slate-600">
+                          <span className="font-semibold">Color:</span>{' '}
+                          {car.color}
+                        </p>
+                        <p className="text-slate-600">
+                          <span className="font-semibold">VIN:</span> {car.vin}
+                        </p>
+                        <p className="text-slate-600">
+                          <span className="font-semibold">Stock #:</span>{' '}
+                          {car.stockNumber}
+                        </p>
+                        <div className="pt-2 border-t">
+                          <p className="text-2xl font-bold text-green-600">
+                            ${car.price.toLocaleString()}
                           </p>
+                          {car.msrp && (
+                            <p className="text-sm text-slate-500">
+                              MSRP: ${car.msrp.toLocaleString()}
+                            </p>
+                          )}
+                        </div>
+                        <div className="pt-2 border-t">
+                          <p className="font-semibold text-slate-800">
+                            {car.dealer.name}
+                          </p>
+                          {car.dealer.phone && (
+                            <p className="text-slate-600">{car.dealer.phone}</p>
+                          )}
+                          {car.dealer.address && (
+                            <p className="text-slate-600">
+                              {car.dealer.address}
+                            </p>
+                          )}
+                        </div>
+                        {car.listingUrl && (
+                          <Button
+                            className="w-full mt-4"
+                            onClick={() =>
+                              window.open(car.listingUrl, '_blank')
+                            }
+                          >
+                            View Details
+                          </Button>
                         )}
                       </div>
-                      <div className="pt-2 border-t">
-                        <p className="font-semibold text-slate-800">
-                          {car.dealer.name}
-                        </p>
-                        {car.dealer.phone && (
-                          <p className="text-slate-600">{car.dealer.phone}</p>
-                        )}
-                        {car.dealer.address && (
-                          <p className="text-slate-600">{car.dealer.address}</p>
-                        )}
-                      </div>
-                      {car.listingUrl && (
-                        <Button
-                          className="w-full mt-4"
-                          onClick={() => window.open(car.listingUrl, '_blank')}
-                        >
-                          View Details
-                        </Button>
-                      )}
-                    </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -327,7 +339,6 @@ export default function App() {
             </div>
           </div>
         )}
-
       </div>
     </div>
   );

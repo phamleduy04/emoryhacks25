@@ -1,4 +1,8 @@
+'use node';
+
+import type { Readable } from 'node:stream';
 import { v } from 'convex/values';
+import FormData from 'form-data';
 import { action } from './_generated/server';
 
 export const requestCall = action({
@@ -14,33 +18,98 @@ export const requestCall = action({
     phone_number: v.string(),
   },
   handler: async (_ctx, args) => {
-    const data = await fetch('https://api.elevenlabs.io/v1/convai/twilio/outbound-call', {
+    const data = await fetch(
+      'https://api.elevenlabs.io/v1/convai/twilio/outbound-call',
+      {
+        method: 'POST',
+        headers: {
+          'xi-api-key': process.env.ELEVENLABS_API_KEY || '',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          agent_id: process.env.ELEVENLABS_AGENT_ID || '',
+          agent_phone_number_id: process.env.ELEVENLABS_PHONE_NUMBER_ID || '',
+          to_number: args.phone_number,
+          conversation_initiation_client_data: {
+            dynamic_variables: {
+              year: args.year,
+              make: args.make,
+              model: args.model,
+              zipcode: args.zipcode,
+              dealer_name: args.dealer_name,
+              msrp: args.msrp,
+              listing_price: args.listing_price,
+              stock_number: args.stock_number,
+            },
+          },
+        }),
+      },
+    );
+
+    return {
+      data: data,
+    };
+  },
+});
+
+export const createVoice = action({
+  args: {
+    audio: v.string(),
+    name: v.string(),
+  },
+  returns: v.any(),
+  handler: async (_ctx, args) => {
+    const audioBuffer = Buffer.from(args.audio, 'base64');
+
+    const formData = new FormData();
+    formData.append('name', args.name);
+    formData.append('files', audioBuffer, 'audio.mp3');
+
+    const headers = formData.getHeaders();
+
+    const chunks: Buffer[] = [];
+    const formDataStream = formData as unknown as Readable;
+
+    await new Promise<void>((resolve, reject) => {
+      formDataStream.on('data', (chunk: Buffer | string) => {
+        if (Buffer.isBuffer(chunk)) {
+          chunks.push(chunk);
+        } else {
+          chunks.push(Buffer.from(chunk));
+        }
+      });
+      formDataStream.on('end', () => {
+        resolve();
+      });
+      formDataStream.on('error', (err: Error) => {
+        reject(err);
+      });
+
+      formDataStream.resume();
+    });
+
+    const bodyBuffer = Buffer.concat(chunks);
+
+    const res = await fetch('https://api.elevenlabs.io/v1/voices/add', {
       method: 'POST',
       headers: {
         'xi-api-key': process.env.ELEVENLABS_API_KEY || '',
-        'Content-Type': 'application/json',
+        'Content-Type': headers['content-type'],
       },
-      body: JSON.stringify({
-        agent_id: process.env.ELEVENLABS_AGENT_ID || '',
-        agent_phone_number_id: process.env.ELEVENLABS_PHONE_NUMBER_ID || '',
-        to_number: args.phone_number,
-        conversation_initiation_client_data: {
-          dynamic_variables: {
-            year: args.year,
-            make: args.make,
-            model: args.model,
-            zipcode: args.zipcode,
-            dealer_name: args.dealer_name,
-            msrp: args.msrp,
-            listing_price: args.listing_price,
-            stock_number: args.stock_number,
-          },
-        },
-      }),
+      body: bodyBuffer,
     });
 
+    if (!res.ok) {
+      const errorText = await res.text();
+      throw new Error(
+        `ElevenLabs API error: ${res.status} ${res.statusText} - ${errorText}`,
+      );
+    }
+
+    const data = await res.json();
+
     return {
-      data: data
+      data: data,
     };
   },
 });

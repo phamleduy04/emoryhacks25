@@ -1,9 +1,9 @@
 import type { Readable } from 'node:stream';
 import { v } from 'convex/values';
 import FormData from 'form-data';
+import { api } from './_generated/api';
 import { action, mutation, query } from './_generated/server';
 import { callFields } from './schema';
-import { api } from './_generated/api';
 
 const BASE_URL = 'https://api.elevenlabs.io/v1';
 
@@ -89,6 +89,7 @@ export const updateCallStatus = mutation({
     ),
     transcript_summary: v.optional(v.string()),
     call_successful: v.optional(v.boolean()),
+    confirmed_price: v.optional(v.number()),
   },
   returns: v.null(),
   handler: async (ctx, args) => {
@@ -112,9 +113,13 @@ export const updateCallStatus = mutation({
       status: args.status,
       transcript_summary: args.transcript_summary,
       call_successful: args.call_successful,
+      confirmed_price: args.confirmed_price,
     });
 
     console.log(`Updated call ${call._id} to status ${args.status}`);
+    if (args.confirmed_price) {
+      console.log(`Confirmed price: $${args.confirmed_price}`);
+    }
     return null;
   },
 });
@@ -133,6 +138,7 @@ export const checkExistingCall = query({
         v.literal('failed'),
         v.literal('quoted'),
       ),
+      confirmed_price: v.optional(v.number()),
     }),
   ),
   handler: async (ctx, args) => {
@@ -155,7 +161,51 @@ export const checkExistingCall = query({
     return {
       _id: existingCall._id,
       status: existingCall.status,
+      confirmed_price: existingCall.confirmed_price,
     };
+  },
+});
+
+export const getCompetitiveDeals = query({
+  args: {
+    make: v.string(),
+    model: v.string(),
+  },
+  returns: v.array(
+    v.object({
+      dealer_name: v.string(),
+      confirmed_price: v.number(),
+    }),
+  ),
+  handler: async (ctx, args) => {
+    // Query all calls from the database
+    const allCalls = await ctx.db.query('calls').collect();
+
+    // Filter calls based on criteria
+    const competitiveDeals = allCalls
+      .filter((call) => {
+        // Exclude pending status
+        if (call.status === 'pending') return false;
+
+        // Must have a confirmed price
+        if (!call.confirmed_price) return false;
+
+        // Match make and model (case insensitive)
+        if (
+          call.make.toLowerCase() !== args.make.toLowerCase() ||
+          call.model.toLowerCase() !== args.model.toLowerCase()
+        ) {
+          return false;
+        }
+
+        return true;
+      })
+      .map((call) => ({
+        dealer_name: call.dealer_name,
+        confirmed_price: call.confirmed_price as number,
+      }));
+
+    return competitiveDeals;
   },
 });
 

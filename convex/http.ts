@@ -1,9 +1,87 @@
-import { httpRouter } from 'convex/server';
+import { GoogleGenAI } from '@google/genai';
 import type { GenericActionCtx } from 'convex/server';
-import { httpAction } from './_generated/server';
+import { httpRouter } from 'convex/server';
 import { api } from './_generated/api';
+import type { DataModel } from './_generated/dataModel';
+import { httpAction } from './_generated/server';
+
+const getPrompt = (data: string) => {
+  return `You are an information-extraction model. Extract the final price that the user provided from the email and provide a summary of the email content.\n\nReturn a JSON object following this TypeScript interface:\n\nParsedEmail {\n  final_price: number | null;\n  summary: string;\n}\n\nRules:\n- Output only the JSON object.\n- Do not wrap the result in code blocks or add any commentary.\n- Parse only from the content of the email.\n- Remove currency symbols and commas from the final price (e.g., $23,500 → 23500).\n- If the final price is missing, unclear, or cannot be confidently interpreted as a number, set it to null.\n- The summary should be a concise 1-2 sentence overview of the email's main content.\n- Include no extra fields.\n\n\nData to parse:\n${data}`;
+};
+
+const ai = new GoogleGenAI({
+  apiKey: process.env.GOOGLE_GENAI_API_KEY || '',
+});
 
 const http = httpRouter();
+
+http.route({
+  path: '/elevenlabs/get-competitive-deals',
+  method: 'POST',
+  handler: httpAction(async (ctx, request) => {
+    try {
+      const bodyText = await request.text();
+      const body = JSON.parse(bodyText);
+      const { make, model } = body;
+
+      console.log('Fetching competitive deals for:', {
+        make,
+        model,
+      });
+
+      // Validate required parameters
+      if (!make || !model) {
+        return new Response(
+          JSON.stringify({
+            error: 'Missing required parameters: make and model are required',
+          }),
+          {
+            status: 400,
+            headers: { 'Content-Type': 'application/json' },
+          },
+        );
+      }
+
+      // Query calls database for competitive deals (excluding pending status)
+      const competitiveDeals = await ctx.runQuery(
+        api.elevenlabs.getCompetitiveDeals,
+        {
+          make: String(make),
+          model: String(model),
+        },
+      );
+
+      console.log(`Returning ${competitiveDeals.length} competitive deals`);
+
+      // Format response as plain text
+      let responseText: string;
+      if (competitiveDeals.length > 0) {
+        responseText = competitiveDeals
+          .map((deal) => `${deal.dealer_name}: ${deal.confirmed_price}`)
+          .join(', ');
+      } else {
+        responseText = 'no offer avaliables';
+      }
+
+      return new Response(responseText, {
+        status: 200,
+        headers: { 'Content-Type': 'text/plain' },
+      });
+    } catch (error) {
+      console.error('Error fetching competitive deals:', error);
+      return new Response(
+        JSON.stringify({
+          error: 'Failed to fetch competitive deals',
+          details: error instanceof Error ? error.message : 'Unknown error',
+        }),
+        {
+          status: 500,
+          headers: { 'Content-Type': 'application/json' },
+        },
+      );
+    }
+  }),
+});
 
 http.route({
   path: '/elevenlabs/post-call',
@@ -52,8 +130,7 @@ interface CallInitiationFailureData {
 }
 
 async function handlePostCallTranscription(
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ctx: GenericActionCtx<any>,
+  ctx: GenericActionCtx<DataModel>,
   data: PostCallTranscriptionData,
 ) {
   console.log('Processing post_call_transcription webhook');
@@ -64,6 +141,32 @@ async function handlePostCallTranscription(
   const conversationId = data.conversation_id;
   const callSuccessful = data.analysis?.call_successful ?? false;
   const transcriptSummary = data.analysis?.transcript_summary;
+
+  if (!transcriptSummary) {
+    console.error('Transcript summary is missing');
+    return;
+  }
+
+  // Extract confirmed price using AI
+  let confirmedPrice: number | undefined;
+  try {
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: getPrompt(transcriptSummary),
+    });
+
+    const responseText = response.text;
+    console.log('AI Response:', responseText);
+
+    // Parse the JSON response
+    const parsed = JSON.parse(responseText || '{}');
+    if (parsed.final_price && typeof parsed.final_price === 'number') {
+      confirmedPrice = parsed.final_price;
+      console.log('Extracted confirmed price:', confirmedPrice);
+    }
+  } catch (error) {
+    console.error('Error extracting price with AI:', error);
+  }
 
   // Determine the new status based on call analysis
   let newStatus: 'completed' | 'failed' | 'quoted' = 'completed';
@@ -84,14 +187,15 @@ async function handlePostCallTranscription(
     conversation_id: conversationId,
     status: newStatus,
     transcript_summary: transcriptSummary,
-    call_successful: callSuccessful,
+    call_successful: Boolean(callSuccessful), // Ensure it's always a boolean
+    confirmed_price: confirmedPrice,
   });
 
   console.log(`Updated call ${conversationId} to status: ${newStatus}`);
 }
 
 async function handleCallInitiationFailure(
-  ctx: GenericActionCtx<any>,
+  ctx: GenericActionCtx<DataModel>,
   data: CallInitiationFailureData,
 ) {
   console.log('Processing call_initiation_failure webhook');

@@ -1,8 +1,8 @@
 'use client';
 
 import { useAction, useQuery } from 'convex/react';
-import { useState } from 'react';
 import { ExternalLink, Phone } from 'lucide-react';
+import { useState } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -49,7 +49,7 @@ function CallDealerButton({
     if (isLoading) return 'Calling...';
     if (existingCall?.status === 'pending') return 'Call Pending';
     if (existingCall?.status === 'completed') return 'Already Called';
-    if (existingCall?.status === 'quoted') return 'Quote Received';
+    if (existingCall?.status === 'quoted') return 'Verbal Offer Received';
     return 'Call Dealer using AI';
   };
 
@@ -64,14 +64,23 @@ function CallDealerButton({
   };
 
   return (
-    <Button
-      className={getButtonClass()}
-      onClick={onCallRequest}
-      disabled={isDisabled}
-    >
-      <Phone className="w-4 h-4 mr-2" />
-      {getButtonText()}
-    </Button>
+    <div className="flex-1 flex flex-col gap-2">
+      <Button
+        className={getButtonClass()}
+        onClick={onCallRequest}
+        disabled={isDisabled}
+      >
+        <Phone className="w-4 h-4 mr-2" />
+        {getButtonText()}
+      </Button>
+      {existingCall?.status === 'quoted' && existingCall?.confirmed_price && (
+        <div className="text-center">
+          <p className="text-sm font-semibold text-purple-600">
+            Negotiated Price: ${existingCall.confirmed_price.toLocaleString()}
+          </p>
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -293,19 +302,19 @@ export default function App() {
               Found {results.length} Listings
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {results.map((car, index) => (
+              {results.map((car) => (
                 <Card
-                  key={index}
+                  key={car.vin}
                   className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
                 >
                   {car.images && car.images.length > 0 && (
                     <Carousel className="w-full">
                       <CarouselContent>
-                        {car.images.map((image: string, imageIndex: number) => (
-                          <CarouselItem key={imageIndex}>
+                        {car.images.map((image: string) => (
+                          <CarouselItem key={image}>
                             <img
                               src={image}
-                              alt={`${car.year} ${car.model} - Image ${imageIndex + 1}`}
+                              alt={`${car.year} ${car.model} view`}
                               className="w-full h-64 object-cover"
                             />
                           </CarouselItem>

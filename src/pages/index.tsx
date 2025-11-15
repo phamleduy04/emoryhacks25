@@ -2,7 +2,7 @@
 
 import { useAction, useQuery } from 'convex/react';
 import { ExternalLink, Phone } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -25,6 +25,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Slider } from '@/components/ui/slider';
+import { VoiceCloning } from '@/_components/VoiceCloning';
 import { carModels, otherMakes, popularMakes } from '@/data/carData';
 import { api } from '../../convex/_generated/api';
 import type { FilteredListing } from '../../convex/carfax';
@@ -99,9 +100,36 @@ export default function App() {
     model: '',
     zipCode: '',
   });
+  const [voices, setVoices] = useState<
+    Array<{ name: string; voiceId: string }>
+  >([]);
+  const [selectedVoiceId, setSelectedVoiceId] = useState<string>('');
+  const [isLoadingVoices, setIsLoadingVoices] = useState(false);
 
   const getCarfax = useAction(api.carfax.getCarfax);
-  const requestCall = useAction(api.elevenlabs.requestCall);
+  const requestCall = useAction(api.elevenlabsActions.requestCall);
+  const getVoices = useAction(api.elevenlabsActions.getVoices);
+
+  // Fetch voices on component mount
+  useEffect(() => {
+    const fetchVoices = async () => {
+      setIsLoadingVoices(true);
+      try {
+        const voicesList = await getVoices();
+        setVoices(voicesList);
+        // Set first voice as default if available
+        if (voicesList.length > 0) {
+          setSelectedVoiceId(voicesList[0].voiceId);
+        }
+      } catch (error) {
+        console.error('Error fetching voices:', error);
+      } finally {
+        setIsLoadingVoices(false);
+      }
+    };
+
+    fetchVoices();
+  }, [getVoices]);
 
   const validateForm = () => {
     const newErrors = {
@@ -163,6 +191,11 @@ export default function App() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-slate-900 mb-2">CarMommy</h1>
+        </div>
+
+        {/* Voice Cloning Card */}
+        <div className="mb-8">
+          <VoiceCloning />
         </div>
 
         <Card className="mb-8 shadow-lg">
@@ -281,6 +314,38 @@ export default function App() {
                   onValueChange={setRadius}
                   className="mt-2"
                 />
+              </div>
+
+              {/* Voice Selection */}
+              <div className="space-y-2">
+                <Label htmlFor="voice">AI Voice for Calls</Label>
+                <Select
+                  value={selectedVoiceId}
+                  onValueChange={setSelectedVoiceId}
+                  disabled={isLoadingVoices || voices.length === 0}
+                >
+                  <SelectTrigger id="voice">
+                    <SelectValue
+                      placeholder={
+                        isLoadingVoices
+                          ? 'Loading voices...'
+                          : voices.length === 0
+                            ? 'No voices available'
+                            : 'Select a voice'
+                      }
+                    />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectGroup>
+                      <SelectLabel>Available Voices</SelectLabel>
+                      {voices.map((voice) => (
+                        <SelectItem key={voice.voiceId} value={voice.voiceId}>
+                          {voice.name}
+                        </SelectItem>
+                      ))}
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
               </div>
             </div>
 
@@ -414,6 +479,7 @@ export default function App() {
                                   stock_number: car.stockNumber,
                                   phone_number: '+14695963483',
                                   vin: car.vin,
+                                  voice_id: selectedVoiceId,
                                 });
                               } finally {
                                 setCallLoadingStates((prev) => ({

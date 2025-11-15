@@ -1,10 +1,11 @@
 import { ConvexProvider, ConvexReactClient } from 'convex/react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import './index.css';
 import { Suspense } from 'react';
 import { BrowserRouter, useRoutes } from 'react-router-dom';
+import { Toaster } from 'sonner';
 import routes from '~react-pages';
+import './index.css';
 
 const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL as string);
 
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root') as HTMLElement).render(
     <ConvexProvider client={convex}>
       <BrowserRouter>
         <App />
+        <Toaster />
       </BrowserRouter>
     </ConvexProvider>
   </StrictMode>,

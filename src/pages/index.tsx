@@ -127,15 +127,51 @@ function CallDealerButton({
   );
 }
 
-// Component to handle video generation button
-function GenerateVideoButton({ car }: { car: FilteredListing }) {
+// Component to handle video generation button with payment
+function GenerateVideoButton({
+  car,
+  wallet,
+  connection,
+  merchantAddress,
+}: {
+  car: FilteredListing;
+  wallet: ReturnType<typeof useWallet>;
+  connection: Connection;
+  merchantAddress: string | undefined;
+}) {
   const [isGenerating, setIsGenerating] = useState(false);
   const generateVideo = useAction(api.gemini.generateVideo);
   const existingVideo = useQuery(api.gemini.getVideoByVin, {
     vin: car.vin,
   });
 
+  const isDisabled =
+    isGenerating || existingVideo !== null || !wallet.connected;
+
+  const getButtonText = () => {
+    if (isGenerating) return 'Generating...';
+    if (!wallet.connected) return 'Connect Wallet';
+    if (existingVideo) return 'Video Ready';
+    return `Generate Video (${PAYMENT_AMOUNT_SOL} SOL)`;
+  };
+
+  const getButtonClass = () => {
+    if (!wallet.connected) return 'flex-1 bg-gray-500 hover:bg-gray-600';
+    if (existingVideo) return 'flex-1 bg-gray-600 hover:bg-gray-600';
+    return 'flex-1 bg-purple-600 hover:bg-purple-700';
+  };
+
   const handleGenerateVideo = async () => {
+    if (!wallet.connected) {
+      toast.error('Please connect your wallet first');
+      return;
+    }
+
+    if (!merchantAddress) {
+      toast.error('Merchant address not configured');
+      return;
+    }
+
     if (!car.images || car.images.length === 0) {
       toast.error('No images available for video generation');
       return;
@@ -143,6 +179,12 @@ function GenerateVideoButton({ car }: { car: FilteredListing }) {
 
     setIsGenerating(true);
     try {
+      // Send payment first
+      toast.info('Sending payment...');
+      const _signature = await sendPayment(merchantAddress, wallet, connection);
+      toast.success('Payment sent! Generating video...');
+
+      // Then generate video
       toast.info('Generating video... This may take a few minutes.');
       await generateVideo({
         vin: car.vin,
@@ -150,9 +192,11 @@ function GenerateVideoButton({ car }: { car: FilteredListing }) {
       });
       toast.success('Video generated successfully!');
     } catch (error) {
-      console.error('Error generating video:', error);
+      console.error('Payment or video generation error:', error);
       toast.error(
-        error instanceof Error ? error.message : 'Failed to generate video',
+        error instanceof Error
+          ? error.message
+          : 'Failed to process payment or generate video',
       );
     } finally {
       setIsGenerating(false);
@@ -160,21 +204,16 @@ function GenerateVideoButton({ car }: { car: FilteredListing }) {
   };
 
   const videoUrl = existingVideo?.url || null;
-  const hasVideo = videoUrl !== null;
 
   return (
     <div className="flex flex-col gap-2">
       <Button
-        className="flex-1 bg-purple-600 hover:bg-purple-700"
+        className={getButtonClass()}
         onClick={handleGenerateVideo}
-        disabled={isGenerating || hasVideo}
+        disabled={isDisabled}
       >
         <Video className="w-4 h-4 mr-2" />
-        {isGenerating
-          ? 'Generating...'
-          : hasVideo
-            ? 'Video Ready'
-            : 'Generate Video'}
+        {getButtonText()}
       </Button>
       {videoUrl && (
         <div className="mt-2">
@@ -623,7 +662,12 @@ export default function App() {
                           />
                         </div>
                         <div className="mt-4">
-                          <GenerateVideoButton car={car} />
+                          <GenerateVideoButton
+                            car={car}
+                            wallet={wallet}
+                            connection={connection}
+                            merchantAddress={merchantAddress}
+                          />
                         </div>
                       </div>
                     </div>

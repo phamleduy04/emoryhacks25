@@ -26,6 +26,12 @@ export const callFields = {
   ),
 };
 
+export const videoFields = {
+  storageId: v.id("_storage"),
+  vin: v.string()
+}
+
 export default defineSchema({
   calls: defineTable(callFields),
+  videos: defineTable(videoFields),
 });

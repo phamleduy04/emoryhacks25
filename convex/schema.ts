@@ -41,4 +41,9 @@ export default defineSchema({
   calls: defineTable(callFields)
     .index('by_vin', ['vin'])
     .index('by_conversation_id', ['conversation_id']),
+  payments: defineTable({
+    signature: v.string(),
+    amount: v.number(),
+    merchantAddress: v.string(),
+  }).index('by_signature', ['signature']),
 });

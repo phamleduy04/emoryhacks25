@@ -2,6 +2,7 @@
 
 import { useAction } from 'convex/react';
 import { useState } from 'react';
+import { ExternalLink, Phone } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -26,6 +27,26 @@ import {
 import { Slider } from '@/components/ui/slider';
 import { carModels, otherMakes, popularMakes } from '@/data/carData';
 import { api } from '../../convex/_generated/api';
+
+interface CarListing {
+  year: number;
+  msrp: number;
+  price: number;
+  images: string[];
+  dealer: {
+    name: string | undefined;
+    phone: string | undefined;
+    address: string | undefined;
+    latitude: string | undefined;
+    longitude: string | undefined;
+  };
+  listingUrl: string;
+  color: string;
+  trim: string;
+  vin: string;
+  stockNumber: string;
+  model: string;
+}
 
 export default function App() {
   const [make, setMake] = useState<string>('');
@@ -321,16 +342,29 @@ export default function App() {
                             </p>
                           )}
                         </div>
-                        {car.listingUrl && (
+                        <div className="flex gap-2 mt-4">
+                          {car.listingUrl && (
+                            <Button
+                              className="flex-1"
+                              onClick={() =>
+                                window.open(car.listingUrl, '_blank')
+                              }
+                            >
+                              <ExternalLink className="w-4 h-4 mr-2" />
+                              View Details
+                            </Button>
+                          )}
                           <Button
-                            className="w-full mt-4"
-                            onClick={() =>
-                              window.open(car.listingUrl, '_blank')
-                            }
+                            className="flex-1 bg-blue-600 hover:bg-blue-700"
+                            onClick={() => {
+                              // TODO: Implement AI call functionality
+                              console.log('Call dealer using AI', car.dealer);
+                            }}
                           >
-                            View Details
+                            <Phone className="w-4 h-4 mr-2" />
+                            Call Dealer using AI
                           </Button>
-                        )}
+                        </div>
                       </div>
                     </div>
                   </CardContent>

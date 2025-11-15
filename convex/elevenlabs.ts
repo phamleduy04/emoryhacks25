@@ -19,9 +19,32 @@ export const requestCall = action({
     listing_price: v.number(),
     stock_number: v.string(),
     phone_number: v.string(),
+    paymentSignature: v.string(),
   },
   handler: async (_ctx, args) => {
     console.log('requestCall', args);
+
+    // Get merchant address from environment variable
+    const merchantAddress =
+      process.env.SOLANA_MERCHANT_ADDRESS ||
+      '11111111111111111111111111111111'; // Default to system program if not set
+
+    // Verify payment before processing the call
+    const paymentVerification = await _ctx.runAction(api.solanaPayment.verifyPayment, {
+      signature: args.paymentSignature,
+      merchantAddress,
+    });
+
+    if (!paymentVerification.valid) {
+      throw new Error(
+        `Payment verification failed: ${paymentVerification.message}`,
+      );
+    }
+
+    console.log(
+      `Payment verified: ${paymentVerification.amount} SOL received`,
+    );
+
     const res = await fetch(`${BASE_URL}/convai/twilio/outbound-call`, {
       method: 'POST',
       headers: {

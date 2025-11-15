@@ -3,6 +3,9 @@
 import { useAction, useQuery } from 'convex/react';
 import { ExternalLink, Phone } from 'lucide-react';
 import { useState } from 'react';
+import { useConnection, useWallet } from '@solana/wallet-adapter-react';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import { Connection } from '@solana/web3.js';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -28,32 +31,43 @@ import { Slider } from '@/components/ui/slider';
 import { carModels, otherMakes, popularMakes } from '@/data/carData';
 import { api } from '../../convex/_generated/api';
 import type { FilteredListing } from '../../convex/carfax';
+import { sendPayment, PAYMENT_AMOUNT_SOL } from '@/lib/solanaPayment';
+import { toast } from 'sonner';
+import { WalletBalance } from '@/components/WalletBalance';
 
-// Component to handle call dealer button with database check
+// Component to handle call dealer button with database check and payment
 function CallDealerButton({
   car,
   isLoading,
   onCallRequest,
+  wallet,
+  connection,
+  merchantAddress,
 }: {
   car: FilteredListing;
   isLoading: boolean;
-  onCallRequest: () => Promise<void>;
+  onCallRequest: (paymentSignature: string) => Promise<void>;
+  wallet: ReturnType<typeof useWallet>;
+  connection: Connection;
+  merchantAddress: string | undefined;
 }) {
   const existingCall = useQuery(api.elevenlabs.checkExistingCall, {
     vin: car.vin,
   });
 
-  const isDisabled = isLoading || existingCall !== null;
+  const isDisabled = isLoading || existingCall !== null || !wallet.connected;
 
   const getButtonText = () => {
-    if (isLoading) return 'Calling...';
+    if (isLoading) return 'Processing...';
+    if (!wallet.connected) return 'Connect Wallet';
     if (existingCall?.status === 'pending') return 'Call Pending';
     if (existingCall?.status === 'completed') return 'Already Called';
     if (existingCall?.status === 'quoted') return 'Verbal Offer Received';
-    return 'Call Dealer using AI';
+    return `Call Dealer (${PAYMENT_AMOUNT_SOL} SOL)`;
   };
 
   const getButtonClass = () => {
+    if (!wallet.connected) return 'flex-1 bg-gray-500 hover:bg-gray-600';
     if (existingCall?.status === 'pending')
       return 'flex-1 bg-yellow-600 hover:bg-yellow-600';
     if (existingCall?.status === 'completed')
@@ -63,11 +77,39 @@ function CallDealerButton({
     return 'flex-1 bg-blue-600 hover:bg-blue-700';
   };
 
+  const handleClick = async () => {
+    if (!wallet.connected) {
+      toast.error('Please connect your wallet first');
+      return;
+    }
+
+    if (!merchantAddress) {
+      toast.error('Merchant address not configured');
+      return;
+    }
+
+    try {
+      // Send payment first
+      toast.info('Sending payment...');
+      const signature = await sendPayment(merchantAddress, wallet, connection);
+      toast.success('Payment sent! Verifying...');
+
+      // Then call the dealer
+      await onCallRequest(signature);
+      toast.success('Call requested successfully!');
+    } catch (error) {
+      console.error('Payment or call error:', error);
+      toast.error(
+        error instanceof Error ? error.message : 'Failed to process payment',
+      );
+    }
+  };
+
   return (
     <div className="flex-1 flex flex-col gap-2">
       <Button
         className={getButtonClass()}
-        onClick={onCallRequest}
+        onClick={handleClick}
         disabled={isDisabled}
       >
         <Phone className="w-4 h-4 mr-2" />
@@ -100,8 +142,14 @@ export default function App() {
     zipCode: '',
   });
 
+  // Solana wallet hooks
+  const wallet = useWallet();
+  const { connection } = useConnection();
+
+  // Convex actions and queries
   const getCarfax = useAction(api.carfax.getCarfax);
   const requestCall = useAction(api.elevenlabs.requestCall);
+  const merchantAddress = useQuery(api.solana.getMerchantAddress);
 
   const validateForm = () => {
     const newErrors = {
@@ -161,8 +209,22 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">CarMommy</h1>
+        <div className="flex items-center justify-between mb-8">
+          <div className="text-center flex-1">
+            <h1 className="text-4xl font-bold text-slate-900 mb-2">CarMommy</h1>
+          </div>
+          <div className="flex items-center gap-4">
+            {wallet.connected && wallet.publicKey && (
+              <div className="flex flex-col items-end">
+                <div className="text-sm text-slate-600">
+                  {wallet.publicKey.toString().slice(0, 4)}...
+                  {wallet.publicKey.toString().slice(-4)}
+                </div>
+                <WalletBalance />
+              </div>
+            )}
+            <WalletMultiButton className="!bg-purple-600 hover:!bg-purple-700" />
+          </div>
         </div>
 
         <Card className="mb-8 shadow-lg">
@@ -397,7 +459,10 @@ export default function App() {
                           <CallDealerButton
                             car={car}
                             isLoading={callLoadingStates[car.vin] || false}
-                            onCallRequest={async () => {
+                            wallet={wallet}
+                            connection={connection}
+                            merchantAddress={merchantAddress}
+                            onCallRequest={async (paymentSignature: string) => {
                               setCallLoadingStates((prev) => ({
                                 ...prev,
                                 [car.vin]: true,
@@ -414,6 +479,7 @@ export default function App() {
                                   stock_number: car.stockNumber,
                                   phone_number: '+14695963483',
                                   vin: car.vin,
+                                  paymentSignature,
                                 });
                               } finally {
                                 setCallLoadingStates((prev) => ({

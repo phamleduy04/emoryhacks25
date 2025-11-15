@@ -12,6 +12,8 @@ import type * as carfax from "../carfax.js";
 import type * as elevenlabs from "../elevenlabs.js";
 import type * as gemini from "../gemini.js";
 import type * as http from "../http.js";
+import type * as solana from "../solana.js";
+import type * as solanaPayment from "../solanaPayment.js";
 
 import type {
   ApiFromModules,
@@ -24,6 +26,8 @@ declare const fullApi: ApiFromModules<{
   elevenlabs: typeof elevenlabs;
   gemini: typeof gemini;
   http: typeof http;
+  solana: typeof solana;
+  solanaPayment: typeof solanaPayment;
 }>;
 
 /**

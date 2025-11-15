@@ -145,7 +145,8 @@ function GenerateVideoButton({
     vin: car.vin,
   });
 
-  const isDisabled = isGenerating || existingVideo !== null || !wallet.connected;
+  const isDisabled =
+    isGenerating || existingVideo !== null || !wallet.connected;
 
   const getButtonText = () => {
     if (isGenerating) return 'Generating...';
@@ -180,7 +181,7 @@ function GenerateVideoButton({
     try {
       // Send payment first
       toast.info('Sending payment...');
-      const signature = await sendPayment(merchantAddress, wallet, connection);
+      const _signature = await sendPayment(merchantAddress, wallet, connection);
       toast.success('Payment sent! Generating video...');
 
       // Then generate video

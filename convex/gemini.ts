@@ -1,7 +1,7 @@
 import { GoogleGenAI } from '@google/genai';
 import { v } from 'convex/values';
 import { api } from './_generated/api';
-import { action, mutation } from './_generated/server';
+import { action, mutation, query } from './_generated/server';
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GOOGLE_GENAI_API_KEY || '',

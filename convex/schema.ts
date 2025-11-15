@@ -37,7 +37,7 @@ export const videoFields = {
 };
 
 export default defineSchema({
-  videos: defineTable(videoFields),
+  videos: defineTable(videoFields).index('by_vin', ['vin']),
   calls: defineTable(callFields)
     .index('by_vin', ['vin'])
     .index('by_conversation_id', ['conversation_id']),

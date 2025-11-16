@@ -57,6 +57,47 @@ export const updateCallStatus = mutation({
   },
 });
 
+export const updateCallStatusByVin = mutation({
+  args: {
+    vin: v.string(),
+    status: v.union(
+      v.literal('pending'),
+      v.literal('completed'),
+      v.literal('failed'),
+      v.literal('quoted'),
+      v.literal('confirmed_quote'),
+    ),
+    confirmed_price: v.optional(v.number()),
+  },
+  returns: v.null(),
+  handler: async (ctx, args) => {
+    // Find the call by VIN
+    const call = await ctx.db
+      .query('calls')
+      .withIndex('by_vin', (q) => q.eq('vin', args.vin))
+      .first();
+
+    if (!call) {
+      console.error(`Call not found for VIN: ${args.vin}`);
+      throw new Error(`Call not found for VIN: ${args.vin}`);
+    }
+
+    // Update the call with new status and confirmed price
+    await ctx.db.patch(call._id, {
+      status: args.status,
+      confirmed_price: args.confirmed_price,
+    });
+
+    console.log(
+      `Updated call ${call._id} to status ${args.status} for VIN ${args.vin}`,
+    );
+    if (args.confirmed_price) {
+      console.log(`Confirmed price: $${args.confirmed_price}`);
+    }
+    return null;
+  },
+});
+
 export const checkExistingCall = query({
   args: {
     vin: v.string(),
@@ -70,6 +111,7 @@ export const checkExistingCall = query({
         v.literal('completed'),
         v.literal('failed'),
         v.literal('quoted'),
+        v.literal('confirmed_quote'),
       ),
       confirmed_price: v.optional(v.number()),
     }),
@@ -83,6 +125,7 @@ export const checkExistingCall = query({
           q.eq(q.field('status'), 'pending'),
           q.eq(q.field('status'), 'completed'),
           q.eq(q.field('status'), 'quoted'),
+          q.eq(q.field('status'), 'confirmed_quote'),
         ),
       )
       .first();

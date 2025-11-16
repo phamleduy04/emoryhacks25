@@ -25,6 +25,7 @@ export const callFields = {
     v.literal('completed'),
     v.literal('failed'),
     v.literal('quoted'),
+    v.literal('confirmed_quote'),
   ),
   transcript_summary: v.optional(v.string()),
   call_successful: v.optional(v.boolean()),

@@ -64,6 +64,8 @@ function CallDealerButton({
     if (existingCall?.status === 'pending') return 'Call Pending';
     if (existingCall?.status === 'completed') return 'Already Called';
     if (existingCall?.status === 'quoted') return 'Verbal Offer Received';
+    if (existingCall?.status === 'confirmed_quote')
+      return 'Email Quote Received';
     return `Call Dealer (${PAYMENT_AMOUNT_SOL} SOL)`;
   };
 
@@ -75,6 +77,8 @@ function CallDealerButton({
       return 'flex-1 bg-gray-600 hover:bg-gray-600';
     if (existingCall?.status === 'quoted')
       return 'flex-1 bg-green-600 hover:bg-green-600';
+    if (existingCall?.status === 'confirmed_quote')
+      return 'flex-1 bg-indigo-600 hover:bg-indigo-600';
     return 'flex-1 bg-blue-600 hover:bg-blue-700';
   };
 
@@ -123,6 +127,15 @@ function CallDealerButton({
           </p>
         </div>
       )}
+      {existingCall?.status === 'confirmed_quote' &&
+        existingCall?.confirmed_price && (
+          <div className="text-center">
+            <p className="text-sm font-semibold text-indigo-600">
+              Email Quote: ${existingCall.confirmed_price.toLocaleString()}
+            </p>
+            <p className="text-xs text-slate-500">Received via email</p>
+          </div>
+        )}
     </div>
   );
 }
@@ -181,7 +194,7 @@ function GenerateVideoButton({
     try {
       // Send payment first
       toast.info('Sending payment...');
-      const _signature = await sendPayment(merchantAddress, wallet, connection);
+      await sendPayment(merchantAddress, wallet, connection);
       toast.success('Payment sent! Generating video...');
 
       // Then generate video

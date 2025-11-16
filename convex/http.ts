@@ -84,6 +84,81 @@ http.route({
 });
 
 http.route({
+  path: '/quotes',
+  method: 'POST',
+  handler: httpAction(async (ctx, request) => {
+    try {
+      const bodyText = await request.text();
+      const body = JSON.parse(bodyText);
+      const { finalPrice, vin } = body;
+
+      console.log('Received quote:', { finalPrice, vin });
+
+      // Validate required parameters
+      if (!vin) {
+        return new Response(
+          JSON.stringify({
+            error: 'Missing required parameter: vin is required',
+          }),
+          {
+            status: 400,
+            headers: { 'Content-Type': 'application/json' },
+          },
+        );
+      }
+
+      if (finalPrice === undefined || finalPrice === null) {
+        return new Response(
+          JSON.stringify({
+            error: 'Missing required parameter: finalPrice is required',
+          }),
+          {
+            status: 400,
+            headers: { 'Content-Type': 'application/json' },
+          },
+        );
+      }
+
+      // Update the call status to confirmed_quote with the final price
+      await ctx.runMutation(api.elevenlabs.updateCallStatusByVin, {
+        vin: String(vin),
+        status: 'confirmed_quote',
+        confirmed_price: Number(finalPrice),
+      });
+
+      console.log(
+        `Updated call for VIN ${vin} to confirmed_quote with price: $${finalPrice}`,
+      );
+
+      return new Response(
+        JSON.stringify({
+          success: true,
+          message: 'Quote updated successfully',
+          vin,
+          finalPrice,
+        }),
+        {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        },
+      );
+    } catch (error) {
+      console.error('Error updating quote:', error);
+      return new Response(
+        JSON.stringify({
+          error: 'Failed to update quote',
+          details: error instanceof Error ? error.message : 'Unknown error',
+        }),
+        {
+          status: 500,
+          headers: { 'Content-Type': 'application/json' },
+        },
+      );
+    }
+  }),
+});
+
+http.route({
   path: '/elevenlabs/post-call',
   method: 'POST',
   handler: httpAction(async (ctx, request) => {

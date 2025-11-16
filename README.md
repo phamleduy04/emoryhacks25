@@ -12,6 +12,9 @@ CarMommy searches through thousands of car listings by scraping Carfax to find t
 
 All of this happens automatically as users sit back and watch the best deals come to them!
 
+## Architecture
+<img width="5672" height="3069" alt="Untitled-2025-11-15-2043" src="https://github.com/user-attachments/assets/2c74f111-02b4-462c-a286-bd1056c923bc" />
+
 ## Features
 
 ### Car Search and Discovery

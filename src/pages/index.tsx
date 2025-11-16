@@ -1,9 +1,14 @@
 // index.tsx (paste this over your current file)
 'use client';
 
+import { useConnection, useWallet } from '@solana/wallet-adapter-react';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import type { Connection } from '@solana/web3.js';
 import { useAction, useQuery } from 'convex/react';
-import { useState } from 'react';
-import { ExternalLink, Phone } from 'lucide-react';
+import { ExternalLink, Phone, Video } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { toast } from 'sonner';
+import { VoiceCloning } from '@/_components/VoiceCloning';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -25,66 +30,272 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select';
-import { Slider } from '@/components/ui/slider';
+import { WalletBalance } from '@/components/WalletBalance';
 import { carModels, otherMakes, popularMakes } from '@/data/carData';
+import { PAYMENT_AMOUNT_SOL, sendPayment } from '@/lib/solanaPayment';
 import { api } from '../../convex/_generated/api';
 import type { FilteredListing } from '../../convex/carfax';
 
-// Call button component (unchanged behavior)
+// Component to handle call dealer button with database check and payment
 function CallDealerButton({
-                              car,
-                              isLoading,
-                              onCallRequest,
-                          }: {
-    car: FilteredListing;
-    isLoading: boolean;
-    onCallRequest: () => Promise<void>;
+  car,
+  isLoading,
+  onCallRequest,
+  wallet,
+  connection,
+  merchantAddress,
+}: {
+  car: FilteredListing;
+  isLoading: boolean;
+  onCallRequest: (paymentSignature: string) => Promise<void>;
+  wallet: ReturnType<typeof useWallet>;
+  connection: Connection;
+  merchantAddress: string | undefined;
 }) {
     const existingCall = useQuery(api.elevenlabs.checkExistingCall, {
         vin: car.vin,
     });
 
-    const isDisabled = isLoading || existingCall !== null;
+  const isDisabled = isLoading || existingCall !== null || !wallet.connected;
 
-    const getButtonText = () => {
-        if (isLoading) return 'Calling...';
-        if (existingCall?.status === 'pending') return 'Call Pending';
-        if (existingCall?.status === 'completed') return 'Already Called';
-        if (existingCall?.status === 'quoted') return 'Quote Received';
-        return 'Call Dealer using AI';
-    };
+  const getButtonText = () => {
+    if (isLoading) return 'Processing...';
+    if (!wallet.connected) return 'Connect Wallet';
+    if (existingCall?.status === 'pending') return 'Call Pending';
+    if (existingCall?.status === 'completed') return 'Already Called';
+    if (existingCall?.status === 'quoted') return 'Verbal Offer Received';
+    if (existingCall?.status === 'confirmed_quote')
+      return 'Email Quote Received';
+    return `Call Dealer (${PAYMENT_AMOUNT_SOL} SOL)`;
+  };
 
-    const getButtonClass = () => {
-        if (existingCall?.status === 'pending')
-            return 'flex-1 bg-yellow-600 hover:bg-yellow-600 cursor-pointer';
-        if (existingCall?.status === 'completed')
-            return 'flex-1 bg-gray-600 hover:bg-gray-600 cursor-pointer';
-        if (existingCall?.status === 'quoted')
-            return 'flex-1 bg-green-600 hover:bg-green-600 cursor-pointer';
-        return 'flex-1 bg-blue-600 hover:bg-blue-700 cursor-pointer';
-    };
+  const getButtonClass = () => {
+    if (!wallet.connected) return 'flex-1 bg-gray-500 hover:bg-gray-600';
+    if (existingCall?.status === 'pending')
+      return 'flex-1 bg-yellow-600 hover:bg-yellow-600';
+    if (existingCall?.status === 'completed')
+      return 'flex-1 bg-gray-600 hover:bg-gray-600';
+    if (existingCall?.status === 'quoted')
+      return 'flex-1 bg-green-600 hover:bg-green-600';
+    if (existingCall?.status === 'confirmed_quote')
+      return 'flex-1 bg-indigo-600 hover:bg-indigo-600';
+    return 'flex-1 bg-blue-600 hover:bg-blue-700';
+  };
 
-    return (
-        <Button className={getButtonClass()} onClick={onCallRequest} disabled={isDisabled}>
-            <Phone className="w-4 h-4 mr-2" />
-            {getButtonText()}
-        </Button>
-    );
+  const handleClick = async () => {
+    if (!wallet.connected) {
+      toast.error('Please connect your wallet first');
+      return;
+    }
+
+    if (!merchantAddress) {
+      toast.error('Merchant address not configured');
+      return;
+    }
+
+    try {
+      // Send payment first
+      toast.info('Sending payment...');
+      const signature = await sendPayment(merchantAddress, wallet, connection);
+      toast.success('Payment sent! Verifying...');
+
+      // Then call the dealer
+      await onCallRequest(signature);
+      toast.success('Call requested successfully!');
+    } catch (error) {
+      console.error('Payment or call error:', error);
+      toast.error(
+        error instanceof Error ? error.message : 'Failed to process payment',
+      );
+    }
+  };
+
+  return (
+    <div className="flex-1 flex flex-col gap-2">
+      <Button
+        className={getButtonClass()}
+        onClick={handleClick}
+        disabled={isDisabled}
+      >
+        <Phone className="w-4 h-4 mr-2" />
+        {getButtonText()}
+      </Button>
+      {existingCall?.status === 'quoted' && existingCall?.confirmed_price && (
+        <div className="text-center">
+          <p className="text-sm font-semibold text-purple-600">
+            Negotiated Price: ${existingCall.confirmed_price.toLocaleString()}
+          </p>
+        </div>
+      )}
+      {existingCall?.status === 'confirmed_quote' &&
+        existingCall?.confirmed_price && (
+          <div className="text-center">
+            <p className="text-sm font-semibold text-indigo-600">
+              Email Quote: ${existingCall.confirmed_price.toLocaleString()}
+            </p>
+            <p className="text-xs text-slate-500">Received via email</p>
+          </div>
+        )}
+    </div>
+  );
+}
+
+// Component to handle video generation button with payment
+function GenerateVideoButton({
+  car,
+  wallet,
+  connection,
+  merchantAddress,
+}: {
+  car: FilteredListing;
+  wallet: ReturnType<typeof useWallet>;
+  connection: Connection;
+  merchantAddress: string | undefined;
+}) {
+  const [isGenerating, setIsGenerating] = useState(false);
+  const generateVideo = useAction(api.gemini.generateVideo);
+  const existingVideo = useQuery(api.gemini.getVideoByVin, {
+    vin: car.vin,
+  });
+
+  const isDisabled =
+    isGenerating || existingVideo !== null || !wallet.connected;
+
+  const getButtonText = () => {
+    if (isGenerating) return 'Generating...';
+    if (!wallet.connected) return 'Connect Wallet';
+    if (existingVideo) return 'Video Ready';
+    return `Generate Video (${PAYMENT_AMOUNT_SOL} SOL)`;
+  };
+
+  const getButtonClass = () => {
+    if (!wallet.connected) return 'flex-1 bg-gray-500 hover:bg-gray-600';
+    if (existingVideo) return 'flex-1 bg-gray-600 hover:bg-gray-600';
+    return 'flex-1 bg-purple-600 hover:bg-purple-700';
+  };
+
+  const handleGenerateVideo = async () => {
+    if (!wallet.connected) {
+      toast.error('Please connect your wallet first');
+      return;
+    }
+
+    if (!merchantAddress) {
+      toast.error('Merchant address not configured');
+      return;
+    }
+
+    if (!car.images || car.images.length === 0) {
+      toast.error('No images available for video generation');
+      return;
+    }
+
+    setIsGenerating(true);
+    try {
+      // Send payment first
+      toast.info('Sending payment...');
+      await sendPayment(merchantAddress, wallet, connection);
+      toast.success('Payment sent! Generating video...');
+
+      // Then generate video
+      toast.info('Generating video... This may take a few minutes.');
+      await generateVideo({
+        vin: car.vin,
+        images: car.images,
+      });
+      toast.success('Video generated successfully!');
+    } catch (error) {
+      console.error('Payment or video generation error:', error);
+      toast.error(
+        error instanceof Error
+          ? error.message
+          : 'Failed to process payment or generate video',
+      );
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  const videoUrl = existingVideo?.url || null;
+
+  return (
+    <div className="flex flex-col gap-2">
+      <Button
+        className={getButtonClass()}
+        onClick={handleGenerateVideo}
+        disabled={isDisabled}
+      >
+        <Video className="w-4 h-4 mr-2" />
+        {getButtonText()}
+      </Button>
+      {videoUrl && (
+        <div className="mt-2">
+          <video
+            src={videoUrl}
+            controls
+            className="w-full rounded-lg"
+            style={{ maxHeight: '300px' }}
+          >
+            <track kind="captions" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default function App() {
-    // --- state (unchanged) ---
     const [make, setMake] = useState<string>('');
     const [model, setModel] = useState<string>('');
     const [zipCode, setZipCode] = useState<string>('');
     const [radius, setRadius] = useState<number[]>([50]);
     const [isLoading, setIsLoading] = useState(false);
     const [results, setResults] = useState<FilteredListing[]>([]);
-    const [callLoadingStates, setCallLoadingStates] = useState<Record<string, boolean>>({});
-    const [errors, setErrors] = useState({ make: '', model: '', zipCode: '' });
+    const [callLoadingStates, setCallLoadingStates] = useState<
+        Record<string, boolean>
+    >({});
+    const [errors, setErrors] = useState({
+        make: '',
+        model: '',
+        zipCode: '',
+    });
+    const [voices, setVoices] = useState<
+        Array<{ name: string; voiceId: string }>
+    >([]);
+    const [selectedVoiceId, setSelectedVoiceId] = useState<string>('');
+    const [isLoadingVoices, setIsLoadingVoices] = useState(false);
 
+    // Solana wallet hooks
+    const wallet = useWallet();
+    const { connection } = useConnection();
+
+    // Convex actions and queries
     const getCarfax = useAction(api.carfax.getCarfax);
-    const requestCall = useAction(api.elevenlabs.requestCall);
+    const requestCall = useAction(api.elevenlabsActions.requestCall);
+    const getVoices = useAction(api.elevenlabsActions.getVoices);
+
+    // Fetch voices on component mount
+    useEffect(() => {
+        const fetchVoices = async () => {
+            setIsLoadingVoices(true);
+            try {
+                const voicesList = await getVoices();
+                setVoices(voicesList);
+                // Set first voice as default if available
+                if (voicesList.length > 0) {
+                    setSelectedVoiceId(voicesList[0].voiceId);
+                }
+            } catch (error) {
+                console.error('Error fetching voices:', error);
+            } finally {
+                setIsLoadingVoices(false);
+            }
+        };
+
+        fetchVoices();
+    }, [getVoices]);
+    const merchantAddress = useQuery(api.solana.getMerchantAddress);
 
     const validateForm = () => {
         const newErrors = { make: '', model: '', zipCode: '' };
@@ -134,7 +345,7 @@ export default function App() {
             {/* HERO — background from public/images/car-background.jpg */}
             <section
                 className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center overflow-hidden"
-                style={{ 
+                style={{
                     backgroundImage: "url('/images/car-background.jpg')",
                     backgroundAttachment: 'fixed',
                 }}
@@ -144,7 +355,17 @@ export default function App() {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30" />
 
                 {/* Logo top-right - bright and clean */}
-                <div className="absolute top-8 right-8 z-40">
+                <div className="absolute top-8 right-8 z-40 flex items-center gap-4">
+                    {wallet.connected && wallet.publicKey && (
+                        <div className="flex flex-col items-end bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg">
+                            <div className="text-sm text-slate-600">
+                                {wallet.publicKey.toString().slice(0, 4)}...
+                                {wallet.publicKey.toString().slice(-4)}
+                            </div>
+                            <WalletBalance />
+                        </div>
+                    )}
+                    <WalletMultiButton className="!bg-purple-600 hover:!bg-purple-700 !shadow-lg" />
                     <img
                         src="/images/logo.png"
                         alt="CarMommy logo"
@@ -283,6 +504,43 @@ export default function App() {
                                             {errors.zipCode && <p className="text-xs text-red-500 mt-1.5 font-medium">{errors.zipCode}</p>}
                                         </div>
 
+                                        {/* Voice Selection */}
+                                        <div className="w-full">
+                                            <Label htmlFor="voice" className="text-sm font-semibold text-gray-800 mb-1.5 block">
+                                                AI Voice for Calls
+                                            </Label>
+                                            <Select
+                                                value={selectedVoiceId}
+                                                onValueChange={setSelectedVoiceId}
+                                                disabled={isLoadingVoices || voices.length === 0}
+                                            >
+                                                <SelectTrigger
+                                                    id="voice"
+                                                    className="w-full h-12 rounded-lg border-2 border-gray-300 bg-white hover:border-purple-400 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                                                >
+                                                    <SelectValue
+                                                        placeholder={
+                                                            isLoadingVoices
+                                                                ? 'Loading voices...'
+                                                                : voices.length === 0
+                                                                    ? 'No voices available'
+                                                                    : 'Select a voice'
+                                                        }
+                                                    />
+                                                </SelectTrigger>
+                                                <SelectContent>
+                                                    <SelectGroup>
+                                                        <SelectLabel>Available Voices</SelectLabel>
+                                                        {voices.map((voice) => (
+                                                            <SelectItem key={voice.voiceId} value={voice.voiceId}>
+                                                                {voice.name}
+                                                            </SelectItem>
+                                                        ))}
+                                                    </SelectGroup>
+                                                </SelectContent>
+                                            </Select>
+                                        </div>
+
                                         <Button
                                             onClick={handleSearch}
                                             disabled={isLoading || !make || !model || !zipCode}
@@ -311,8 +569,15 @@ export default function App() {
                 </div>
             </section>
 
+            {/* Voice Cloning Card - visible after hero section */}
+            <div className="max-w-7xl mx-auto px-6 pt-8 relative z-20 bg-slate-50">
+                <div className="mb-8">
+                    <VoiceCloning />
+                </div>
+            </div>
+
             {/* RESULTS below hero */}
-            <main className="max-w-7xl mx-auto px-6 pt-8 relative z-20 bg-slate-50">
+            <main className="max-w-7xl mx-auto px-6 pb-8 relative z-20 bg-slate-50">
                 {results.length > 0 && (
                     <div id="results-section" className="space-y-4">
                         <h2 className="text-2xl font-bold text-slate-900">Found {results.length} Listings</h2>
@@ -385,8 +650,14 @@ export default function App() {
                                                     <CallDealerButton
                                                         car={car}
                                                         isLoading={callLoadingStates[car.vin] || false}
-                                                        onCallRequest={async () => {
-                                                            setCallLoadingStates((prev) => ({ ...prev, [car.vin]: true }));
+                                                        wallet={wallet}
+                                                        connection={connection}
+                                                        merchantAddress={merchantAddress}
+                                                        onCallRequest={async (paymentSignature: string) => {
+                                                            setCallLoadingStates((prev) => ({
+                                                                ...prev,
+                                                                [car.vin]: true,
+                                                            }));
                                                             try {
                                                                 await requestCall({
                                                                     year: car.year,
@@ -399,11 +670,24 @@ export default function App() {
                                                                     stock_number: car.stockNumber,
                                                                     phone_number: '+14695963483',
                                                                     vin: car.vin,
+                                                                    voice_id: selectedVoiceId,
+                                                                    paymentSignature,
                                                                 });
                                                             } finally {
-                                                                setCallLoadingStates((prev) => ({ ...prev, [car.vin]: false }));
+                                                                setCallLoadingStates((prev) => ({
+                                                                    ...prev,
+                                                                    [car.vin]: false,
+                                                                }));
                                                             }
                                                         }}
+                                                    />
+                                                </div>
+                                                <div className="mt-4">
+                                                    <GenerateVideoButton
+                                                        car={car}
+                                                        wallet={wallet}
+                                                        connection={connection}
+                                                        merchantAddress={merchantAddress}
                                                     />
                                                 </div>
                                             </div>

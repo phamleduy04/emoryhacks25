@@ -25,13 +25,26 @@ export const callFields = {
     v.literal('completed'),
     v.literal('failed'),
     v.literal('quoted'),
+    v.literal('confirmed_quote'),
   ),
   transcript_summary: v.optional(v.string()),
   call_successful: v.optional(v.boolean()),
+  confirmed_price: v.optional(v.number()),
+};
+
+export const videoFields = {
+  storageId: v.id('_storage'),
+  vin: v.string(),
 };
 
 export default defineSchema({
+  videos: defineTable(videoFields).index('by_vin', ['vin']),
   calls: defineTable(callFields)
     .index('by_vin', ['vin'])
     .index('by_conversation_id', ['conversation_id']),
+  payments: defineTable({
+    signature: v.string(),
+    amount: v.number(),
+    merchantAddress: v.string(),
+  }).index('by_signature', ['signature']),
 });

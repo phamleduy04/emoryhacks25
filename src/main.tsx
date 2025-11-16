@@ -1,10 +1,11 @@
 import { ConvexProvider, ConvexReactClient } from 'convex/react';
-import { StrictMode } from 'react';
+import { StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
-import './index.css';
-import { Suspense } from 'react';
 import { BrowserRouter, useRoutes } from 'react-router-dom';
 import routes from '~react-pages';
+import './index.css';
+import { Toaster } from '@/components/ui/sonner';
+import { SolanaWalletProvider } from './contexts/SolanaWalletProvider';
 
 const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL as string);
 
@@ -17,9 +18,12 @@ function App() {
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
     <ConvexProvider client={convex}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <SolanaWalletProvider>
+        <BrowserRouter>
+          <App />
+          <Toaster />
+        </BrowserRouter>
+      </SolanaWalletProvider>
     </ConvexProvider>
   </StrictMode>,
 );

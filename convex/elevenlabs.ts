@@ -1,80 +1,13 @@
-import type { Readable } from 'node:stream';
 import { v } from 'convex/values';
-import FormData from 'form-data';
-import { action, mutation, query } from './_generated/server';
+import { mutation, query } from './_generated/server';
 import { callFields } from './schema';
-import { api } from './_generated/api';
-
-const BASE_URL = 'https://api.elevenlabs.io/v1';
-
-export const requestCall = action({
-  args: {
-    year: v.number(),
-    make: v.string(),
-    model: v.string(),
-    zipcode: v.number(),
-    dealer_name: v.string(),
-    msrp: v.number(),
-    vin: v.string(),
-    listing_price: v.number(),
-    stock_number: v.string(),
-    phone_number: v.string(),
-  },
-  handler: async (_ctx, args) => {
-    console.log('requestCall', args);
-    const res = await fetch(`${BASE_URL}/convai/twilio/outbound-call`, {
-      method: 'POST',
-      headers: {
-        'xi-api-key': process.env.ELEVENLABS_API_KEY || '',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        agent_id: process.env.ELEVENLABS_AGENT_ID || '',
-        agent_phone_number_id: process.env.ELEVENLABS_PHONE_NUMBER_ID || '',
-        to_number: args.phone_number,
-        conversation_initiation_client_data: {
-          dynamic_variables: {
-            year: args.year,
-            make: args.make,
-            model: args.model,
-            zipcode: args.zipcode,
-            dealer_name: args.dealer_name,
-            vin: args.vin,
-            msrp: args.msrp,
-            listing_price: args.listing_price,
-            stock_number: args.stock_number,
-          },
-        },
-      }),
-    });
-
-    const data = await res.json();
-    await _ctx.runMutation(api.elevenlabs.saveCall, {
-      callSid: data.callSid,
-      conversation_id: data.conversation_id,
-      year: args.year,
-      make: args.make,
-      model: args.model,
-      zipcode: args.zipcode,
-      dealer_name: args.dealer_name,
-      msrp: args.msrp,
-      listing_price: args.listing_price,
-      vin: args.vin,
-      stock_number: args.stock_number,
-      phone_number: args.phone_number,
-      status: 'pending',
-      transcript_summary: undefined,
-      call_successful: undefined,
-    });
-    return data;
-  },
-});
 
 export const saveCall = mutation({
   args: callFields,
   returns: v.null(),
   handler: async (_ctx, args) => {
     await _ctx.db.insert('calls', args);
+    return null;
   },
 });
 
@@ -89,6 +22,7 @@ export const updateCallStatus = mutation({
     ),
     transcript_summary: v.optional(v.string()),
     call_successful: v.optional(v.boolean()),
+    confirmed_price: v.optional(v.number()),
   },
   returns: v.null(),
   handler: async (ctx, args) => {
@@ -112,9 +46,54 @@ export const updateCallStatus = mutation({
       status: args.status,
       transcript_summary: args.transcript_summary,
       call_successful: args.call_successful,
+      confirmed_price: args.confirmed_price,
     });
 
     console.log(`Updated call ${call._id} to status ${args.status}`);
+    if (args.confirmed_price) {
+      console.log(`Confirmed price: $${args.confirmed_price}`);
+    }
+    return null;
+  },
+});
+
+export const updateCallStatusByVin = mutation({
+  args: {
+    vin: v.string(),
+    status: v.union(
+      v.literal('pending'),
+      v.literal('completed'),
+      v.literal('failed'),
+      v.literal('quoted'),
+      v.literal('confirmed_quote'),
+    ),
+    confirmed_price: v.optional(v.number()),
+  },
+  returns: v.null(),
+  handler: async (ctx, args) => {
+    // Find the call by VIN
+    const call = await ctx.db
+      .query('calls')
+      .withIndex('by_vin', (q) => q.eq('vin', args.vin))
+      .first();
+
+    if (!call) {
+      console.error(`Call not found for VIN: ${args.vin}`);
+      throw new Error(`Call not found for VIN: ${args.vin}`);
+    }
+
+    // Update the call with new status and confirmed price
+    await ctx.db.patch(call._id, {
+      status: args.status,
+      confirmed_price: args.confirmed_price,
+    });
+
+    console.log(
+      `Updated call ${call._id} to status ${args.status} for VIN ${args.vin}`,
+    );
+    if (args.confirmed_price) {
+      console.log(`Confirmed price: $${args.confirmed_price}`);
+    }
     return null;
   },
 });
@@ -132,7 +111,9 @@ export const checkExistingCall = query({
         v.literal('completed'),
         v.literal('failed'),
         v.literal('quoted'),
+        v.literal('confirmed_quote'),
       ),
+      confirmed_price: v.optional(v.number()),
     }),
   ),
   handler: async (ctx, args) => {
@@ -144,6 +125,7 @@ export const checkExistingCall = query({
           q.eq(q.field('status'), 'pending'),
           q.eq(q.field('status'), 'completed'),
           q.eq(q.field('status'), 'quoted'),
+          q.eq(q.field('status'), 'confirmed_quote'),
         ),
       )
       .first();
@@ -155,68 +137,50 @@ export const checkExistingCall = query({
     return {
       _id: existingCall._id,
       status: existingCall.status,
+      confirmed_price: existingCall.confirmed_price,
     };
   },
 });
 
-export const createVoice = action({
+export const getCompetitiveDeals = query({
   args: {
-    audio: v.string(),
-    name: v.string(),
+    make: v.string(),
+    model: v.string(),
   },
-  returns: v.any(),
-  handler: async (_ctx, args) => {
-    const audioBuffer = Buffer.from(args.audio, 'base64');
+  returns: v.array(
+    v.object({
+      dealer_name: v.string(),
+      confirmed_price: v.number(),
+    }),
+  ),
+  handler: async (ctx, args) => {
+    // Query all calls from the database
+    const allCalls = await ctx.db.query('calls').collect();
 
-    const formData = new FormData();
-    formData.append('name', args.name);
-    formData.append('files', audioBuffer, 'audio.mp3');
+    // Filter calls based on criteria
+    const competitiveDeals = allCalls
+      .filter((call) => {
+        // Exclude pending status
+        if (call.status === 'pending') return false;
 
-    const headers = formData.getHeaders();
+        // Must have a confirmed price
+        if (!call.confirmed_price) return false;
 
-    const chunks: Buffer[] = [];
-    const formDataStream = formData as unknown as Readable;
-
-    await new Promise<void>((resolve, reject) => {
-      formDataStream.on('data', (chunk: Buffer | string) => {
-        if (Buffer.isBuffer(chunk)) {
-          chunks.push(chunk);
-        } else {
-          chunks.push(Buffer.from(chunk));
+        // Match make and model (case insensitive)
+        if (
+          call.make.toLowerCase() !== args.make.toLowerCase() ||
+          call.model.toLowerCase() !== args.model.toLowerCase()
+        ) {
+          return false;
         }
-      });
-      formDataStream.on('end', () => {
-        resolve();
-      });
-      formDataStream.on('error', (err: Error) => {
-        reject(err);
-      });
 
-      formDataStream.resume();
-    });
+        return true;
+      })
+      .map((call) => ({
+        dealer_name: call.dealer_name,
+        confirmed_price: call.confirmed_price as number,
+      }));
 
-    const bodyBuffer = Buffer.concat(chunks);
-
-    const res = await fetch(`${BASE_URL}/voices/add`, {
-      method: 'POST',
-      headers: {
-        'xi-api-key': process.env.ELEVENLABS_API_KEY || '',
-        'Content-Type': headers['content-type'],
-      },
-      body: bodyBuffer,
-    });
-
-    if (!res.ok) {
-      const errorText = await res.text();
-      throw new Error(
-        `ElevenLabs API error: ${res.status} ${res.statusText} - ${errorText}`,
-      );
-    }
-
-    const data = await res.json();
-
-    return {
-      data: data,
-    };
+    return competitiveDeals;
   },
 });

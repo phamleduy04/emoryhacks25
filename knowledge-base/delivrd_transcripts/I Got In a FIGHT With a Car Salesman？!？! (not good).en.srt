@@ -1,0 +1,8965 @@
+1
+00:00:00,080 --> 00:00:01,350
+
+He's beating me up, Rick.
+
+2
+00:00:01,350 --> 00:00:01,360
+He's beating me up, Rick.
+ 
+
+3
+00:00:01,360 --> 00:00:02,950
+He's beating me up, Rick.
+>> Beating him up, punching him left, right
+
+4
+00:00:02,950 --> 00:00:02,960
+>> Beating him up, punching him left, right
+ 
+
+5
+00:00:02,960 --> 00:00:05,269
+>> Beating him up, punching him left, right
+side.
+
+6
+00:00:05,269 --> 00:00:05,279
+side.
+ 
+
+7
+00:00:05,279 --> 00:00:06,869
+side.
+>> All right, Tommy. I I like you, by the
+
+8
+00:00:06,869 --> 00:00:06,879
+>> All right, Tommy. I I like you, by the
+ 
+
+9
+00:00:06,879 --> 00:00:08,070
+>> All right, Tommy. I I like you, by the
+way. I just want you to know that.
+
+10
+00:00:08,070 --> 00:00:08,080
+way. I just want you to know that.
+ 
+
+11
+00:00:08,080 --> 00:00:10,230
+way. I just want you to know that.
+>> I know. And no add-ons, no fees, just
+
+12
+00:00:10,230 --> 00:00:10,240
+>> I know. And no add-ons, no fees, just
+ 
+
+13
+00:00:10,240 --> 00:00:12,870
+>> I know. And no add-ons, no fees, just
+tax title license. And honestly, I want
+
+14
+00:00:12,870 --> 00:00:12,880
+tax title license. And honestly, I want
+ 
+
+15
+00:00:12,880 --> 00:00:14,470
+tax title license. And honestly, I want
+I want the notebook ending. I'm going to
+
+16
+00:00:14,470 --> 00:00:14,480
+I want the notebook ending. I'm going to
+ 
+
+17
+00:00:14,480 --> 00:00:16,150
+I want the notebook ending. I'm going to
+look at what we're building here. We had
+
+18
+00:00:16,150 --> 00:00:16,160
+look at what we're building here. We had
+ 
+
+19
+00:00:16,160 --> 00:00:18,710
+look at what we're building here. We had
+the perfect car before. It was just the
+
+20
+00:00:18,710 --> 00:00:18,720
+the perfect car before. It was just the
+ 
+
+21
+00:00:18,720 --> 00:00:21,029
+the perfect car before. It was just the
+wrong color. So, this client is looking
+
+22
+00:00:21,029 --> 00:00:21,039
+wrong color. So, this client is looking
+ 
+
+23
+00:00:21,039 --> 00:00:24,070
+wrong color. So, this client is looking
+for a F-150 Lariat. So, let's go build
+
+24
+00:00:24,070 --> 00:00:24,080
+for a F-150 Lariat. So, let's go build
+ 
+
+25
+00:00:24,080 --> 00:00:26,310
+for a F-150 Lariat. So, let's go build
+it in Invisor. They're looking for a new
+
+26
+00:00:26,310 --> 00:00:26,320
+it in Invisor. They're looking for a new
+ 
+
+27
+00:00:26,320 --> 00:00:29,349
+it in Invisor. They're looking for a new
+Lariat. They are looking for the Blue
+
+28
+00:00:29,349 --> 00:00:29,359
+Lariat. They are looking for the Blue
+ 
+
+29
+00:00:29,359 --> 00:00:32,950
+Lariat. They are looking for the Blue
+Cruise. They are looking for the
+
+30
+00:00:32,950 --> 00:00:32,960
+Cruise. They are looking for the
+ 
+
+31
+00:00:32,960 --> 00:00:34,549
+Cruise. They are looking for the
+off-road package. Oh, and they're also
+
+32
+00:00:34,549 --> 00:00:34,559
+off-road package. Oh, and they're also
+ 
+
+33
+00:00:34,559 --> 00:00:38,389
+off-road package. Oh, and they're also
+looking for the 3.5 L EcoBoost. And they
+
+34
+00:00:38,389 --> 00:00:38,399
+looking for the 3.5 L EcoBoost. And they
+ 
+
+35
+00:00:38,399 --> 00:00:39,750
+looking for the 3.5 L EcoBoost. And they
+are not looking for a hybrid. They are
+
+36
+00:00:39,750 --> 00:00:39,760
+are not looking for a hybrid. They are
+ 
+
+37
+00:00:39,760 --> 00:00:41,910
+are not looking for a hybrid. They are
+looking for a gas. And they want every
+
+38
+00:00:41,910 --> 00:00:41,920
+looking for a gas. And they want every
+ 
+
+39
+00:00:41,920 --> 00:00:43,990
+looking for a gas. And they want every
+color but white. They're open to
+
+40
+00:00:43,990 --> 00:00:44,000
+color but white. They're open to
+ 
+
+41
+00:00:44,000 --> 00:00:45,670
+color but white. They're open to
+anything but white and ideally not
+
+42
+00:00:45,670 --> 00:00:45,680
+anything but white and ideally not
+ 
+
+43
+00:00:45,680 --> 00:00:46,630
+anything but white and ideally not
+silver. So, we're going to get rid of
+
+44
+00:00:46,630 --> 00:00:46,640
+silver. So, we're going to get rid of
+ 
+
+45
+00:00:46,640 --> 00:00:48,150
+silver. So, we're going to get rid of
+the whites and the silvers. Make their
+
+46
+00:00:48,150 --> 00:00:48,160
+the whites and the silvers. Make their
+ 
+
+47
+00:00:48,160 --> 00:00:50,950
+the whites and the silvers. Make their
+life easy. So, uh there's 500 of these
+
+48
+00:00:50,950 --> 00:00:50,960
+life easy. So, uh there's 500 of these
+ 
+
+49
+00:00:50,960 --> 00:00:52,869
+life easy. So, uh there's 500 of these
+trucks nationwide. Uh, my client lives
+
+50
+00:00:52,869 --> 00:00:52,879
+trucks nationwide. Uh, my client lives
+ 
+
+51
+00:00:52,879 --> 00:00:54,470
+trucks nationwide. Uh, my client lives
+in,
+
+52
+00:00:54,470 --> 00:00:54,480
+in,
+ 
+
+53
+00:00:54,480 --> 00:00:56,069
+in,
+which I don't even know where it is, but
+
+54
+00:00:56,069 --> 00:00:56,079
+which I don't even know where it is, but
+ 
+
+55
+00:00:56,079 --> 00:00:59,110
+which I don't even know where it is, but
+it's in Washington.
+
+56
+00:00:59,110 --> 00:00:59,120
+it's in Washington.
+ 
+
+57
+00:00:59,120 --> 00:01:01,750
+it's in Washington.
+>> Hi, this is Alex. How can I help you?
+
+58
+00:01:01,750 --> 00:01:01,760
+>> Hi, this is Alex. How can I help you?
+ 
+
+59
+00:01:01,760 --> 00:01:03,189
+>> Hi, this is Alex. How can I help you?
+>> Hey, uh, I just want to see if you guys
+
+60
+00:01:03,189 --> 00:01:03,199
+>> Hey, uh, I just want to see if you guys
+ 
+
+61
+00:01:03,199 --> 00:01:04,789
+>> Hey, uh, I just want to see if you guys
+have a car available.
+
+62
+00:01:04,789 --> 00:01:04,799
+have a car available.
+ 
+
+63
+00:01:04,799 --> 00:01:06,149
+have a car available.
+>> Sure. What was the car you're looking
+
+64
+00:01:06,149 --> 00:01:06,159
+>> Sure. What was the car you're looking
+ 
+
+65
+00:01:06,159 --> 00:01:06,789
+>> Sure. What was the car you're looking
+for?
+
+66
+00:01:06,789 --> 00:01:06,799
+for?
+ 
+
+67
+00:01:06,799 --> 00:01:08,789
+for?
+>> Uh, I I would give you the stock number,
+
+68
+00:01:08,789 --> 00:01:08,799
+>> Uh, I I would give you the stock number,
+ 
+
+69
+00:01:08,799 --> 00:01:11,510
+>> Uh, I I would give you the stock number,
+but it's just like a blank slot. So, I
+
+70
+00:01:11,510 --> 00:01:11,520
+but it's just like a blank slot. So, I
+ 
+
+71
+00:01:11,520 --> 00:01:12,789
+but it's just like a blank slot. So, I
+can give you the last six of the VIN if
+
+72
+00:01:12,789 --> 00:01:12,799
+can give you the last six of the VIN if
+ 
+
+73
+00:01:12,799 --> 00:01:13,429
+can give you the last six of the VIN if
+that helps.
+
+74
+00:01:13,429 --> 00:01:13,439
+that helps.
+ 
+
+75
+00:01:13,439 --> 00:01:14,870
+that helps.
+>> Sure. Yeah. What was the last six of the
+
+76
+00:01:14,870 --> 00:01:14,880
+>> Sure. Yeah. What was the last six of the
+ 
+
+77
+00:01:14,880 --> 00:01:15,590
+>> Sure. Yeah. What was the last six of the
+VIN?
+
+78
+00:01:15,590 --> 00:01:15,600
+VIN?
+ 
+
+79
+00:01:15,600 --> 00:01:19,030
+VIN?
+>> Yeah. Uh, it's C as in Chrysler 25809.
+
+80
+00:01:19,030 --> 00:01:19,040
+>> Yeah. Uh, it's C as in Chrysler 25809.
+ 
+
+81
+00:01:19,040 --> 00:01:21,990
+>> Yeah. Uh, it's C as in Chrysler 25809.
+And this is a new car, I'm assuming.
+
+82
+00:01:21,990 --> 00:01:22,000
+And this is a new car, I'm assuming.
+ 
+
+83
+00:01:22,000 --> 00:01:23,030
+And this is a new car, I'm assuming.
+>> Yeah, a brand new car.
+
+84
+00:01:23,030 --> 00:01:23,040
+>> Yeah, a brand new car.
+ 
+
+85
+00:01:23,040 --> 00:01:25,429
+>> Yeah, a brand new car.
+>> Is it a Ford, Jeep, Dodge, Ram?
+
+86
+00:01:25,429 --> 00:01:25,439
+>> Is it a Ford, Jeep, Dodge, Ram?
+ 
+
+87
+00:01:25,439 --> 00:01:25,990
+>> Is it a Ford, Jeep, Dodge, Ram?
+>> Ford.
+
+88
+00:01:25,990 --> 00:01:26,000
+>> Ford.
+ 
+
+89
+00:01:26,000 --> 00:01:29,030
+>> Ford.
+>> Ford. Gotcha.
+
+90
+00:01:29,030 --> 00:01:29,040
+>> Ford. Gotcha.
+ 
+
+91
+00:01:29,040 --> 00:01:29,429
+>> Ford. Gotcha.
+>> See,
+
+92
+00:01:29,429 --> 00:01:29,439
+>> See,
+ 
+
+93
+00:01:29,439 --> 00:01:30,870
+>> See,
+>> I wish I could whistle. I can't figure
+
+94
+00:01:30,870 --> 00:01:30,880
+>> I wish I could whistle. I can't figure
+ 
+
+95
+00:01:30,880 --> 00:01:31,670
+>> I wish I could whistle. I can't figure
+it out.
+
+96
+00:01:31,670 --> 00:01:31,680
+it out.
+ 
+
+97
+00:01:31,680 --> 00:01:33,749
+it out.
+>> Oh, no. You're all good. I I barely do.
+
+98
+00:01:33,749 --> 00:01:33,759
+>> Oh, no. You're all good. I I barely do.
+ 
+
+99
+00:01:33,759 --> 00:01:35,190
+>> Oh, no. You're all good. I I barely do.
+So, I just have to uh
+
+100
+00:01:35,190 --> 00:01:35,200
+So, I just have to uh
+ 
+
+101
+00:01:35,200 --> 00:01:35,910
+So, I just have to uh
+>> Yeah, I just
+
+102
+00:01:35,910 --> 00:01:35,920
+>> Yeah, I just
+ 
+
+103
+00:01:35,920 --> 00:01:37,830
+>> Yeah, I just
+>> I mean, yeah. I mean, it's not as it's
+
+104
+00:01:37,830 --> 00:01:37,840
+>> I mean, yeah. I mean, it's not as it's
+ 
+
+105
+00:01:37,840 --> 00:01:39,270
+>> I mean, yeah. I mean, it's not as it's
+not as high pitched as my dad, that's
+
+106
+00:01:39,270 --> 00:01:39,280
+not as high pitched as my dad, that's
+ 
+
+107
+00:01:39,280 --> 00:01:40,550
+not as high pitched as my dad, that's
+for sure. I'm still trying to work my
+
+108
+00:01:40,550 --> 00:01:40,560
+for sure. I'm still trying to work my
+ 
+
+109
+00:01:40,560 --> 00:01:41,109
+for sure. I'm still trying to work my
+way up there.
+
+110
+00:01:41,109 --> 00:01:41,119
+way up there.
+ 
+
+111
+00:01:41,119 --> 00:01:41,830
+way up there.
+>> Y
+
+112
+00:01:41,830 --> 00:01:41,840
+>> Y
+ 
+
+113
+00:01:41,840 --> 00:01:43,510
+>> Y
+>> um
+
+114
+00:01:43,510 --> 00:01:43,520
+>> um
+ 
+
+115
+00:01:43,520 --> 00:01:46,230
+>> um
+Is this a uh a truck or is this a
+
+116
+00:01:46,230 --> 00:01:46,240
+Is this a uh a truck or is this a
+ 
+
+117
+00:01:46,240 --> 00:01:46,710
+Is this a uh a truck or is this a
+certain
+
+118
+00:01:46,710 --> 00:01:46,720
+certain
+ 
+
+119
+00:01:46,720 --> 00:01:48,310
+certain
+>> Yep, it's a truck.
+
+120
+00:01:48,310 --> 00:01:48,320
+>> Yep, it's a truck.
+ 
+
+121
+00:01:48,320 --> 00:01:49,109
+>> Yep, it's a truck.
+It's a truck.
+
+122
+00:01:49,109 --> 00:01:49,119
+It's a truck.
+ 
+
+123
+00:01:49,119 --> 00:01:51,510
+It's a truck.
+>> Gotcha. It doesn't seem to pop up with
+
+124
+00:01:51,510 --> 00:01:51,520
+>> Gotcha. It doesn't seem to pop up with
+ 
+
+125
+00:01:51,520 --> 00:01:52,870
+>> Gotcha. It doesn't seem to pop up with
+my system. What truck was it? Just so I
+
+126
+00:01:52,870 --> 00:01:52,880
+my system. What truck was it? Just so I
+ 
+
+127
+00:01:52,880 --> 00:01:54,789
+my system. What truck was it? Just so I
+can see if my managers can uh find
+
+128
+00:01:54,789 --> 00:01:54,799
+can see if my managers can uh find
+ 
+
+129
+00:01:54,799 --> 00:01:55,350
+can see if my managers can uh find
+locate that
+
+130
+00:01:55,350 --> 00:01:55,360
+locate that
+ 
+
+131
+00:01:55,360 --> 00:01:56,550
+locate that
+>> F-150 Laria.
+
+132
+00:01:56,550 --> 00:01:56,560
+>> F-150 Laria.
+ 
+
+133
+00:01:56,560 --> 00:01:57,990
+>> F-150 Laria.
+>> All right, cool. I'm going go ahead and
+
+134
+00:01:57,990 --> 00:01:58,000
+>> All right, cool. I'm going go ahead and
+ 
+
+135
+00:01:58,000 --> 00:01:59,270
+>> All right, cool. I'm going go ahead and
+check in with them. Could I put you on
+
+136
+00:01:59,270 --> 00:01:59,280
+check in with them. Could I put you on
+ 
+
+137
+00:01:59,280 --> 00:02:00,870
+check in with them. Could I put you on
+the brief board for just a little bit?
+
+138
+00:02:00,870 --> 00:02:00,880
+the brief board for just a little bit?
+ 
+
+139
+00:02:00,880 --> 00:02:02,310
+the brief board for just a little bit?
+>> Yep. You can put me on a hold as long as
+
+140
+00:02:02,310 --> 00:02:02,320
+>> Yep. You can put me on a hold as long as
+ 
+
+141
+00:02:02,320 --> 00:02:02,709
+>> Yep. You can put me on a hold as long as
+you need.
+
+142
+00:02:02,709 --> 00:02:02,719
+you need.
+ 
+
+143
+00:02:02,719 --> 00:02:04,069
+you need.
+>> Awesome. What was your name, man?
+
+144
+00:02:04,069 --> 00:02:04,079
+>> Awesome. What was your name, man?
+ 
+
+145
+00:02:04,079 --> 00:02:05,109
+>> Awesome. What was your name, man?
+>> My name's Tommy.
+
+146
+00:02:05,109 --> 00:02:05,119
+>> My name's Tommy.
+ 
+
+147
+00:02:05,119 --> 00:02:05,830
+>> My name's Tommy.
+>> Tommy?
+
+148
+00:02:05,830 --> 00:02:05,840
+>> Tommy?
+ 
+
+149
+00:02:05,840 --> 00:02:06,149
+>> Tommy?
+>> Mhm.
+
+150
+00:02:06,149 --> 00:02:06,159
+>> Mhm.
+ 
+
+151
+00:02:06,159 --> 00:02:07,670
+>> Mhm.
+>> All right. All right. Let me go ahead
+
+152
+00:02:07,670 --> 00:02:07,680
+>> All right. All right. Let me go ahead
+ 
+
+153
+00:02:07,680 --> 00:02:09,430
+>> All right. All right. Let me go ahead
+and check back in with him. I'll I'll be
+
+154
+00:02:09,430 --> 00:02:09,440
+and check back in with him. I'll I'll be
+ 
+
+155
+00:02:09,440 --> 00:02:10,469
+and check back in with him. I'll I'll be
+right back with you.
+
+156
+00:02:10,469 --> 00:02:10,479
+right back with you.
+ 
+
+157
+00:02:10,479 --> 00:02:12,309
+right back with you.
+>> Sounds good. We can all just agree that
+
+158
+00:02:12,309 --> 00:02:12,319
+>> Sounds good. We can all just agree that
+ 
+
+159
+00:02:12,319 --> 00:02:14,229
+>> Sounds good. We can all just agree that
+it just didn't happen, right? Yeah. I
+
+160
+00:02:14,229 --> 00:02:14,239
+it just didn't happen, right? Yeah. I
+ 
+
+161
+00:02:14,239 --> 00:02:14,550
+it just didn't happen, right? Yeah. I
+just
+
+162
+00:02:14,550 --> 00:02:14,560
+just
+ 
+
+163
+00:02:14,560 --> 00:02:16,470
+just
+>> I mean, yeah. I mean, it's not as it's
+
+164
+00:02:16,470 --> 00:02:16,480
+>> I mean, yeah. I mean, it's not as it's
+ 
+
+165
+00:02:16,480 --> 00:02:17,990
+>> I mean, yeah. I mean, it's not as it's
+not as high pitched as mine does. That's
+
+166
+00:02:17,990 --> 00:02:18,000
+not as high pitched as mine does. That's
+ 
+
+167
+00:02:18,000 --> 00:02:19,430
+not as high pitched as mine does. That's
+>> Thanks. Thanks. Well, this is Joe, one
+
+168
+00:02:19,430 --> 00:02:19,440
+>> Thanks. Thanks. Well, this is Joe, one
+ 
+
+169
+00:02:19,440 --> 00:02:21,430
+>> Thanks. Thanks. Well, this is Joe, one
+of the sales managers. I'm having a hard
+
+170
+00:02:21,430 --> 00:02:21,440
+of the sales managers. I'm having a hard
+ 
+
+171
+00:02:21,440 --> 00:02:22,949
+of the sales managers. I'm having a hard
+time finding that truck. So, I'm going
+
+172
+00:02:22,949 --> 00:02:22,959
+time finding that truck. So, I'm going
+ 
+
+173
+00:02:22,959 --> 00:02:24,790
+time finding that truck. So, I'm going
+to confirm the uh stock number you got
+
+174
+00:02:24,790 --> 00:02:24,800
+to confirm the uh stock number you got
+ 
+
+175
+00:02:24,800 --> 00:02:26,710
+to confirm the uh stock number you got
+there. The last view of the bin. Is it
+
+176
+00:02:26,710 --> 00:02:26,720
+there. The last view of the bin. Is it
+ 
+
+177
+00:02:26,720 --> 00:02:29,030
+there. The last view of the bin. Is it
+C25809?
+
+178
+00:02:29,030 --> 00:02:29,040
+C25809?
+ 
+
+179
+00:02:29,040 --> 00:02:29,990
+C25809?
+>> Correct. Yeah.
+
+180
+00:02:29,990 --> 00:02:30,000
+>> Correct. Yeah.
+ 
+
+181
+00:02:30,000 --> 00:02:32,630
+>> Correct. Yeah.
+>> Okay. And that's a new 2025.
+
+182
+00:02:32,630 --> 00:02:32,640
+>> Okay. And that's a new 2025.
+ 
+
+183
+00:02:32,640 --> 00:02:35,430
+>> Okay. And that's a new 2025.
+>> Yeah. 2025 Ford F-150 Lariat Super Crew
+
+184
+00:02:35,430 --> 00:02:35,440
+>> Yeah. 2025 Ford F-150 Lariat Super Crew
+ 
+
+185
+00:02:35,440 --> 00:02:37,190
+>> Yeah. 2025 Ford F-150 Lariat Super Crew
+4x4. We don't have any more free consult
+
+186
+00:02:37,190 --> 00:02:37,200
+4x4. We don't have any more free consult
+ 
+
+187
+00:02:37,200 --> 00:02:39,190
+4x4. We don't have any more free consult
+spots uh right now. Uh we're booked out
+
+188
+00:02:39,190 --> 00:02:39,200
+spots uh right now. Uh we're booked out
+ 
+
+189
+00:02:39,200 --> 00:02:40,390
+spots uh right now. Uh we're booked out
+for a little bit, but you guys can send
+
+190
+00:02:40,390 --> 00:02:40,400
+for a little bit, but you guys can send
+ 
+
+191
+00:02:40,400 --> 00:02:42,070
+for a little bit, but you guys can send
+an email in and a question. We can help
+
+192
+00:02:42,070 --> 00:02:42,080
+an email in and a question. We can help
+ 
+
+193
+00:02:42,080 --> 00:02:43,270
+an email in and a question. We can help
+you out. So, we're not booked out for
+
+194
+00:02:43,270 --> 00:02:43,280
+you out. So, we're not booked out for
+ 
+
+195
+00:02:43,280 --> 00:02:44,869
+you out. So, we're not booked out for
+the month for deals, but we are booked
+
+196
+00:02:44,869 --> 00:02:44,879
+the month for deals, but we are booked
+ 
+
+197
+00:02:44,879 --> 00:02:46,390
+the month for deals, but we are booked
+out for consults right now. We're trying
+
+198
+00:02:46,390 --> 00:02:46,400
+out for consults right now. We're trying
+ 
+
+199
+00:02:46,400 --> 00:02:47,670
+out for consults right now. We're trying
+to add up more spots. We're just not
+
+200
+00:02:47,670 --> 00:02:47,680
+to add up more spots. We're just not
+ 
+
+201
+00:02:47,680 --> 00:02:49,430
+to add up more spots. We're just not
+there yet. This is Marsh Gray. Marsh
+
+202
+00:02:49,430 --> 00:02:49,440
+there yet. This is Marsh Gray. Marsh
+ 
+
+203
+00:02:49,440 --> 00:02:50,710
+there yet. This is Marsh Gray. Marsh
+Gray is fine with He just doesn't want
+
+204
+00:02:50,710 --> 00:02:50,720
+Gray is fine with He just doesn't want
+ 
+
+205
+00:02:50,720 --> 00:02:52,630
+Gray is fine with He just doesn't want
+white. Also, when I'm when I'm talking
+
+206
+00:02:52,630 --> 00:02:52,640
+white. Also, when I'm when I'm talking
+ 
+
+207
+00:02:52,640 --> 00:02:54,150
+white. Also, when I'm when I'm talking
+like this, I have it muted. So,
+
+208
+00:02:54,150 --> 00:02:54,160
+like this, I have it muted. So,
+ 
+
+209
+00:02:54,160 --> 00:02:55,509
+like this, I have it muted. So,
+>> all right. That's why I wasn't able to
+
+210
+00:02:55,509 --> 00:02:55,519
+>> all right. That's why I wasn't able to
+ 
+
+211
+00:02:55,519 --> 00:02:56,869
+>> all right. That's why I wasn't able to
+find it on my website. It looks like
+
+212
+00:02:56,869 --> 00:02:56,879
+find it on my website. It looks like
+ 
+
+213
+00:02:56,879 --> 00:02:59,990
+find it on my website. It looks like
+it's uh inbound. It's not here yet.
+
+214
+00:02:59,990 --> 00:03:00,000
+it's uh inbound. It's not here yet.
+ 
+
+215
+00:03:00,000 --> 00:03:00,869
+it's uh inbound. It's not here yet.
+>> Let me take a look.
+
+216
+00:03:00,869 --> 00:03:00,879
+>> Let me take a look.
+ 
+
+217
+00:03:00,879 --> 00:03:03,270
+>> Let me take a look.
+>> You have an inbound 25. That's crazy.
+
+218
+00:03:03,270 --> 00:03:03,280
+>> You have an inbound 25. That's crazy.
+ 
+
+219
+00:03:03,280 --> 00:03:07,350
+>> You have an inbound 25. That's crazy.
+>> Yeah. Yeah. It looks like it was ordered
+
+220
+00:03:07,350 --> 00:03:07,360
+>> Yeah. Yeah. It looks like it was ordered
+ 
+
+221
+00:03:07,360 --> 00:03:10,390
+>> Yeah. Yeah. It looks like it was ordered
+103 of 2024. So, we didn't expect that
+
+222
+00:03:10,390 --> 00:03:10,400
+103 of 2024. So, we didn't expect that
+ 
+
+223
+00:03:10,400 --> 00:03:12,710
+103 of 2024. So, we didn't expect that
+one to take that long to get here.
+
+224
+00:03:12,710 --> 00:03:12,720
+one to take that long to get here.
+ 
+
+225
+00:03:12,720 --> 00:03:16,949
+one to take that long to get here.
+>> Oh, wow. 103 to 20 24. Oh my goodness.
+
+226
+00:03:16,949 --> 00:03:16,959
+>> Oh, wow. 103 to 20 24. Oh my goodness.
+ 
+
+227
+00:03:16,959 --> 00:03:19,509
+>> Oh, wow. 103 to 20 24. Oh my goodness.
+>> Yeah.
+
+228
+00:03:19,509 --> 00:03:19,519
+>> Yeah.
+ 
+
+229
+00:03:19,519 --> 00:03:21,030
+>> Yeah.
+You know, they're probably like one
+
+230
+00:03:21,030 --> 00:03:21,040
+You know, they're probably like one
+ 
+
+231
+00:03:21,040 --> 00:03:21,830
+You know, they're probably like one
+piece at a time.
+
+232
+00:03:21,830 --> 00:03:21,840
+piece at a time.
+ 
+
+233
+00:03:21,840 --> 00:03:23,750
+piece at a time.
+>> I know. See, and that that that that's
+
+234
+00:03:23,750 --> 00:03:23,760
+>> I know. See, and that that that that's
+ 
+
+235
+00:03:23,760 --> 00:03:25,830
+>> I know. See, and that that that that's
+what makes this one special for you. Uh
+
+236
+00:03:25,830 --> 00:03:25,840
+what makes this one special for you. Uh
+ 
+
+237
+00:03:25,840 --> 00:03:27,030
+what makes this one special for you. Uh
+let me take a look and I'll tell you
+
+238
+00:03:27,030 --> 00:03:27,040
+let me take a look and I'll tell you
+ 
+
+239
+00:03:27,040 --> 00:03:28,390
+let me take a look and I'll tell you
+exactly where it's at. It looks like
+
+240
+00:03:28,390 --> 00:03:28,400
+exactly where it's at. It looks like
+ 
+
+241
+00:03:28,400 --> 00:03:31,270
+exactly where it's at. It looks like
+it's been uh inbound for a while, but uh
+
+242
+00:03:31,270 --> 00:03:31,280
+it's been uh inbound for a while, but uh
+ 
+
+243
+00:03:31,280 --> 00:03:32,070
+it's been uh inbound for a while, but uh
+I'm going to double check.
+
+244
+00:03:32,070 --> 00:03:32,080
+I'm going to double check.
+ 
+
+245
+00:03:32,080 --> 00:03:33,910
+I'm going to double check.
+>> Maybe they got lost that.
+
+246
+00:03:33,910 --> 00:03:33,920
+>> Maybe they got lost that.
+ 
+
+247
+00:03:33,920 --> 00:03:35,350
+>> Maybe they got lost that.
+>> It could have been. It could be on a
+
+248
+00:03:35,350 --> 00:03:35,360
+>> It could have been. It could be on a
+ 
+
+249
+00:03:35,360 --> 00:03:36,869
+>> It could have been. It could be on a
+rail somewhere, you know, just went the
+
+250
+00:03:36,869 --> 00:03:36,879
+rail somewhere, you know, just went the
+ 
+
+251
+00:03:36,879 --> 00:03:39,030
+rail somewhere, you know, just went the
+wrong direction. Maybe maybe I flew over
+
+252
+00:03:39,030 --> 00:03:39,040
+wrong direction. Maybe maybe I flew over
+ 
+
+253
+00:03:39,040 --> 00:03:40,949
+wrong direction. Maybe maybe I flew over
+the uh what's it called? The the place
+
+254
+00:03:40,949 --> 00:03:40,959
+the uh what's it called? The the place
+ 
+
+255
+00:03:40,959 --> 00:03:42,149
+the uh what's it called? The the place
+in the Caribbean, you know, where
+
+256
+00:03:42,149 --> 00:03:42,159
+in the Caribbean, you know, where
+ 
+
+257
+00:03:42,159 --> 00:03:43,270
+in the Caribbean, you know, where
+everything goes.
+
+258
+00:03:43,270 --> 00:03:43,280
+everything goes.
+ 
+
+259
+00:03:43,280 --> 00:03:45,910
+everything goes.
+>> Exactly.
+
+260
+00:03:45,910 --> 00:03:45,920
+>> Exactly.
+ 
+
+261
+00:03:45,920 --> 00:03:46,550
+>> Exactly.
+That's it.
+
+262
+00:03:46,550 --> 00:03:46,560
+That's it.
+ 
+
+263
+00:03:46,560 --> 00:03:48,309
+That's it.
+>> There you go. About a year and a half
+
+264
+00:03:48,309 --> 00:03:48,319
+>> There you go. About a year and a half
+ 
+
+265
+00:03:48,319 --> 00:03:50,550
+>> There you go. About a year and a half
+ago, there was a uh a bunch of imports
+
+266
+00:03:50,550 --> 00:03:50,560
+ago, there was a uh a bunch of imports
+ 
+
+267
+00:03:50,560 --> 00:03:52,149
+ago, there was a uh a bunch of imports
+coming like Mercedes and Audi's that
+
+268
+00:03:52,149 --> 00:03:52,159
+coming like Mercedes and Audi's that
+ 
+
+269
+00:03:52,159 --> 00:03:53,990
+coming like Mercedes and Audi's that
+were coming across on the boat. The boat
+
+270
+00:03:53,990 --> 00:03:54,000
+were coming across on the boat. The boat
+ 
+
+271
+00:03:54,000 --> 00:03:54,869
+were coming across on the boat. The boat
+sunk.
+
+272
+00:03:54,869 --> 00:03:54,879
+sunk.
+ 
+
+273
+00:03:54,879 --> 00:03:55,190
+sunk.
+>> Wow.
+
+274
+00:03:55,190 --> 00:03:55,200
+>> Wow.
+ 
+
+275
+00:03:55,200 --> 00:03:56,869
+>> Wow.
+>> That was pretty crazy. Yeah, the whole
+
+276
+00:03:56,869 --> 00:03:56,879
+>> That was pretty crazy. Yeah, the whole
+ 
+
+277
+00:03:56,879 --> 00:03:59,270
+>> That was pretty crazy. Yeah, the whole
+boat sunk.
+
+278
+00:03:59,270 --> 00:03:59,280
+boat sunk.
+ 
+
+279
+00:03:59,280 --> 00:04:00,869
+boat sunk.
+>> $4 million worth of vehicles.
+
+280
+00:04:00,869 --> 00:04:00,879
+>> $4 million worth of vehicles.
+ 
+
+281
+00:04:00,879 --> 00:04:01,750
+>> $4 million worth of vehicles.
+>> That's insane.
+
+282
+00:04:01,750 --> 00:04:01,760
+>> That's insane.
+ 
+
+283
+00:04:01,760 --> 00:04:03,190
+>> That's insane.
+>> Oh, so yeah, that one that one's due
+
+284
+00:04:03,190 --> 00:04:03,200
+>> Oh, so yeah, that one that one's due
+ 
+
+285
+00:04:03,200 --> 00:04:05,110
+>> Oh, so yeah, that one that one's due
+here any second now. Um, it's actually
+
+286
+00:04:05,110 --> 00:04:05,120
+here any second now. Um, it's actually
+ 
+
+287
+00:04:05,120 --> 00:04:06,949
+here any second now. Um, it's actually
+it's actually literally on a semi-truck
+
+288
+00:04:06,949 --> 00:04:06,959
+it's actually literally on a semi-truck
+ 
+
+289
+00:04:06,959 --> 00:04:09,190
+it's actually literally on a semi-truck
+coming from the port in Kent to here.
+
+290
+00:04:09,190 --> 00:04:09,200
+coming from the port in Kent to here.
+ 
+
+291
+00:04:09,200 --> 00:04:11,190
+coming from the port in Kent to here.
+So, we should see it sometime today or
+
+292
+00:04:11,190 --> 00:04:11,200
+So, we should see it sometime today or
+ 
+
+293
+00:04:11,200 --> 00:04:12,149
+So, we should see it sometime today or
+early tomorrow morning.
+
+294
+00:04:12,149 --> 00:04:12,159
+early tomorrow morning.
+ 
+
+295
+00:04:12,159 --> 00:04:13,429
+early tomorrow morning.
+>> Well, I'm definitely interested in it.
+
+296
+00:04:13,429 --> 00:04:13,439
+>> Well, I'm definitely interested in it.
+ 
+
+297
+00:04:13,439 --> 00:04:14,470
+>> Well, I'm definitely interested in it.
+I've already driven one. I already know
+
+298
+00:04:14,470 --> 00:04:14,480
+I've already driven one. I already know
+ 
+
+299
+00:04:14,480 --> 00:04:15,589
+I've already driven one. I already know
+I want it. I'm just looking for this
+
+300
+00:04:15,589 --> 00:04:15,599
+I want it. I'm just looking for this
+ 
+
+301
+00:04:15,599 --> 00:04:17,110
+I want it. I'm just looking for this
+exact truck. So, you know, we can read a
+
+302
+00:04:17,110 --> 00:04:17,120
+exact truck. So, you know, we can read a
+ 
+
+303
+00:04:17,120 --> 00:04:18,550
+exact truck. So, you know, we can read a
+numbers. I can sell it as your oldest
+
+304
+00:04:18,550 --> 00:04:18,560
+numbers. I can sell it as your oldest
+ 
+
+305
+00:04:18,560 --> 00:04:20,870
+numbers. I can sell it as your oldest
+truck that's been built even though it's
+
+306
+00:04:20,870 --> 00:04:20,880
+truck that's been built even though it's
+ 
+
+307
+00:04:20,880 --> 00:04:22,390
+truck that's been built even though it's
+not your oldest truck on your inventory.
+
+308
+00:04:22,390 --> 00:04:22,400
+not your oldest truck on your inventory.
+ 
+
+309
+00:04:22,400 --> 00:04:24,070
+not your oldest truck on your inventory.
+>> Absolutely. Absolutely. Let me I'll get
+
+310
+00:04:24,070 --> 00:04:24,080
+>> Absolutely. Absolutely. Let me I'll get
+ 
+
+311
+00:04:24,080 --> 00:04:26,629
+>> Absolutely. Absolutely. Let me I'll get
+you back over to uh Alex. That way we he
+
+312
+00:04:26,629 --> 00:04:26,639
+you back over to uh Alex. That way we he
+ 
+
+313
+00:04:26,639 --> 00:04:27,909
+you back over to uh Alex. That way we he
+can get your information. I'll tell you
+
+314
+00:04:27,909 --> 00:04:27,919
+can get your information. I'll tell you
+ 
+
+315
+00:04:27,919 --> 00:04:29,189
+can get your information. I'll tell you
+exactly when it's here. All right.
+
+316
+00:04:29,189 --> 00:04:29,199
+exactly when it's here. All right.
+ 
+
+317
+00:04:29,199 --> 00:04:31,030
+exactly when it's here. All right.
+>> I love it. I am curious about the
+
+318
+00:04:31,030 --> 00:04:31,040
+>> I love it. I am curious about the
+ 
+
+319
+00:04:31,040 --> 00:04:32,469
+>> I love it. I am curious about the
+condition of the car, but the car is not
+
+320
+00:04:32,469 --> 00:04:32,479
+condition of the car, but the car is not
+ 
+
+321
+00:04:32,479 --> 00:04:34,070
+condition of the car, but the car is not
+shipped over the Bermuda Triangle
+
+322
+00:04:34,070 --> 00:04:34,080
+shipped over the Bermuda Triangle
+ 
+
+323
+00:04:34,080 --> 00:04:35,189
+shipped over the Bermuda Triangle
+either. I don't know why I'm still on
+
+324
+00:04:35,189 --> 00:04:35,199
+either. I don't know why I'm still on
+ 
+
+325
+00:04:35,199 --> 00:04:36,310
+either. I don't know why I'm still on
+hold.
+
+326
+00:04:36,310 --> 00:04:36,320
+hold.
+ 
+
+327
+00:04:36,320 --> 00:04:37,350
+hold.
+>> Tom, you still there?
+
+328
+00:04:37,350 --> 00:04:37,360
+>> Tom, you still there?
+ 
+
+329
+00:04:37,360 --> 00:04:38,629
+>> Tom, you still there?
+>> I'm still here.
+
+330
+00:04:38,629 --> 00:04:38,639
+>> I'm still here.
+ 
+
+331
+00:04:38,639 --> 00:04:40,870
+>> I'm still here.
+>> Awesome. I was just uh It looks like my
+
+332
+00:04:40,870 --> 00:04:40,880
+>> Awesome. I was just uh It looks like my
+ 
+
+333
+00:04:40,880 --> 00:04:42,390
+>> Awesome. I was just uh It looks like my
+manager was able to locate that for you
+
+334
+00:04:42,390 --> 00:04:42,400
+manager was able to locate that for you
+ 
+
+335
+00:04:42,400 --> 00:04:43,990
+manager was able to locate that for you
+and he I believe he even mentioned it
+
+336
+00:04:43,990 --> 00:04:44,000
+and he I believe he even mentioned it
+ 
+
+337
+00:04:44,000 --> 00:04:45,749
+and he I believe he even mentioned it
+over to you that we're going to be able
+
+338
+00:04:45,749 --> 00:04:45,759
+over to you that we're going to be able
+ 
+
+339
+00:04:45,759 --> 00:04:47,510
+over to you that we're going to be able
+to see any day now. Yeah. When we were
+
+340
+00:04:47,510 --> 00:04:47,520
+to see any day now. Yeah. When we were
+ 
+
+341
+00:04:47,520 --> 00:04:49,110
+to see any day now. Yeah. When we were
+looking to stop by and checking it out
+
+342
+00:04:49,110 --> 00:04:49,120
+looking to stop by and checking it out
+ 
+
+343
+00:04:49,120 --> 00:04:51,270
+looking to stop by and checking it out
+or I can also uh uh if you want to stop
+
+344
+00:04:51,270 --> 00:04:51,280
+or I can also uh uh if you want to stop
+ 
+
+345
+00:04:51,280 --> 00:04:53,030
+or I can also uh uh if you want to stop
+by today so we can kind of go over the
+
+346
+00:04:53,030 --> 00:04:53,040
+by today so we can kind of go over the
+ 
+
+347
+00:04:53,040 --> 00:04:54,629
+by today so we can kind of go over the
+uh the window sticker with you too, just
+
+348
+00:04:54,629 --> 00:04:54,639
+uh the window sticker with you too, just
+ 
+
+349
+00:04:54,639 --> 00:04:56,070
+uh the window sticker with you too, just
+so you know where you're exactly what
+
+350
+00:04:56,070 --> 00:04:56,080
+so you know where you're exactly what
+ 
+
+351
+00:04:56,080 --> 00:04:57,430
+so you know where you're exactly what
+you're getting, we can also do that as
+
+352
+00:04:57,430 --> 00:04:57,440
+you're getting, we can also do that as
+ 
+
+353
+00:04:57,440 --> 00:04:59,189
+you're getting, we can also do that as
+Well, the good news is I went to I went
+
+354
+00:04:59,189 --> 00:04:59,199
+Well, the good news is I went to I went
+ 
+
+355
+00:04:59,199 --> 00:05:00,870
+Well, the good news is I went to I went
+to college to read window stickers, so I
+
+356
+00:05:00,870 --> 00:05:00,880
+to college to read window stickers, so I
+ 
+
+357
+00:05:00,880 --> 00:05:01,990
+to college to read window stickers, so I
+really don't need help doing that, but
+
+358
+00:05:01,990 --> 00:05:02,000
+really don't need help doing that, but
+ 
+
+359
+00:05:02,000 --> 00:05:03,270
+really don't need help doing that, but
+this is the car I want. So, this is
+
+360
+00:05:03,270 --> 00:05:03,280
+this is the car I want. So, this is
+ 
+
+361
+00:05:03,280 --> 00:05:04,629
+this is the car I want. So, this is
+great. This is awesome. This is the one
+
+362
+00:05:04,629 --> 00:05:04,639
+great. This is awesome. This is the one
+ 
+
+363
+00:05:04,639 --> 00:05:07,590
+great. This is awesome. This is the one
+I'm looking for. So, uh, as the the last
+
+364
+00:05:07,590 --> 00:05:07,600
+I'm looking for. So, uh, as the the last
+ 
+
+365
+00:05:07,600 --> 00:05:09,270
+I'm looking for. So, uh, as the the last
+person, if if we can agree to numbers,
+
+366
+00:05:09,270 --> 00:05:09,280
+person, if if we can agree to numbers,
+ 
+
+367
+00:05:09,280 --> 00:05:10,310
+person, if if we can agree to numbers,
+I'll come buy it.
+
+368
+00:05:10,310 --> 00:05:10,320
+I'll come buy it.
+ 
+
+369
+00:05:10,320 --> 00:05:13,270
+I'll come buy it.
+>> Okay, sounds good. Um, all right. Let me
+
+370
+00:05:13,270 --> 00:05:13,280
+>> Okay, sounds good. Um, all right. Let me
+ 
+
+371
+00:05:13,280 --> 00:05:15,670
+>> Okay, sounds good. Um, all right. Let me
+just get a little some information here.
+
+372
+00:05:15,670 --> 00:05:15,680
+just get a little some information here.
+ 
+
+373
+00:05:15,680 --> 00:05:17,510
+just get a little some information here.
+This is a good number to contact you on.
+
+374
+00:05:17,510 --> 00:05:17,520
+This is a good number to contact you on.
+ 
+
+375
+00:05:17,520 --> 00:05:18,790
+This is a good number to contact you on.
+>> Yep. This is the best number.
+
+376
+00:05:18,790 --> 00:05:18,800
+>> Yep. This is the best number.
+ 
+
+377
+00:05:18,800 --> 00:05:20,469
+>> Yep. This is the best number.
+>> Awesome. And what was your last name?
+
+378
+00:05:20,469 --> 00:05:20,479
+>> Awesome. And what was your last name?
+ 
+
+379
+00:05:20,479 --> 00:05:23,510
+>> Awesome. And what was your last name?
+>> Last name is Makula. M I K U L A.
+
+380
+00:05:23,510 --> 00:05:23,520
+>> Last name is Makula. M I K U L A.
+ 
+
+381
+00:05:23,520 --> 00:05:25,909
+>> Last name is Makula. M I K U L A.
+>> Awesome. And are you available to come
+
+382
+00:05:25,909 --> 00:05:25,919
+>> Awesome. And are you available to come
+ 
+
+383
+00:05:25,919 --> 00:05:29,029
+>> Awesome. And are you available to come
+come in today? and uh has um all the
+
+384
+00:05:29,029 --> 00:05:29,039
+come in today? and uh has um all the
+ 
+
+385
+00:05:29,039 --> 00:05:30,469
+come in today? and uh has um all the
+facts and figures or
+
+386
+00:05:30,469 --> 00:05:30,479
+facts and figures or
+ 
+
+387
+00:05:30,479 --> 00:05:32,230
+facts and figures or
+>> you know even better uh I can I can do
+
+388
+00:05:32,230 --> 00:05:32,240
+>> you know even better uh I can I can do
+ 
+
+389
+00:05:32,240 --> 00:05:33,670
+>> you know even better uh I can I can do
+it all at home. So you send those over
+
+390
+00:05:33,670 --> 00:05:33,680
+it all at home. So you send those over
+ 
+
+391
+00:05:33,680 --> 00:05:35,110
+it all at home. So you send those over
+to me right now and I'll look at them
+
+392
+00:05:35,110 --> 00:05:35,120
+to me right now and I'll look at them
+ 
+
+393
+00:05:35,120 --> 00:05:36,629
+to me right now and I'll look at them
+and if I agree to them and you give me
+
+394
+00:05:36,629 --> 00:05:36,639
+and if I agree to them and you give me
+ 
+
+395
+00:05:36,639 --> 00:05:38,469
+and if I agree to them and you give me
+an awesome deal I'll put a deposit on it
+
+396
+00:05:38,469 --> 00:05:38,479
+an awesome deal I'll put a deposit on it
+ 
+
+397
+00:05:38,479 --> 00:05:40,230
+an awesome deal I'll put a deposit on it
+today over the phone and you don't have
+
+398
+00:05:40,230 --> 00:05:40,240
+today over the phone and you don't have
+ 
+
+399
+00:05:40,240 --> 00:05:41,670
+today over the phone and you don't have
+to see my face.
+
+400
+00:05:41,670 --> 00:05:41,680
+to see my face.
+ 
+
+401
+00:05:41,680 --> 00:05:43,830
+to see my face.
+>> Oh wow. I always want to shake your
+
+402
+00:05:43,830 --> 00:05:43,840
+>> Oh wow. I always want to shake your
+ 
+
+403
+00:05:43,840 --> 00:05:45,430
+>> Oh wow. I always want to shake your
+hand. But in any case if that's what the
+
+404
+00:05:45,430 --> 00:05:45,440
+hand. But in any case if that's what the
+ 
+
+405
+00:05:45,440 --> 00:05:46,870
+hand. But in any case if that's what the
+method you prefer I'm not a problem on
+
+406
+00:05:46,870 --> 00:05:46,880
+method you prefer I'm not a problem on
+ 
+
+407
+00:05:46,880 --> 00:05:48,710
+method you prefer I'm not a problem on
+that. What's a good email for you? Or do
+
+408
+00:05:48,710 --> 00:05:48,720
+that. What's a good email for you? Or do
+ 
+
+409
+00:05:48,720 --> 00:05:49,670
+that. What's a good email for you? Or do
+you prefer text?
+
+410
+00:05:49,670 --> 00:05:49,680
+you prefer text?
+ 
+
+411
+00:05:49,680 --> 00:05:50,710
+you prefer text?
+>> Texting is better.
+
+412
+00:05:50,710 --> 00:05:50,720
+>> Texting is better.
+ 
+
+413
+00:05:50,720 --> 00:05:52,390
+>> Texting is better.
+>> Texting is better for now. Okay. Not a
+
+414
+00:05:52,390 --> 00:05:52,400
+>> Texting is better for now. Okay. Not a
+ 
+
+415
+00:05:52,400 --> 00:05:54,310
+>> Texting is better for now. Okay. Not a
+problem on that.
+
+416
+00:05:54,310 --> 00:05:54,320
+problem on that.
+ 
+
+417
+00:05:54,320 --> 00:05:55,990
+problem on that.
+All right. Just getting you loaded all
+
+418
+00:05:55,990 --> 00:05:56,000
+All right. Just getting you loaded all
+ 
+
+419
+00:05:56,000 --> 00:05:57,350
+All right. Just getting you loaded all
+into the system here. What I'm going to
+
+420
+00:05:57,350 --> 00:05:57,360
+into the system here. What I'm going to
+ 
+
+421
+00:05:57,360 --> 00:05:58,710
+into the system here. What I'm going to
+go ahead and do is just let my manager
+
+422
+00:05:58,710 --> 00:05:58,720
+go ahead and do is just let my manager
+ 
+
+423
+00:05:58,720 --> 00:06:01,909
+go ahead and do is just let my manager
+know kind of get you uh uh some numbers.
+
+424
+00:06:01,909 --> 00:06:01,919
+know kind of get you uh uh some numbers.
+ 
+
+425
+00:06:01,919 --> 00:06:03,749
+know kind of get you uh uh some numbers.
+Did you want me to send you over a link
+
+426
+00:06:03,749 --> 00:06:03,759
+Did you want me to send you over a link
+ 
+
+427
+00:06:03,759 --> 00:06:05,270
+Did you want me to send you over a link
+to the credit app as well if you're
+
+428
+00:06:05,270 --> 00:06:05,280
+to the credit app as well if you're
+ 
+
+429
+00:06:05,280 --> 00:06:06,469
+to the credit app as well if you're
+going to be financing or would this be
+
+430
+00:06:06,469 --> 00:06:06,479
+going to be financing or would this be
+ 
+
+431
+00:06:06,479 --> 00:06:06,950
+going to be financing or would this be
+cash?
+
+432
+00:06:06,950 --> 00:06:06,960
+cash?
+ 
+
+433
+00:06:06,960 --> 00:06:08,230
+cash?
+>> You know, I'm open to cash, open to
+
+434
+00:06:08,230 --> 00:06:08,240
+>> You know, I'm open to cash, open to
+ 
+
+435
+00:06:08,240 --> 00:06:09,430
+>> You know, I'm open to cash, open to
+finance, but let's let's make sure we
+
+436
+00:06:09,430 --> 00:06:09,440
+finance, but let's let's make sure we
+ 
+
+437
+00:06:09,440 --> 00:06:10,870
+finance, but let's let's make sure we
+create a numbers for first before we get
+
+438
+00:06:10,870 --> 00:06:10,880
+create a numbers for first before we get
+ 
+
+439
+00:06:10,880 --> 00:06:11,670
+create a numbers for first before we get
+to a credit app.
+
+440
+00:06:11,670 --> 00:06:11,680
+to a credit app.
+ 
+
+441
+00:06:11,680 --> 00:06:13,270
+to a credit app.
+>> Not a problem. Not a problem at all.
+
+442
+00:06:13,270 --> 00:06:13,280
+>> Not a problem. Not a problem at all.
+ 
+
+443
+00:06:13,280 --> 00:06:14,950
+>> Not a problem. Not a problem at all.
+I'll go ahead and uh get back with my
+
+444
+00:06:14,950 --> 00:06:14,960
+I'll go ahead and uh get back with my
+ 
+
+445
+00:06:14,960 --> 00:06:16,070
+I'll go ahead and uh get back with my
+manager, see what we can do for you,
+
+446
+00:06:16,070 --> 00:06:16,080
+manager, see what we can do for you,
+ 
+
+447
+00:06:16,080 --> 00:06:16,309
+manager, see what we can do for you,
+man.
+
+448
+00:06:16,309 --> 00:06:16,319
+man.
+ 
+
+449
+00:06:16,319 --> 00:06:17,189
+man.
+>> Thank you. Appreciate it.
+
+450
+00:06:17,189 --> 00:06:17,199
+>> Thank you. Appreciate it.
+ 
+
+451
+00:06:17,199 --> 00:06:18,790
+>> Thank you. Appreciate it.
+>> Yeah, absolutely. We'll keep in touch
+
+452
+00:06:18,790 --> 00:06:18,800
+>> Yeah, absolutely. We'll keep in touch
+ 
+
+453
+00:06:18,800 --> 00:06:19,270
+>> Yeah, absolutely. We'll keep in touch
+soon. All right.
+
+454
+00:06:19,270 --> 00:06:19,280
+soon. All right.
+ 
+
+455
+00:06:19,280 --> 00:06:19,990
+soon. All right.
+>> All right. Sounds good.
+
+456
+00:06:19,990 --> 00:06:20,000
+>> All right. Sounds good.
+ 
+
+457
+00:06:20,000 --> 00:06:21,350
+>> All right. Sounds good.
+>> Not a problem. Bye.
+
+458
+00:06:21,350 --> 00:06:21,360
+>> Not a problem. Bye.
+ 
+
+459
+00:06:21,360 --> 00:06:22,309
+>> Not a problem. Bye.
+>> If you guys don't know who I am, my
+
+460
+00:06:22,309 --> 00:06:22,319
+>> If you guys don't know who I am, my
+ 
+
+461
+00:06:22,319 --> 00:06:23,749
+>> If you guys don't know who I am, my
+name's Tommy. I negotiate car deals for
+
+462
+00:06:23,749 --> 00:06:23,759
+name's Tommy. I negotiate car deals for
+ 
+
+463
+00:06:23,759 --> 00:06:25,590
+name's Tommy. I negotiate car deals for
+a living. My goal save you time, energy,
+
+464
+00:06:25,590 --> 00:06:25,600
+a living. My goal save you time, energy,
+ 
+
+465
+00:06:25,600 --> 00:06:27,270
+a living. My goal save you time, energy,
+anxiety. Do we save money? Sure. But
+
+466
+00:06:27,270 --> 00:06:27,280
+anxiety. Do we save money? Sure. But
+ 
+
+467
+00:06:27,280 --> 00:06:28,870
+anxiety. Do we save money? Sure. But
+that's a byproduct. Don't hire me to do
+
+468
+00:06:28,870 --> 00:06:28,880
+that's a byproduct. Don't hire me to do
+ 
+
+469
+00:06:28,880 --> 00:06:30,070
+that's a byproduct. Don't hire me to do
+that. Hire me because you don't want to
+
+470
+00:06:30,070 --> 00:06:30,080
+that. Hire me because you don't want to
+ 
+
+471
+00:06:30,080 --> 00:06:31,110
+that. Hire me because you don't want to
+deal with it. What if you're like, "Hey,
+
+472
+00:06:31,110 --> 00:06:31,120
+deal with it. What if you're like, "Hey,
+ 
+
+473
+00:06:31,120 --> 00:06:32,710
+deal with it. What if you're like, "Hey,
+Tommy, I just want to learn. Follow my
+
+474
+00:06:32,710 --> 00:06:32,720
+Tommy, I just want to learn. Follow my
+ 
+
+475
+00:06:32,720 --> 00:06:33,830
+Tommy, I just want to learn. Follow my
+tips. Follow my tricks. You're going to
+
+476
+00:06:33,830 --> 00:06:33,840
+tips. Follow my tricks. You're going to
+ 
+
+477
+00:06:33,840 --> 00:06:36,469
+tips. Follow my tricks. You're going to
+do it." Great.
+
+478
+00:06:36,469 --> 00:06:36,479
+do it." Great.
+ 
+
+479
+00:06:36,479 --> 00:06:37,830
+do it." Great.
+>> This is Hunter in Sales. How can I help
+
+480
+00:06:37,830 --> 00:06:37,840
+>> This is Hunter in Sales. How can I help
+ 
+
+481
+00:06:37,840 --> 00:06:38,070
+>> This is Hunter in Sales. How can I help
+you?
+
+482
+00:06:38,070 --> 00:06:38,080
+you?
+ 
+
+483
+00:06:38,080 --> 00:06:39,749
+you?
+>> Hello, Hunter and Sales. It's Tommy from
+
+484
+00:06:39,749 --> 00:06:39,759
+>> Hello, Hunter and Sales. It's Tommy from
+ 
+
+485
+00:06:39,759 --> 00:06:40,950
+>> Hello, Hunter and Sales. It's Tommy from
+Buying. I just wanted to see if you guys
+
+486
+00:06:40,950 --> 00:06:40,960
+Buying. I just wanted to see if you guys
+ 
+
+487
+00:06:40,960 --> 00:06:42,550
+Buying. I just wanted to see if you guys
+have a car available.
+
+488
+00:06:42,550 --> 00:06:42,560
+have a car available.
+ 
+
+489
+00:06:42,560 --> 00:06:43,670
+have a car available.
+>> Of course. What are you looking for?
+
+490
+00:06:43,670 --> 00:06:43,680
+>> Of course. What are you looking for?
+ 
+
+491
+00:06:43,680 --> 00:06:44,870
+>> Of course. What are you looking for?
+>> I have a stock number if that helps.
+
+492
+00:06:44,870 --> 00:06:44,880
+>> I have a stock number if that helps.
+ 
+
+493
+00:06:44,880 --> 00:06:46,309
+>> I have a stock number if that helps.
+>> Uh, give me one second to get to the
+
+494
+00:06:46,309 --> 00:06:46,319
+>> Uh, give me one second to get to the
+ 
+
+495
+00:06:46,319 --> 00:06:49,110
+>> Uh, give me one second to get to the
+website. Looking at new or used, Brian?
+
+496
+00:06:49,110 --> 00:06:49,120
+website. Looking at new or used, Brian?
+ 
+
+497
+00:06:49,120 --> 00:06:50,309
+website. Looking at new or used, Brian?
+>> Tommy, but uh, new.
+
+498
+00:06:50,309 --> 00:06:50,319
+>> Tommy, but uh, new.
+ 
+
+499
+00:06:50,319 --> 00:06:52,070
+>> Tommy, but uh, new.
+>> Tommy. Tommy from buying. I'm sorry.
+
+500
+00:06:52,070 --> 00:06:52,080
+>> Tommy. Tommy from buying. I'm sorry.
+ 
+
+501
+00:06:52,080 --> 00:06:53,749
+>> Tommy. Tommy from buying. I'm sorry.
+>> Tommy from buying. That's okay. That's
+
+502
+00:06:53,749 --> 00:06:53,759
+>> Tommy from buying. That's okay. That's
+ 
+
+503
+00:06:53,759 --> 00:06:54,230
+>> Tommy from buying. That's okay. That's
+right. That's right.
+
+504
+00:06:54,230 --> 00:06:54,240
+right. That's right.
+ 
+
+505
+00:06:54,240 --> 00:06:57,110
+right. That's right.
+>> I made a funny mish heard it.
+
+506
+00:06:57,110 --> 00:06:57,120
+>> I made a funny mish heard it.
+ 
+
+507
+00:06:57,120 --> 00:06:58,150
+>> I made a funny mish heard it.
+>> Go ahead. Fire away.
+
+508
+00:06:58,150 --> 00:06:58,160
+>> Go ahead. Fire away.
+ 
+
+509
+00:06:58,160 --> 00:07:01,350
+>> Go ahead. Fire away.
+>> Yeah. Yeah. C is in cat. 30710.
+
+510
+00:07:01,350 --> 00:07:01,360
+>> Yeah. Yeah. C is in cat. 30710.
+ 
+
+511
+00:07:01,360 --> 00:07:03,350
+>> Yeah. Yeah. C is in cat. 30710.
+>> C30710.
+
+512
+00:07:03,350 --> 00:07:03,360
+>> C30710.
+ 
+
+513
+00:07:03,360 --> 00:07:05,510
+>> C30710.
+Lariat F-150.
+
+514
+00:07:05,510 --> 00:07:05,520
+Lariat F-150.
+ 
+
+515
+00:07:05,520 --> 00:07:06,230
+Lariat F-150.
+>> Yeah, that's it.
+
+516
+00:07:06,230 --> 00:07:06,240
+>> Yeah, that's it.
+ 
+
+517
+00:07:06,240 --> 00:07:07,430
+>> Yeah, that's it.
+>> Nope.
+
+518
+00:07:07,430 --> 00:07:07,440
+>> Nope.
+ 
+
+519
+00:07:07,440 --> 00:07:09,909
+>> Nope.
+>> All right. Let me double check my other
+
+520
+00:07:09,909 --> 00:07:09,919
+>> All right. Let me double check my other
+ 
+
+521
+00:07:09,919 --> 00:07:11,830
+>> All right. Let me double check my other
+source. That's not pictures at our
+
+522
+00:07:11,830 --> 00:07:11,840
+source. That's not pictures at our
+ 
+
+523
+00:07:11,840 --> 00:07:13,350
+source. That's not pictures at our
+dealership. So sometimes that means the
+
+524
+00:07:13,350 --> 00:07:13,360
+dealership. So sometimes that means the
+ 
+
+525
+00:07:13,360 --> 00:07:15,589
+dealership. So sometimes that means the
+vehicle could still be in transit.
+
+526
+00:07:15,589 --> 00:07:15,599
+vehicle could still be in transit.
+ 
+
+527
+00:07:15,599 --> 00:07:17,350
+vehicle could still be in transit.
+>> Maybe it showed up this week. Let's
+
+528
+00:07:17,350 --> 00:07:17,360
+>> Maybe it showed up this week. Let's
+ 
+
+529
+00:07:17,360 --> 00:07:19,110
+>> Maybe it showed up this week. Let's
+check.
+
+530
+00:07:19,110 --> 00:07:19,120
+check.
+ 
+
+531
+00:07:19,120 --> 00:07:20,309
+check.
+>> Yeah, no worries. Take your time. I have
+
+532
+00:07:20,309 --> 00:07:20,319
+>> Yeah, no worries. Take your time. I have
+ 
+
+533
+00:07:20,319 --> 00:07:23,990
+>> Yeah, no worries. Take your time. I have
+nowhere to be.
+
+534
+00:07:23,990 --> 00:07:24,000
+
+ 
+
+535
+00:07:24,000 --> 00:07:24,710
+
+Almond. All in.
+
+536
+00:07:24,710 --> 00:07:24,720
+Almond. All in.
+ 
+
+537
+00:07:24,720 --> 00:07:27,189
+Almond. All in.
+>> So, car is not currently here. The ETA
+
+538
+00:07:27,189 --> 00:07:27,199
+>> So, car is not currently here. The ETA
+ 
+
+539
+00:07:27,199 --> 00:07:29,589
+>> So, car is not currently here. The ETA
+I'm seeing is 107 to 10:13. So, it's
+
+540
+00:07:29,589 --> 00:07:29,599
+I'm seeing is 107 to 10:13. So, it's
+ 
+
+541
+00:07:29,599 --> 00:07:31,350
+I'm seeing is 107 to 10:13. So, it's
+literally any day that thing's going to
+
+542
+00:07:31,350 --> 00:07:31,360
+literally any day that thing's going to
+ 
+
+543
+00:07:31,360 --> 00:07:31,909
+literally any day that thing's going to
+show up.
+
+544
+00:07:31,909 --> 00:07:31,919
+show up.
+ 
+
+545
+00:07:31,919 --> 00:07:33,189
+show up.
+>> I love it. Well, I'm definitely
+
+546
+00:07:33,189 --> 00:07:33,199
+>> I love it. Well, I'm definitely
+ 
+
+547
+00:07:33,199 --> 00:07:34,390
+>> I love it. Well, I'm definitely
+interested in it. I already driven one.
+
+548
+00:07:34,390 --> 00:07:34,400
+interested in it. I already driven one.
+ 
+
+549
+00:07:34,400 --> 00:07:35,350
+interested in it. I already driven one.
+I already know I want it. I'm just
+
+550
+00:07:35,350 --> 00:07:35,360
+I already know I want it. I'm just
+ 
+
+551
+00:07:35,360 --> 00:07:37,189
+I already know I want it. I'm just
+looking for this exact spec. Um, if we
+
+552
+00:07:37,189 --> 00:07:37,199
+looking for this exact spec. Um, if we
+ 
+
+553
+00:07:37,199 --> 00:07:38,469
+looking for this exact spec. Um, if we
+can go to numbers, I'm all for buying
+
+554
+00:07:38,469 --> 00:07:38,479
+can go to numbers, I'm all for buying
+ 
+
+555
+00:07:38,479 --> 00:07:38,790
+can go to numbers, I'm all for buying
+it.
+
+556
+00:07:38,790 --> 00:07:38,800
+it.
+ 
+
+557
+00:07:38,800 --> 00:07:40,230
+it.
+>> Perfect. Let me get your information
+
+558
+00:07:40,230 --> 00:07:40,240
+>> Perfect. Let me get your information
+ 
+
+559
+00:07:40,240 --> 00:07:41,830
+>> Perfect. Let me get your information
+down. We'll move forward. Are you guys
+
+560
+00:07:41,830 --> 00:07:41,840
+down. We'll move forward. Are you guys
+ 
+
+561
+00:07:41,840 --> 00:07:43,510
+down. We'll move forward. Are you guys
+looking to trade something in, pay cash,
+
+562
+00:07:43,510 --> 00:07:43,520
+looking to trade something in, pay cash,
+ 
+
+563
+00:07:43,520 --> 00:07:44,150
+looking to trade something in, pay cash,
+finance?
+
+564
+00:07:44,150 --> 00:07:44,160
+finance?
+ 
+
+565
+00:07:44,160 --> 00:07:45,589
+finance?
+>> Uh, looking to pay cash or finance.
+
+566
+00:07:45,589 --> 00:07:45,599
+>> Uh, looking to pay cash or finance.
+ 
+
+567
+00:07:45,599 --> 00:07:47,029
+>> Uh, looking to pay cash or finance.
+Either way, uh, we're open to financing
+
+568
+00:07:47,029 --> 00:07:47,039
+Either way, uh, we're open to financing
+ 
+
+569
+00:07:47,039 --> 00:07:47,990
+Either way, uh, we're open to financing
+if the deal makes sense. Otherwise,
+
+570
+00:07:47,990 --> 00:07:48,000
+if the deal makes sense. Otherwise,
+ 
+
+571
+00:07:48,000 --> 00:07:48,870
+if the deal makes sense. Otherwise,
+we'll just pay cash.
+
+572
+00:07:48,870 --> 00:07:48,880
+we'll just pay cash.
+ 
+
+573
+00:07:48,880 --> 00:07:50,230
+we'll just pay cash.
+>> Cool. Yeah, I think there's some
+
+574
+00:07:50,230 --> 00:07:50,240
+>> Cool. Yeah, I think there's some
+ 
+
+575
+00:07:50,240 --> 00:07:52,870
+>> Cool. Yeah, I think there's some
+incentivized rates. So they do 0.9 for
+
+576
+00:07:52,870 --> 00:07:52,880
+incentivized rates. So they do 0.9 for
+ 
+
+577
+00:07:52,880 --> 00:07:57,510
+incentivized rates. So they do 0.9 for
+36, 1.9 for 48, 29 for 60, 39 for 72,
+
+578
+00:07:57,510 --> 00:07:57,520
+36, 1.9 for 48, 29 for 60, 39 for 72,
+ 
+
+579
+00:07:57,520 --> 00:07:59,909
+36, 1.9 for 48, 29 for 60, 39 for 72,
+and 49 for 84.
+
+580
+00:07:59,909 --> 00:07:59,919
+and 49 for 84.
+ 
+
+581
+00:07:59,919 --> 00:08:01,270
+and 49 for 84.
+>> Yeah. Okay. Well, we're definitely open
+
+582
+00:08:01,270 --> 00:08:01,280
+>> Yeah. Okay. Well, we're definitely open
+ 
+
+583
+00:08:01,280 --> 00:08:02,629
+>> Yeah. Okay. Well, we're definitely open
+on that as well. So
+
+584
+00:08:02,629 --> 00:08:02,639
+on that as well. So
+ 
+
+585
+00:08:02,639 --> 00:08:03,749
+on that as well. So
+>> cool. Do you want to see the longer
+
+586
+00:08:03,749 --> 00:08:03,759
+>> cool. Do you want to see the longer
+ 
+
+587
+00:08:03,759 --> 00:08:04,869
+>> cool. Do you want to see the longer
+terms or shorter terms?
+
+588
+00:08:04,869 --> 00:08:04,879
+terms or shorter terms?
+ 
+
+589
+00:08:04,879 --> 00:08:05,589
+terms or shorter terms?
+>> Shorter terms.
+
+590
+00:08:05,589 --> 00:08:05,599
+>> Shorter terms.
+ 
+
+591
+00:08:05,599 --> 00:08:07,189
+>> Shorter terms.
+>> All right. Cool. So I'll show you 36
+
+592
+00:08:07,189 --> 00:08:07,199
+>> All right. Cool. So I'll show you 36
+ 
+
+593
+00:08:07,199 --> 00:08:08,629
+>> All right. Cool. So I'll show you 36
+through 60. Sound good with those
+
+594
+00:08:08,629 --> 00:08:08,639
+through 60. Sound good with those
+ 
+
+595
+00:08:08,639 --> 00:08:09,749
+through 60. Sound good with those
+advertised rates?
+
+596
+00:08:09,749 --> 00:08:09,759
+advertised rates?
+ 
+
+597
+00:08:09,759 --> 00:08:11,110
+advertised rates?
+>> Yeah, sounds great to me. More focused
+
+598
+00:08:11,110 --> 00:08:11,120
+>> Yeah, sounds great to me. More focused
+ 
+
+599
+00:08:11,120 --> 00:08:12,390
+>> Yeah, sounds great to me. More focused
+on the out the door, just so you know,
+
+600
+00:08:12,390 --> 00:08:12,400
+on the out the door, just so you know,
+ 
+
+601
+00:08:12,400 --> 00:08:13,510
+on the out the door, just so you know,
+but definitely want to see those rates
+
+602
+00:08:13,510 --> 00:08:13,520
+but definitely want to see those rates
+ 
+
+603
+00:08:13,520 --> 00:08:13,990
+but definitely want to see those rates
+as well.
+
+604
+00:08:13,990 --> 00:08:14,000
+as well.
+ 
+
+605
+00:08:14,000 --> 00:08:16,550
+as well.
+>> Cool. No problem. Um, and then I got
+
+606
+00:08:16,550 --> 00:08:16,560
+>> Cool. No problem. Um, and then I got
+ 
+
+607
+00:08:16,560 --> 00:08:18,150
+>> Cool. No problem. Um, and then I got
+Tommy. Tommy, what's your real last
+
+608
+00:08:18,150 --> 00:08:18,160
+Tommy. Tommy, what's your real last
+ 
+
+609
+00:08:18,160 --> 00:08:18,790
+Tommy. Tommy, what's your real last
+name?
+
+610
+00:08:18,790 --> 00:08:18,800
+name?
+ 
+
+611
+00:08:18,800 --> 00:08:20,390
+name?
+>> My real last name? Do I have a fake last
+
+612
+00:08:20,390 --> 00:08:20,400
+>> My real last name? Do I have a fake last
+ 
+
+613
+00:08:20,400 --> 00:08:20,710
+>> My real last name? Do I have a fake last
+name?
+
+614
+00:08:20,710 --> 00:08:20,720
+name?
+ 
+
+615
+00:08:20,720 --> 00:08:22,629
+name?
+>> Well, I know it's not from buying, so
+
+616
+00:08:22,629 --> 00:08:22,639
+>> Well, I know it's not from buying, so
+ 
+
+617
+00:08:22,639 --> 00:08:25,029
+>> Well, I know it's not from buying, so
+>> Oh, it's from your m UA.
+
+618
+00:08:25,029 --> 00:08:25,039
+>> Oh, it's from your m UA.
+ 
+
+619
+00:08:25,039 --> 00:08:25,670
+>> Oh, it's from your m UA.
+>> Say it again.
+
+620
+00:08:25,670 --> 00:08:25,680
+>> Say it again.
+ 
+
+621
+00:08:25,680 --> 00:08:27,749
+>> Say it again.
+>> M I K U L A.
+
+622
+00:08:27,749 --> 00:08:27,759
+>> M I K U L A.
+ 
+
+623
+00:08:27,759 --> 00:08:31,670
+>> M I K U L A.
+>> M I K L U buying though.
+
+624
+00:08:31,670 --> 00:08:31,680
+>> M I K L U buying though.
+ 
+
+625
+00:08:31,680 --> 00:08:33,190
+>> M I K L U buying though.
+>> And then what's your address so we can
+
+626
+00:08:33,190 --> 00:08:33,200
+>> And then what's your address so we can
+ 
+
+627
+00:08:33,200 --> 00:08:34,709
+>> And then what's your address so we can
+get title taxes and fees?
+
+628
+00:08:34,709 --> 00:08:34,719
+get title taxes and fees?
+ 
+
+629
+00:08:34,719 --> 00:08:36,790
+get title taxes and fees?
+>> You know what? I don't love giving my
+
+630
+00:08:36,790 --> 00:08:36,800
+>> You know what? I don't love giving my
+ 
+
+631
+00:08:36,800 --> 00:08:38,070
+>> You know what? I don't love giving my
+address, but I can definitely give you
+
+632
+00:08:38,070 --> 00:08:38,080
+address, but I can definitely give you
+ 
+
+633
+00:08:38,080 --> 00:08:39,110
+address, but I can definitely give you
+>> How about zip code?
+
+634
+00:08:39,110 --> 00:08:39,120
+>> How about zip code?
+ 
+
+635
+00:08:39,120 --> 00:08:40,630
+>> How about zip code?
+>> Yeah.
+
+636
+00:08:40,630 --> 00:08:40,640
+>> Yeah.
+ 
+
+637
+00:08:40,640 --> 00:08:42,949
+>> Yeah.
+>> Got to love taxes in Washington.
+
+638
+00:08:42,949 --> 00:08:42,959
+>> Got to love taxes in Washington.
+ 
+
+639
+00:08:42,959 --> 00:08:44,070
+>> Got to love taxes in Washington.
+>> Yeah. Right.
+
+640
+00:08:44,070 --> 00:08:44,080
+>> Yeah. Right.
+ 
+
+641
+00:08:44,080 --> 00:08:45,430
+>> Yeah. Right.
+>> And then is this a good cell phone for
+
+642
+00:08:45,430 --> 00:08:45,440
+>> And then is this a good cell phone for
+ 
+
+643
+00:08:45,440 --> 00:08:45,910
+>> And then is this a good cell phone for
+you?
+
+644
+00:08:45,910 --> 00:08:45,920
+you?
+ 
+
+645
+00:08:45,920 --> 00:08:49,590
+you?
+>> Yep. This is the best one. Cool.
+
+646
+00:08:49,590 --> 00:08:49,600
+>> Yep. This is the best one. Cool.
+ 
+
+647
+00:08:49,600 --> 00:08:51,190
+>> Yep. This is the best one. Cool.
+So, one of my sales reps is going to
+
+648
+00:08:51,190 --> 00:08:51,200
+So, one of my sales reps is going to
+ 
+
+649
+00:08:51,200 --> 00:08:53,030
+So, one of my sales reps is going to
+send you over a text message to opt you
+
+650
+00:08:53,030 --> 00:08:53,040
+send you over a text message to opt you
+ 
+
+651
+00:08:53,040 --> 00:08:54,870
+send you over a text message to opt you
+in. You can always end it by replying
+
+652
+00:08:54,870 --> 00:08:54,880
+in. You can always end it by replying
+ 
+
+653
+00:08:54,880 --> 00:08:56,389
+in. You can always end it by replying
+stop, but that means we can't text you.
+
+654
+00:08:56,389 --> 00:08:56,399
+stop, but that means we can't text you.
+ 
+
+655
+00:08:56,399 --> 00:08:58,150
+stop, but that means we can't text you.
+So, make sure you reply yes at first and
+
+656
+00:08:58,150 --> 00:08:58,160
+So, make sure you reply yes at first and
+ 
+
+657
+00:08:58,160 --> 00:08:59,509
+So, make sure you reply yes at first and
+then we'll shoot those numbers over to
+
+658
+00:08:59,509 --> 00:08:59,519
+then we'll shoot those numbers over to
+ 
+
+659
+00:08:59,519 --> 00:09:00,949
+then we'll shoot those numbers over to
+you on the truck. All right.
+
+660
+00:09:00,949 --> 00:09:00,959
+you on the truck. All right.
+ 
+
+661
+00:09:00,959 --> 00:09:01,509
+you on the truck. All right.
+>> Correct.
+
+662
+00:09:01,509 --> 00:09:01,519
+>> Correct.
+ 
+
+663
+00:09:01,519 --> 00:09:03,030
+>> Correct.
+>> All right. Cool. All right. Coming your
+
+664
+00:09:03,030 --> 00:09:03,040
+>> All right. Cool. All right. Coming your
+ 
+
+665
+00:09:03,040 --> 00:09:03,670
+>> All right. Cool. All right. Coming your
+way.
+
+666
+00:09:03,670 --> 00:09:03,680
+way.
+ 
+
+667
+00:09:03,680 --> 00:09:04,710
+way.
+>> Sounds good. Appreciate it.
+
+668
+00:09:04,710 --> 00:09:04,720
+>> Sounds good. Appreciate it.
+ 
+
+669
+00:09:04,720 --> 00:09:05,910
+>> Sounds good. Appreciate it.
+>> All right. Cheers.
+
+670
+00:09:05,910 --> 00:09:05,920
+>> All right. Cheers.
+ 
+
+671
+00:09:05,920 --> 00:09:09,030
+>> All right. Cheers.
+>> Bye.
+
+672
+00:09:09,030 --> 00:09:09,040
+
+ 
+
+673
+00:09:09,040 --> 00:09:10,630
+
+One second. I'm getting a phone call
+
+674
+00:09:10,630 --> 00:09:10,640
+One second. I'm getting a phone call
+ 
+
+675
+00:09:10,640 --> 00:09:12,150
+One second. I'm getting a phone call
+back. This is Tommy.
+
+676
+00:09:12,150 --> 00:09:12,160
+back. This is Tommy.
+ 
+
+677
+00:09:12,160 --> 00:09:14,949
+back. This is Tommy.
+>> Hey, Tommy. Alex here.
+
+678
+00:09:14,949 --> 00:09:14,959
+>> Hey, Tommy. Alex here.
+ 
+
+679
+00:09:14,959 --> 00:09:16,070
+>> Hey, Tommy. Alex here.
+>> Oh, hey. How's it going?
+
+680
+00:09:16,070 --> 00:09:16,080
+>> Oh, hey. How's it going?
+ 
+
+681
+00:09:16,080 --> 00:09:18,230
+>> Oh, hey. How's it going?
+>> Good, man. So, I just got done with my
+
+682
+00:09:18,230 --> 00:09:18,240
+>> Good, man. So, I just got done with my
+ 
+
+683
+00:09:18,240 --> 00:09:19,590
+>> Good, man. So, I just got done with my
+meeting with my manager and it looks
+
+684
+00:09:19,590 --> 00:09:19,600
+meeting with my manager and it looks
+ 
+
+685
+00:09:19,600 --> 00:09:21,350
+meeting with my manager and it looks
+like we're able to sell it over to you
+
+686
+00:09:21,350 --> 00:09:21,360
+like we're able to sell it over to you
+ 
+
+687
+00:09:21,360 --> 00:09:23,590
+like we're able to sell it over to you
+for 69281.
+
+688
+00:09:23,590 --> 00:09:23,600
+for 69281.
+ 
+
+689
+00:09:23,600 --> 00:09:25,110
+for 69281.
+>> 69281 you said?
+
+690
+00:09:25,110 --> 00:09:25,120
+>> 69281 you said?
+ 
+
+691
+00:09:25,120 --> 00:09:26,230
+>> 69281 you said?
+>> Yes, sir.
+
+692
+00:09:26,230 --> 00:09:26,240
+>> Yes, sir.
+ 
+
+693
+00:09:26,240 --> 00:09:28,630
+>> Yes, sir.
+>> Okay. So, sorry. Let me pull that back
+
+694
+00:09:28,630 --> 00:09:28,640
+>> Okay. So, sorry. Let me pull that back
+ 
+
+695
+00:09:28,640 --> 00:09:31,430
+>> Okay. So, sorry. Let me pull that back
+up. So, you guys are at 73980 and now
+
+696
+00:09:31,430 --> 00:09:31,440
+up. So, you guys are at 73980 and now
+ 
+
+697
+00:09:31,440 --> 00:09:33,590
+up. So, you guys are at 73980 and now
+you guys are at 69. So, you're about
+
+698
+00:09:33,590 --> 00:09:33,600
+you guys are at 69. So, you're about
+ 
+
+699
+00:09:33,600 --> 00:09:35,269
+you guys are at 69. So, you're about
+three grand four grand off
+
+700
+00:09:35,269 --> 00:09:35,279
+three grand four grand off
+ 
+
+701
+00:09:35,279 --> 00:09:36,870
+three grand four grand off
+>> from the original MSRP. We're
+
+702
+00:09:36,870 --> 00:09:36,880
+>> from the original MSRP. We're
+ 
+
+703
+00:09:36,880 --> 00:09:38,710
+>> from the original MSRP. We're
+discounting it for that uh for that
+
+704
+00:09:38,710 --> 00:09:38,720
+discounting it for that uh for that
+ 
+
+705
+00:09:38,720 --> 00:09:40,710
+discounting it for that uh for that
+price. Yeah. For 69281.
+
+706
+00:09:40,710 --> 00:09:40,720
+price. Yeah. For 69281.
+ 
+
+707
+00:09:40,720 --> 00:09:43,110
+price. Yeah. For 69281.
+>> 69281 is And that's not out the door.
+
+708
+00:09:43,110 --> 00:09:43,120
+>> 69281 is And that's not out the door.
+ 
+
+709
+00:09:43,120 --> 00:09:44,389
+>> 69281 is And that's not out the door.
+That's just the sales price, right?
+
+710
+00:09:44,389 --> 00:09:44,399
+That's just the sales price, right?
+ 
+
+711
+00:09:44,399 --> 00:09:46,949
+That's just the sales price, right?
+>> That is just the sales price. Yep.
+
+712
+00:09:46,949 --> 00:09:46,959
+>> That is just the sales price. Yep.
+ 
+
+713
+00:09:46,959 --> 00:09:48,389
+>> That is just the sales price. Yep.
+>> And then what's what's above and beyond
+
+714
+00:09:48,389 --> 00:09:48,399
+>> And then what's what's above and beyond
+ 
+
+715
+00:09:48,399 --> 00:09:50,150
+>> And then what's what's above and beyond
+that? Is it tax title license? Is there
+
+716
+00:09:50,150 --> 00:09:50,160
+that? Is it tax title license? Is there
+ 
+
+717
+00:09:50,160 --> 00:09:51,910
+that? Is it tax title license? Is there
+any dealer add-ons, fees, anything
+
+718
+00:09:51,910 --> 00:09:51,920
+any dealer add-ons, fees, anything
+ 
+
+719
+00:09:51,920 --> 00:09:52,470
+any dealer add-ons, fees, anything
+crazy?
+
+720
+00:09:52,470 --> 00:09:52,480
+crazy?
+ 
+
+721
+00:09:52,480 --> 00:09:53,910
+crazy?
+>> Um, let me see if we're able to get you
+
+722
+00:09:53,910 --> 00:09:53,920
+>> Um, let me see if we're able to get you
+ 
+
+723
+00:09:53,920 --> 00:09:56,070
+>> Um, let me see if we're able to get you
+an actual pencil, but it looks like from
+
+724
+00:09:56,070 --> 00:09:56,080
+an actual pencil, but it looks like from
+ 
+
+725
+00:09:56,080 --> 00:09:57,509
+an actual pencil, but it looks like from
+for our dealer discount already gives
+
+726
+00:09:57,509 --> 00:09:57,519
+for our dealer discount already gives
+ 
+
+727
+00:09:57,519 --> 00:09:59,350
+for our dealer discount already gives
+you 46.99
+
+728
+00:09:59,350 --> 00:09:59,360
+you 46.99
+ 
+
+729
+00:09:59,360 --> 00:10:01,590
+you 46.99
+for that dealer discount there. And
+
+730
+00:10:01,590 --> 00:10:01,600
+for that dealer discount there. And
+ 
+
+731
+00:10:01,600 --> 00:10:03,990
+for that dealer discount there. And
+yeah, in terms of out the door, are you
+
+732
+00:10:03,990 --> 00:10:04,000
+yeah, in terms of out the door, are you
+ 
+
+733
+00:10:04,000 --> 00:10:06,310
+yeah, in terms of out the door, are you
+local to you living in a different area?
+
+734
+00:10:06,310 --> 00:10:06,320
+local to you living in a different area?
+ 
+
+735
+00:10:06,320 --> 00:10:08,949
+local to you living in a different area?
+>> I live in I I live in Washington but
+
+736
+00:10:08,949 --> 00:10:08,959
+>> I live in I I live in Washington but
+ 
+
+737
+00:10:08,959 --> 00:10:10,949
+>> I live in I I live in Washington but
+close to Seattle. Seattle. Yeah.
+
+738
+00:10:10,949 --> 00:10:10,959
+close to Seattle. Seattle. Yeah.
+ 
+
+739
+00:10:10,959 --> 00:10:12,870
+close to Seattle. Seattle. Yeah.
+>> And do you have an RTA tax on where you
+
+740
+00:10:12,870 --> 00:10:12,880
+>> And do you have an RTA tax on where you
+ 
+
+741
+00:10:12,880 --> 00:10:13,269
+>> And do you have an RTA tax on where you
+live?
+
+742
+00:10:13,269 --> 00:10:13,279
+live?
+ 
+
+743
+00:10:13,279 --> 00:10:14,710
+live?
+>> Oh, I have no idea. I mean, I can give
+
+744
+00:10:14,710 --> 00:10:14,720
+>> Oh, I have no idea. I mean, I can give
+ 
+
+745
+00:10:14,720 --> 00:10:17,110
+>> Oh, I have no idea. I mean, I can give
+you my zip code, but that's fine. Exact
+
+746
+00:10:17,110 --> 00:10:17,120
+you my zip code, but that's fine. Exact
+ 
+
+747
+00:10:17,120 --> 00:10:19,509
+you my zip code, but that's fine. Exact
+out the door. But the zip code,
+
+748
+00:10:19,509 --> 00:10:19,519
+out the door. But the zip code,
+ 
+
+749
+00:10:19,519 --> 00:10:21,829
+out the door. But the zip code,
+>> we're running those um figures for you
+
+750
+00:10:21,829 --> 00:10:21,839
+>> we're running those um figures for you
+ 
+
+751
+00:10:21,839 --> 00:10:22,470
+>> we're running those um figures for you
+now.
+
+752
+00:10:22,470 --> 00:10:22,480
+now.
+ 
+
+753
+00:10:22,480 --> 00:10:23,030
+now.
+>> Of course.
+
+754
+00:10:23,030 --> 00:10:23,040
+>> Of course.
+ 
+
+755
+00:10:23,040 --> 00:10:24,389
+>> Of course.
+>> Yeah. We want to get you We want to get
+
+756
+00:10:24,389 --> 00:10:24,399
+>> Yeah. We want to get you We want to get
+ 
+
+757
+00:10:24,399 --> 00:10:25,670
+>> Yeah. We want to get you We want to get
+you accurate licensing and everything
+
+758
+00:10:25,670 --> 00:10:25,680
+you accurate licensing and everything
+ 
+
+759
+00:10:25,680 --> 00:10:26,949
+you accurate licensing and everything
+like that for you, man.
+
+760
+00:10:26,949 --> 00:10:26,959
+like that for you, man.
+ 
+
+761
+00:10:26,959 --> 00:10:27,990
+like that for you, man.
+>> Thank you.
+
+762
+00:10:27,990 --> 00:10:28,000
+>> Thank you.
+ 
+
+763
+00:10:28,000 --> 00:10:29,990
+>> Thank you.
+>> Absolutely. Yep. So, it looks like out
+
+764
+00:10:29,990 --> 00:10:30,000
+>> Absolutely. Yep. So, it looks like out
+ 
+
+765
+00:10:30,000 --> 00:10:32,790
+>> Absolutely. Yep. So, it looks like out
+the door price would be $769.90.
+
+766
+00:10:32,790 --> 00:10:32,800
+the door price would be $769.90.
+ 
+
+767
+00:10:32,800 --> 00:10:34,470
+the door price would be $769.90.
+That's tactile licensing, everything
+
+768
+00:10:34,470 --> 00:10:34,480
+That's tactile licensing, everything
+ 
+
+769
+00:10:34,480 --> 00:10:35,269
+That's tactile licensing, everything
+included.
+
+770
+00:10:35,269 --> 00:10:35,279
+included.
+ 
+
+771
+00:10:35,279 --> 00:10:36,389
+included.
+>> Okay. And you said you could send me
+
+772
+00:10:36,389 --> 00:10:36,399
+>> Okay. And you said you could send me
+ 
+
+773
+00:10:36,399 --> 00:10:37,350
+>> Okay. And you said you could send me
+that pencil.
+
+774
+00:10:37,350 --> 00:10:37,360
+that pencil.
+ 
+
+775
+00:10:37,360 --> 00:10:38,870
+that pencil.
+>> Um yeah, we'll we'll go ahead and get
+
+776
+00:10:38,870 --> 00:10:38,880
+>> Um yeah, we'll we'll go ahead and get
+ 
+
+777
+00:10:38,880 --> 00:10:41,030
+>> Um yeah, we'll we'll go ahead and get
+that worked on to for you right now. Is
+
+778
+00:10:41,030 --> 00:10:41,040
+that worked on to for you right now. Is
+ 
+
+779
+00:10:41,040 --> 00:10:43,430
+that worked on to for you right now. Is
+it okay if I can send this? Yeah, I'm
+
+780
+00:10:43,430 --> 00:10:43,440
+it okay if I can send this? Yeah, I'm
+ 
+
+781
+00:10:43,440 --> 00:10:44,949
+it okay if I can send this? Yeah, I'm
+also sending you this invoice too as
+
+782
+00:10:44,949 --> 00:10:44,959
+also sending you this invoice too as
+ 
+
+783
+00:10:44,959 --> 00:10:46,069
+also sending you this invoice too as
+well, just so you can see where the
+
+784
+00:10:46,069 --> 00:10:46,079
+well, just so you can see where the
+ 
+
+785
+00:10:46,079 --> 00:10:46,630
+well, just so you can see where the
+numbers are.
+
+786
+00:10:46,630 --> 00:10:46,640
+numbers are.
+ 
+
+787
+00:10:46,640 --> 00:10:47,750
+numbers are.
+>> And just for transparency, you know,
+
+788
+00:10:47,750 --> 00:10:47,760
+>> And just for transparency, you know,
+ 
+
+789
+00:10:47,760 --> 00:10:49,110
+>> And just for transparency, you know,
+obviously I've been trying to find this.
+
+790
+00:10:49,110 --> 00:10:49,120
+obviously I've been trying to find this.
+ 
+
+791
+00:10:49,120 --> 00:10:51,350
+obviously I've been trying to find this.
+I I I do have one for about six grand
+
+792
+00:10:51,350 --> 00:10:51,360
+I I I do have one for about six grand
+ 
+
+793
+00:10:51,360 --> 00:10:54,230
+I I I do have one for about six grand
+off already on a white one. Um I'm
+
+794
+00:10:54,230 --> 00:10:54,240
+off already on a white one. Um I'm
+ 
+
+795
+00:10:54,240 --> 00:10:56,069
+off already on a white one. Um I'm
+trying to get a little better color. I
+
+796
+00:10:56,069 --> 00:10:56,079
+trying to get a little better color. I
+ 
+
+797
+00:10:56,079 --> 00:10:57,509
+trying to get a little better color. I
+already have a deal for six grand off.
+
+798
+00:10:57,509 --> 00:10:57,519
+already have a deal for six grand off.
+ 
+
+799
+00:10:57,519 --> 00:10:58,710
+already have a deal for six grand off.
+It's just a white one and I'm trying to
+
+800
+00:10:58,710 --> 00:10:58,720
+It's just a white one and I'm trying to
+ 
+
+801
+00:10:58,720 --> 00:10:59,829
+It's just a white one and I'm trying to
+get a different color other than the
+
+802
+00:10:59,829 --> 00:10:59,839
+get a different color other than the
+ 
+
+803
+00:10:59,839 --> 00:11:00,790
+get a different color other than the
+white.
+
+804
+00:11:00,790 --> 00:11:00,800
+white.
+ 
+
+805
+00:11:00,800 --> 00:11:03,110
+white.
+>> So we're we're we're currently $46.99
+
+806
+00:11:03,110 --> 00:11:03,120
+>> So we're we're we're currently $46.99
+ 
+
+807
+00:11:03,120 --> 00:11:06,310
+>> So we're we're we're currently $46.99
+off. So we just need to come up uh what
+
+808
+00:11:06,310 --> 00:11:06,320
+off. So we just need to come up uh what
+ 
+
+809
+00:11:06,320 --> 00:11:07,990
+off. So we just need to come up uh what
+1,200 bucks, 1,400 bucks.
+
+810
+00:11:07,990 --> 00:11:08,000
+1,200 bucks, 1,400 bucks.
+ 
+
+811
+00:11:08,000 --> 00:11:10,150
+1,200 bucks, 1,400 bucks.
+>> I mean, you get to 6K off is where
+
+812
+00:11:10,150 --> 00:11:10,160
+>> I mean, you get to 6K off is where
+ 
+
+813
+00:11:10,160 --> 00:11:11,350
+>> I mean, you get to 6K off is where
+you're trying to be. Yeah, correct.
+
+814
+00:11:11,350 --> 00:11:11,360
+you're trying to be. Yeah, correct.
+ 
+
+815
+00:11:11,360 --> 00:11:14,389
+you're trying to be. Yeah, correct.
+>> All right. We We'll do 60 out plus tax
+
+816
+00:11:14,389 --> 00:11:14,399
+>> All right. We We'll do 60 out plus tax
+ 
+
+817
+00:11:14,399 --> 00:11:14,790
+>> All right. We We'll do 60 out plus tax
+license.
+
+818
+00:11:14,790 --> 00:11:14,800
+license.
+ 
+
+819
+00:11:14,800 --> 00:11:16,389
+license.
+>> Okay, cool. Let's send that a call
+
+820
+00:11:16,389 --> 00:11:16,399
+>> Okay, cool. Let's send that a call
+ 
+
+821
+00:11:16,399 --> 00:11:16,790
+>> Okay, cool. Let's send that a call
+today.
+
+822
+00:11:16,790 --> 00:11:16,800
+today.
+ 
+
+823
+00:11:16,800 --> 00:11:19,350
+today.
+>> All right, I'll get it sent over to you.
+
+824
+00:11:19,350 --> 00:11:19,360
+>> All right, I'll get it sent over to you.
+ 
+
+825
+00:11:19,360 --> 00:11:20,790
+>> All right, I'll get it sent over to you.
+>> Okay, sounds good. I appreciate it.
+
+826
+00:11:20,790 --> 00:11:20,800
+>> Okay, sounds good. I appreciate it.
+ 
+
+827
+00:11:20,800 --> 00:11:23,750
+>> Okay, sounds good. I appreciate it.
+>> All right, thank you.
+
+828
+00:11:23,750 --> 00:11:23,760
+>> All right, thank you.
+ 
+
+829
+00:11:23,760 --> 00:11:25,190
+>> All right, thank you.
+>> This is the dealership that we thought
+
+830
+00:11:25,190 --> 00:11:25,200
+>> This is the dealership that we thought
+ 
+
+831
+00:11:25,200 --> 00:11:27,590
+>> This is the dealership that we thought
+knew who I was. What's What's the over
+
+832
+00:11:27,590 --> 00:11:27,600
+knew who I was. What's What's the over
+ 
+
+833
+00:11:27,600 --> 00:11:29,829
+knew who I was. What's What's the over
+under they know cuz he folded so
+
+834
+00:11:29,829 --> 00:11:29,839
+under they know cuz he folded so
+ 
+
+835
+00:11:29,839 --> 00:11:33,430
+under they know cuz he folded so
+quickly.
+
+836
+00:11:33,430 --> 00:11:33,440
+
+ 
+
+837
+00:11:33,440 --> 00:11:34,870
+
+>> This is Tommy.
+
+838
+00:11:34,870 --> 00:11:34,880
+>> This is Tommy.
+ 
+
+839
+00:11:34,880 --> 00:11:37,430
+>> This is Tommy.
+>> Hello, Tommy. This is Christian with
+
+840
+00:11:37,430 --> 00:11:37,440
+>> Hello, Tommy. This is Christian with
+ 
+
+841
+00:11:37,440 --> 00:11:38,550
+>> Hello, Tommy. This is Christian with
+>> Hey, how's it going?
+
+842
+00:11:38,550 --> 00:11:38,560
+>> Hey, how's it going?
+ 
+
+843
+00:11:38,560 --> 00:11:41,269
+>> Hey, how's it going?
+>> Good. So, I was talking to my manager
+
+844
+00:11:41,269 --> 00:11:41,279
+>> Good. So, I was talking to my manager
+ 
+
+845
+00:11:41,279 --> 00:11:44,069
+>> Good. So, I was talking to my manager
+said that you're interested in our F-150
+
+846
+00:11:44,069 --> 00:11:44,079
+said that you're interested in our F-150
+ 
+
+847
+00:11:44,079 --> 00:11:46,069
+said that you're interested in our F-150
+Lariat that we have coming in.
+
+848
+00:11:46,069 --> 00:11:46,079
+Lariat that we have coming in.
+ 
+
+849
+00:11:46,079 --> 00:11:47,190
+Lariat that we have coming in.
+>> Yes, correct.
+
+850
+00:11:47,190 --> 00:11:47,200
+>> Yes, correct.
+ 
+
+851
+00:11:47,200 --> 00:11:49,110
+>> Yes, correct.
+>> Awesome. Do you have any questions about
+
+852
+00:11:49,110 --> 00:11:49,120
+>> Awesome. Do you have any questions about
+ 
+
+853
+00:11:49,120 --> 00:11:49,430
+>> Awesome. Do you have any questions about
+it?
+
+854
+00:11:49,430 --> 00:11:49,440
+it?
+ 
+
+855
+00:11:49,440 --> 00:11:50,870
+it?
+>> Well, I already driven one. Already know
+
+856
+00:11:50,870 --> 00:11:50,880
+>> Well, I already driven one. Already know
+ 
+
+857
+00:11:50,880 --> 00:11:52,470
+>> Well, I already driven one. Already know
+I want it. Really? Just trying to get
+
+858
+00:11:52,470 --> 00:11:52,480
+I want it. Really? Just trying to get
+ 
+
+859
+00:11:52,480 --> 00:11:54,550
+I want it. Really? Just trying to get
+the best price and I'm hoping we can get
+
+860
+00:11:54,550 --> 00:11:54,560
+the best price and I'm hoping we can get
+ 
+
+861
+00:11:54,560 --> 00:11:55,670
+the best price and I'm hoping we can get
+that done with you.
+
+862
+00:11:55,670 --> 00:11:55,680
+that done with you.
+ 
+
+863
+00:11:55,680 --> 00:11:59,670
+that done with you.
+>> Okay, perfect. Let's see here. Where did
+
+864
+00:11:59,670 --> 00:11:59,680
+>> Okay, perfect. Let's see here. Where did
+ 
+
+865
+00:11:59,680 --> 00:12:01,829
+>> Okay, perfect. Let's see here. Where did
+you see our truck by any chance?
+
+866
+00:12:01,829 --> 00:12:01,839
+you see our truck by any chance?
+ 
+
+867
+00:12:01,839 --> 00:12:03,750
+you see our truck by any chance?
+>> My CR truck? I'm sorry. What?
+
+868
+00:12:03,750 --> 00:12:03,760
+>> My CR truck? I'm sorry. What?
+ 
+
+869
+00:12:03,760 --> 00:12:05,110
+>> My CR truck? I'm sorry. What?
+>> Where did you see our truck? Did you see
+
+870
+00:12:05,110 --> 00:12:05,120
+>> Where did you see our truck? Did you see
+ 
+
+871
+00:12:05,120 --> 00:12:07,350
+>> Where did you see our truck? Did you see
+like on Autotrader on, I don't know,
+
+872
+00:12:07,350 --> 00:12:07,360
+like on Autotrader on, I don't know,
+ 
+
+873
+00:12:07,360 --> 00:12:09,750
+like on Autotrader on, I don't know,
+Ford? Curtis.
+
+874
+00:12:09,750 --> 00:12:09,760
+Ford? Curtis.
+ 
+
+875
+00:12:09,760 --> 00:12:11,910
+Ford? Curtis.
+>> Oh, okay. Through our website. Okay. Not
+
+876
+00:12:11,910 --> 00:12:11,920
+>> Oh, okay. Through our website. Okay. Not
+ 
+
+877
+00:12:11,920 --> 00:12:13,590
+>> Oh, okay. Through our website. Okay. Not
+sure if it like you came through a
+
+878
+00:12:13,590 --> 00:12:13,600
+sure if it like you came through a
+ 
+
+879
+00:12:13,600 --> 00:12:16,150
+sure if it like you came through a
+different spot. So, we have it right now
+
+880
+00:12:16,150 --> 00:12:16,160
+different spot. So, we have it right now
+ 
+
+881
+00:12:16,160 --> 00:12:18,470
+different spot. So, we have it right now
+advertised for $69944.
+
+882
+00:12:18,470 --> 00:12:18,480
+advertised for $69944.
+ 
+
+883
+00:12:18,480 --> 00:12:20,389
+advertised for $69944.
+I'm going to see if there's any more we
+
+884
+00:12:20,389 --> 00:12:20,399
+I'm going to see if there's any more we
+ 
+
+885
+00:12:20,399 --> 00:12:21,509
+I'm going to see if there's any more we
+can do for you.
+
+886
+00:12:21,509 --> 00:12:21,519
+can do for you.
+ 
+
+887
+00:12:21,519 --> 00:12:23,190
+can do for you.
+>> Yeah. Yeah. I have a I have a deal off
+
+888
+00:12:23,190 --> 00:12:23,200
+>> Yeah. Yeah. I have a I have a deal off
+ 
+
+889
+00:12:23,200 --> 00:12:25,030
+>> Yeah. Yeah. I have a I have a deal off
+for 6K already. I was hoping try to get
+
+890
+00:12:25,030 --> 00:12:25,040
+for 6K already. I was hoping try to get
+ 
+
+891
+00:12:25,040 --> 00:12:26,710
+for 6K already. I was hoping try to get
+it to close to 10% is what I was trying
+
+892
+00:12:26,710 --> 00:12:26,720
+it to close to 10% is what I was trying
+ 
+
+893
+00:12:26,720 --> 00:12:27,509
+it to close to 10% is what I was trying
+to be at.
+
+894
+00:12:27,509 --> 00:12:27,519
+to be at.
+ 
+
+895
+00:12:27,519 --> 00:12:29,350
+to be at.
+>> You want to be at 60 grand?
+
+896
+00:12:29,350 --> 00:12:29,360
+>> You want to be at 60 grand?
+ 
+
+897
+00:12:29,360 --> 00:12:31,910
+>> You want to be at 60 grand?
+>> No. So, I already have six grand off.
+
+898
+00:12:31,910 --> 00:12:31,920
+>> No. So, I already have six grand off.
+ 
+
+899
+00:12:31,920 --> 00:12:33,190
+>> No. So, I already have six grand off.
+I'm trying I told the last deal I'm
+
+900
+00:12:33,190 --> 00:12:33,200
+I'm trying I told the last deal I'm
+ 
+
+901
+00:12:33,200 --> 00:12:34,629
+I'm trying I told the last deal I'm
+trying to be at 10% off is where I'm
+
+902
+00:12:34,629 --> 00:12:34,639
+trying to be at 10% off is where I'm
+ 
+
+903
+00:12:34,639 --> 00:12:35,190
+trying to be at 10% off is where I'm
+trying to be.
+
+904
+00:12:35,190 --> 00:12:35,200
+trying to be.
+ 
+
+905
+00:12:35,200 --> 00:12:37,509
+trying to be.
+>> Okay. Okay. Okay. So, we need to be at
+
+906
+00:12:37,509 --> 00:12:37,519
+>> Okay. Okay. Okay. So, we need to be at
+ 
+
+907
+00:12:37,519 --> 00:12:40,069
+>> Okay. Okay. Okay. So, we need to be at
+672.
+
+908
+00:12:40,069 --> 00:12:40,079
+672.
+ 
+
+909
+00:12:40,079 --> 00:12:41,030
+672.
+>> Yeah.
+
+910
+00:12:41,030 --> 00:12:41,040
+>> Yeah.
+ 
+
+911
+00:12:41,040 --> 00:12:43,110
+>> Yeah.
+>> Okay. What's your zip code?
+
+912
+00:12:43,110 --> 00:12:43,120
+>> Okay. What's your zip code?
+ 
+
+913
+00:12:43,120 --> 00:12:47,110
+>> Okay. What's your zip code?
+>> My zip code is
+
+914
+00:12:47,110 --> 00:12:47,120
+
+ 
+
+915
+00:12:47,120 --> 00:12:48,949
+
+>> Okay. And then I think my manager had
+
+916
+00:12:48,949 --> 00:12:48,959
+>> Okay. And then I think my manager had
+ 
+
+917
+00:12:48,959 --> 00:12:50,949
+>> Okay. And then I think my manager had
+mentioned you're open to either
+
+918
+00:12:50,949 --> 00:12:50,959
+mentioned you're open to either
+ 
+
+919
+00:12:50,959 --> 00:12:53,269
+mentioned you're open to either
+financing or paying cash. There is some
+
+920
+00:12:53,269 --> 00:12:53,279
+financing or paying cash. There is some
+ 
+
+921
+00:12:53,279 --> 00:12:55,430
+financing or paying cash. There is some
+decently nice interest rates on those
+
+922
+00:12:55,430 --> 00:12:55,440
+decently nice interest rates on those
+ 
+
+923
+00:12:55,440 --> 00:12:58,310
+decently nice interest rates on those
+right now. Um but that won't affect the
+
+924
+00:12:58,310 --> 00:12:58,320
+right now. Um but that won't affect the
+ 
+
+925
+00:12:58,320 --> 00:12:59,590
+right now. Um but that won't affect the
+price or anything. I'm just letting you
+
+926
+00:12:59,590 --> 00:12:59,600
+price or anything. I'm just letting you
+ 
+
+927
+00:12:59,600 --> 00:12:59,990
+price or anything. I'm just letting you
+know.
+
+928
+00:12:59,990 --> 00:13:00,000
+know.
+ 
+
+929
+00:13:00,000 --> 00:13:01,590
+know.
+>> No, it's good. Okay. I'm more than want
+
+930
+00:13:01,590 --> 00:13:01,600
+>> No, it's good. Okay. I'm more than want
+ 
+
+931
+00:13:01,600 --> 00:13:02,710
+>> No, it's good. Okay. I'm more than want
+to compare contrasting
+
+932
+00:13:02,710 --> 00:13:02,720
+to compare contrasting
+ 
+
+933
+00:13:02,720 --> 00:13:05,190
+to compare contrasting
+>> for sure. All right.
+
+934
+00:13:05,190 --> 00:13:05,200
+>> for sure. All right.
+ 
+
+935
+00:13:05,200 --> 00:13:07,829
+>> for sure. All right.
+Okay. Okay. So, there's no rebates on
+
+936
+00:13:07,829 --> 00:13:07,839
+Okay. Okay. So, there's no rebates on
+ 
+
+937
+00:13:07,839 --> 00:13:10,790
+Okay. Okay. So, there's no rebates on
+those. Just a second. So, Tommy, let me
+
+938
+00:13:10,790 --> 00:13:10,800
+those. Just a second. So, Tommy, let me
+ 
+
+939
+00:13:10,800 --> 00:13:12,949
+those. Just a second. So, Tommy, let me
+give you a call back cuz I said we
+
+940
+00:13:12,949 --> 00:13:12,959
+give you a call back cuz I said we
+ 
+
+941
+00:13:12,959 --> 00:13:14,870
+give you a call back cuz I said we
+already at 4,800 bucks off. So, mean
+
+942
+00:13:14,870 --> 00:13:14,880
+already at 4,800 bucks off. So, mean
+ 
+
+943
+00:13:14,880 --> 00:13:16,550
+already at 4,800 bucks off. So, mean
+that means since there is no rebates
+
+944
+00:13:16,550 --> 00:13:16,560
+that means since there is no rebates
+ 
+
+945
+00:13:16,560 --> 00:13:18,550
+that means since there is no rebates
+from Ford that are going to help us, I
+
+946
+00:13:18,550 --> 00:13:18,560
+from Ford that are going to help us, I
+ 
+
+947
+00:13:18,560 --> 00:13:21,110
+from Ford that are going to help us, I
+need to get be able to get that extra
+
+948
+00:13:21,110 --> 00:13:21,120
+need to get be able to get that extra
+ 
+
+949
+00:13:21,120 --> 00:13:24,470
+need to get be able to get that extra
+2500 from my boss. So, let me see if I
+
+950
+00:13:24,470 --> 00:13:24,480
+2500 from my boss. So, let me see if I
+ 
+
+951
+00:13:24,480 --> 00:13:26,629
+2500 from my boss. So, let me see if I
+can get you the extra 2500 bucks for
+
+952
+00:13:26,629 --> 00:13:26,639
+can get you the extra 2500 bucks for
+ 
+
+953
+00:13:26,639 --> 00:13:27,509
+can get you the extra 2500 bucks for
+you. Okay.
+
+954
+00:13:27,509 --> 00:13:27,519
+you. Okay.
+ 
+
+955
+00:13:27,519 --> 00:13:28,470
+you. Okay.
+>> Okay, sounds great.
+
+956
+00:13:28,470 --> 00:13:28,480
+>> Okay, sounds great.
+ 
+
+957
+00:13:28,480 --> 00:13:30,629
+>> Okay, sounds great.
+>> Awesome. Thank you, Tommy. I'll give you
+
+958
+00:13:30,629 --> 00:13:30,639
+>> Awesome. Thank you, Tommy. I'll give you
+ 
+
+959
+00:13:30,639 --> 00:13:31,430
+>> Awesome. Thank you, Tommy. I'll give you
+call right back.
+
+960
+00:13:31,430 --> 00:13:31,440
+call right back.
+ 
+
+961
+00:13:31,440 --> 00:13:32,790
+call right back.
+>> Okay, sounds good. I'll be here.
+
+962
+00:13:32,790 --> 00:13:32,800
+>> Okay, sounds good. I'll be here.
+ 
+
+963
+00:13:32,800 --> 00:13:33,110
+>> Okay, sounds good. I'll be here.
+>> Bye.
+
+964
+00:13:33,110 --> 00:13:33,120
+>> Bye.
+ 
+
+965
+00:13:33,120 --> 00:13:34,389
+>> Bye.
+>> Bye.
+
+966
+00:13:34,389 --> 00:13:34,399
+>> Bye.
+ 
+
+967
+00:13:34,399 --> 00:13:36,470
+>> Bye.
+Um, one second. This is Tommy.
+
+968
+00:13:36,470 --> 00:13:36,480
+Um, one second. This is Tommy.
+ 
+
+969
+00:13:36,480 --> 00:13:38,150
+Um, one second. This is Tommy.
+>> Hey, Tommy. It's Christian with
+
+970
+00:13:38,150 --> 00:13:38,160
+>> Hey, Tommy. It's Christian with
+ 
+
+971
+00:13:38,160 --> 00:13:39,110
+>> Hey, Tommy. It's Christian with
+>> Hey, how's it going?
+
+972
+00:13:39,110 --> 00:13:39,120
+>> Hey, how's it going?
+ 
+
+973
+00:13:39,120 --> 00:13:42,389
+>> Hey, how's it going?
+>> Good. All right. So, I talked to the big
+
+974
+00:13:42,389 --> 00:13:42,399
+>> Good. All right. So, I talked to the big
+ 
+
+975
+00:13:42,399 --> 00:13:44,389
+>> Good. All right. So, I talked to the big
+boss, too, cuz the the other guy who
+
+976
+00:13:44,389 --> 00:13:44,399
+boss, too, cuz the the other guy who
+ 
+
+977
+00:13:44,399 --> 00:13:46,150
+boss, too, cuz the the other guy who
+answered the phone, he was not
+
+978
+00:13:46,150 --> 00:13:46,160
+answered the phone, he was not
+ 
+
+979
+00:13:46,160 --> 00:13:47,430
+answered the phone, he was not
+available, so I had to go straight to
+
+980
+00:13:47,430 --> 00:13:47,440
+available, so I had to go straight to
+ 
+
+981
+00:13:47,440 --> 00:13:48,949
+available, so I had to go straight to
+the general manager on this one.
+
+982
+00:13:48,949 --> 00:13:48,959
+the general manager on this one.
+ 
+
+983
+00:13:48,959 --> 00:13:49,509
+the general manager on this one.
+>> Okay.
+
+984
+00:13:49,509 --> 00:13:49,519
+>> Okay.
+ 
+
+985
+00:13:49,519 --> 00:13:52,790
+>> Okay.
+>> And unfortunately, I can't do 68 672,
+
+986
+00:13:52,790 --> 00:13:52,800
+>> And unfortunately, I can't do 68 672,
+ 
+
+987
+00:13:52,800 --> 00:13:55,269
+>> And unfortunately, I can't do 68 672,
+but I can do 68,500.
+
+988
+00:13:55,269 --> 00:13:55,279
+but I can do 68,500.
+ 
+
+989
+00:13:55,279 --> 00:13:56,710
+but I can do 68,500.
+That would be my best price on that
+
+990
+00:13:56,710 --> 00:13:56,720
+That would be my best price on that
+ 
+
+991
+00:13:56,720 --> 00:13:57,110
+That would be my best price on that
+unit.
+
+992
+00:13:57,110 --> 00:13:57,120
+unit.
+ 
+
+993
+00:13:57,120 --> 00:13:58,949
+unit.
+>> 685. So, how much of a discount is that
+
+994
+00:13:58,949 --> 00:13:58,959
+>> 685. So, how much of a discount is that
+ 
+
+995
+00:13:58,959 --> 00:14:03,829
+>> 685. So, how much of a discount is that
+>> from MSRP? That is exactly $6,170.
+
+996
+00:14:03,829 --> 00:14:03,839
+>> from MSRP? That is exactly $6,170.
+ 
+
+997
+00:14:03,839 --> 00:14:06,790
+>> from MSRP? That is exactly $6,170.
+>> See, I have one at 67980 plus tax title
+
+998
+00:14:06,790 --> 00:14:06,800
+>> See, I have one at 67980 plus tax title
+ 
+
+999
+00:14:06,800 --> 00:14:07,990
+>> See, I have one at 67980 plus tax title
+license is where I'm at right now. So, I
+
+1000
+00:14:07,990 --> 00:14:08,000
+license is where I'm at right now. So, I
+ 
+
+1001
+00:14:08,000 --> 00:14:09,750
+license is where I'm at right now. So, I
+have one $500 lower. That's why I was
+
+1002
+00:14:09,750 --> 00:14:09,760
+have one $500 lower. That's why I was
+ 
+
+1003
+00:14:09,760 --> 00:14:11,269
+have one $500 lower. That's why I was
+trying to get to that 10%.
+
+1004
+00:14:11,269 --> 00:14:11,279
+trying to get to that 10%.
+ 
+
+1005
+00:14:11,279 --> 00:14:12,310
+trying to get to that 10%.
+>> Okay.
+
+1006
+00:14:12,310 --> 00:14:12,320
+>> Okay.
+ 
+
+1007
+00:14:12,320 --> 00:14:13,750
+>> Okay.
+>> G Willickers. I like you, too. You're a
+
+1008
+00:14:13,750 --> 00:14:13,760
+>> G Willickers. I like you, too. You're a
+ 
+
+1009
+00:14:13,760 --> 00:14:14,389
+>> G Willickers. I like you, too. You're a
+good guy,
+
+1010
+00:14:14,389 --> 00:14:14,399
+good guy,
+ 
+
+1011
+00:14:14,399 --> 00:14:16,389
+good guy,
+>> buddy. I know I am, but it's just that
+
+1012
+00:14:16,389 --> 00:14:16,399
+>> buddy. I know I am, but it's just that
+ 
+
+1013
+00:14:16,399 --> 00:14:20,629
+>> buddy. I know I am, but it's just that
+it's hard. Um, so 500 bucks and you'll
+
+1014
+00:14:20,629 --> 00:14:20,639
+it's hard. Um, so 500 bucks and you'll
+ 
+
+1015
+00:14:20,639 --> 00:14:22,310
+it's hard. Um, so 500 bucks and you'll
+buy it is what is what I think I heard
+
+1016
+00:14:22,310 --> 00:14:22,320
+buy it is what is what I think I heard
+ 
+
+1017
+00:14:22,320 --> 00:14:23,030
+buy it is what is what I think I heard
+you say, Tom.
+
+1018
+00:14:23,030 --> 00:14:23,040
+you say, Tom.
+ 
+
+1019
+00:14:23,040 --> 00:14:24,550
+you say, Tom.
+>> Well, I'm already at I'm already at
+
+1020
+00:14:24,550 --> 00:14:24,560
+>> Well, I'm already at I'm already at
+ 
+
+1021
+00:14:24,560 --> 00:14:26,550
+>> Well, I'm already at I'm already at
+67980 with the other dealership. So,
+
+1022
+00:14:26,550 --> 00:14:26,560
+67980 with the other dealership. So,
+ 
+
+1023
+00:14:26,560 --> 00:14:27,910
+67980 with the other dealership. So,
+that's that's where I'm at with them.
+
+1024
+00:14:27,910 --> 00:14:27,920
+that's that's where I'm at with them.
+ 
+
+1025
+00:14:27,920 --> 00:14:29,110
+that's that's where I'm at with them.
+That's where they came. I didn't even
+
+1026
+00:14:29,110 --> 00:14:29,120
+That's where they came. I didn't even
+ 
+
+1027
+00:14:29,120 --> 00:14:30,150
+That's where they came. I didn't even
+talk about your numbers. I haven't even
+
+1028
+00:14:30,150 --> 00:14:30,160
+talk about your numbers. I haven't even
+ 
+
+1029
+00:14:30,160 --> 00:14:31,750
+talk about your numbers. I haven't even
+seen they they that's where they put it
+
+1030
+00:14:31,750 --> 00:14:31,760
+seen they they that's where they put it
+ 
+
+1031
+00:14:31,760 --> 00:14:33,990
+seen they they that's where they put it
+at. So I obviously I told them 10% as
+
+1032
+00:14:33,990 --> 00:14:34,000
+at. So I obviously I told them 10% as
+ 
+
+1033
+00:14:34,000 --> 00:14:35,590
+at. So I obviously I told them 10% as
+well and this is where they came at.
+
+1034
+00:14:35,590 --> 00:14:35,600
+well and this is where they came at.
+ 
+
+1035
+00:14:35,600 --> 00:14:35,990
+well and this is where they came at.
+>> Okay.
+
+1036
+00:14:35,990 --> 00:14:36,000
+>> Okay.
+ 
+
+1037
+00:14:36,000 --> 00:14:38,470
+>> Okay.
+>> So they're like again I'll ask again
+
+1038
+00:14:38,470 --> 00:14:38,480
+>> So they're like again I'll ask again
+ 
+
+1039
+00:14:38,480 --> 00:14:39,590
+>> So they're like again I'll ask again
+talking.
+
+1040
+00:14:39,590 --> 00:14:39,600
+talking.
+ 
+
+1041
+00:14:39,600 --> 00:14:40,870
+talking.
+>> I'm here. I'm not doing anything for
+
+1042
+00:14:40,870 --> 00:14:40,880
+>> I'm here. I'm not doing anything for
+ 
+
+1043
+00:14:40,880 --> 00:14:42,310
+>> I'm here. I'm not doing anything for
+another about hour or two. So you got a
+
+1044
+00:14:42,310 --> 00:14:42,320
+another about hour or two. So you got a
+ 
+
+1045
+00:14:42,320 --> 00:14:43,430
+another about hour or two. So you got a
+little bit of breathing room, but I'd
+
+1046
+00:14:43,430 --> 00:14:43,440
+little bit of breathing room, but I'd
+ 
+
+1047
+00:14:43,440 --> 00:14:45,350
+little bit of breathing room, but I'd
+like to if I can make a decision and get
+
+1048
+00:14:45,350 --> 00:14:45,360
+like to if I can make a decision and get
+ 
+
+1049
+00:14:45,360 --> 00:14:47,189
+like to if I can make a decision and get
+this all wrapping and rolling, I'm good.
+
+1050
+00:14:47,189 --> 00:14:47,199
+this all wrapping and rolling, I'm good.
+ 
+
+1051
+00:14:47,199 --> 00:14:50,790
+this all wrapping and rolling, I'm good.
+>> Okay. 500 $500 and you won't even call
+
+1052
+00:14:50,790 --> 00:14:50,800
+>> Okay. 500 $500 and you won't even call
+ 
+
+1053
+00:14:50,800 --> 00:14:53,189
+>> Okay. 500 $500 and you won't even call
+that other dealership. Or is it 750 and
+
+1054
+00:14:53,189 --> 00:14:53,199
+that other dealership. Or is it 750 and
+ 
+
+1055
+00:14:53,199 --> 00:14:54,310
+that other dealership. Or is it 750 and
+you won't even call the other?
+
+1056
+00:14:54,310 --> 00:14:54,320
+you won't even call the other?
+ 
+
+1057
+00:14:54,320 --> 00:14:56,230
+you won't even call the other?
+>> I If you give me 10% off, I'll I'll
+
+1058
+00:14:56,230 --> 00:14:56,240
+>> I If you give me 10% off, I'll I'll
+ 
+
+1059
+00:14:56,240 --> 00:14:57,670
+>> I If you give me 10% off, I'll I'll
+ignore I'll put the dealership on red.
+
+1060
+00:14:57,670 --> 00:14:57,680
+ignore I'll put the dealership on red.
+ 
+
+1061
+00:14:57,680 --> 00:14:58,870
+ignore I'll put the dealership on red.
+I'll ignore them. Hang up. Call it a
+
+1062
+00:14:58,870 --> 00:14:58,880
+I'll ignore them. Hang up. Call it a
+ 
+
+1063
+00:14:58,880 --> 00:14:59,189
+I'll ignore them. Hang up. Call it a
+day.
+
+1064
+00:14:59,189 --> 00:14:59,199
+day.
+ 
+
+1065
+00:14:59,199 --> 00:15:00,389
+day.
+>> Oh shoot, man.
+
+1066
+00:15:00,389 --> 00:15:00,399
+>> Oh shoot, man.
+ 
+
+1067
+00:15:00,399 --> 00:15:01,910
+>> Oh shoot, man.
+>> That's That's not I don't ever call this
+
+1068
+00:15:01,910 --> 00:15:01,920
+>> That's That's not I don't ever call this
+ 
+
+1069
+00:15:01,920 --> 00:15:03,350
+>> That's That's not I don't ever call this
+dealership back and they're wondering
+
+1070
+00:15:03,350 --> 00:15:03,360
+dealership back and they're wondering
+ 
+
+1071
+00:15:03,360 --> 00:15:05,110
+dealership back and they're wondering
+what happened. They got ghosted is what
+
+1072
+00:15:05,110 --> 00:15:05,120
+what happened. They got ghosted is what
+ 
+
+1073
+00:15:05,120 --> 00:15:05,990
+what happened. They got ghosted is what
+happens.
+
+1074
+00:15:05,990 --> 00:15:06,000
+happens.
+ 
+
+1075
+00:15:06,000 --> 00:15:06,629
+happens.
+>> Hey,
+
+1076
+00:15:06,629 --> 00:15:06,639
+>> Hey,
+ 
+
+1077
+00:15:06,639 --> 00:15:08,069
+>> Hey,
+>> you want me to ghost somebody? That's
+
+1078
+00:15:08,069 --> 00:15:08,079
+>> you want me to ghost somebody? That's
+ 
+
+1079
+00:15:08,079 --> 00:15:08,949
+>> you want me to ghost somebody? That's
+for real, dude. Have you ever been
+
+1080
+00:15:08,949 --> 00:15:08,959
+for real, dude. Have you ever been
+ 
+
+1081
+00:15:08,959 --> 00:15:10,470
+for real, dude. Have you ever been
+ghosted in real life? Dude, that hurts,
+
+1082
+00:15:10,470 --> 00:15:10,480
+ghosted in real life? Dude, that hurts,
+ 
+
+1083
+00:15:10,480 --> 00:15:11,509
+ghosted in real life? Dude, that hurts,
+man. When a girl goes,
+
+1084
+00:15:11,509 --> 00:15:11,519
+man. When a girl goes,
+ 
+
+1085
+00:15:11,519 --> 00:15:13,189
+man. When a girl goes,
+>> you know how many girls have ghosted me
+
+1086
+00:15:13,189 --> 00:15:13,199
+>> you know how many girls have ghosted me
+ 
+
+1087
+00:15:13,199 --> 00:15:14,870
+>> you know how many girls have ghosted me
+in my lifetime? A lot.
+
+1088
+00:15:14,870 --> 00:15:14,880
+in my lifetime? A lot.
+ 
+
+1089
+00:15:14,880 --> 00:15:16,550
+in my lifetime? A lot.
+>> Dude, that's it's it's happened.
+
+1090
+00:15:16,550 --> 00:15:16,560
+>> Dude, that's it's it's happened.
+ 
+
+1091
+00:15:16,560 --> 00:15:18,069
+>> Dude, that's it's it's happened.
+Luckily, I'm engaged now and I have a
+
+1092
+00:15:18,069 --> 00:15:18,079
+Luckily, I'm engaged now and I have a
+ 
+
+1093
+00:15:18,079 --> 00:15:19,590
+Luckily, I'm engaged now and I have a
+woman that uh does not ghost me. It's
+
+1094
+00:15:19,590 --> 00:15:19,600
+woman that uh does not ghost me. It's
+ 
+
+1095
+00:15:19,600 --> 00:15:21,350
+woman that uh does not ghost me. It's
+great. But I I do not I do not miss
+
+1096
+00:15:21,350 --> 00:15:21,360
+great. But I I do not I do not miss
+ 
+
+1097
+00:15:21,360 --> 00:15:22,150
+great. But I I do not I do not miss
+those days.
+
+1098
+00:15:22,150 --> 00:15:22,160
+those days.
+ 
+
+1099
+00:15:22,160 --> 00:15:24,389
+those days.
+>> See, me, too. I'm engaged now. Happily
+
+1100
+00:15:24,389 --> 00:15:24,399
+>> See, me, too. I'm engaged now. Happily
+ 
+
+1101
+00:15:24,399 --> 00:15:26,069
+>> See, me, too. I'm engaged now. Happily
+going to be married next year, you know.
+
+1102
+00:15:26,069 --> 00:15:26,079
+going to be married next year, you know.
+ 
+
+1103
+00:15:26,079 --> 00:15:28,150
+going to be married next year, you know.
+And even she ignores my calls sometimes,
+
+1104
+00:15:28,150 --> 00:15:28,160
+And even she ignores my calls sometimes,
+ 
+
+1105
+00:15:28,160 --> 00:15:29,509
+And even she ignores my calls sometimes,
+you know.
+
+1106
+00:15:29,509 --> 00:15:29,519
+you know.
+ 
+
+1107
+00:15:29,519 --> 00:15:31,269
+you know.
+>> She's just trying. She's good. I get it,
+
+1108
+00:15:31,269 --> 00:15:31,279
+>> She's just trying. She's good. I get it,
+ 
+
+1109
+00:15:31,279 --> 00:15:32,310
+>> She's just trying. She's good. I get it,
+man. That's good.
+
+1110
+00:15:32,310 --> 00:15:32,320
+man. That's good.
+ 
+
+1111
+00:15:32,320 --> 00:15:36,470
+man. That's good.
+>> So, okay. So, let me give it one more. I
+
+1112
+00:15:36,470 --> 00:15:36,480
+>> So, okay. So, let me give it one more. I
+ 
+
+1113
+00:15:36,480 --> 00:15:38,230
+>> So, okay. So, let me give it one more. I
+think I'm able to get you like 500,
+
+1114
+00:15:38,230 --> 00:15:38,240
+think I'm able to get you like 500,
+ 
+
+1115
+00:15:38,240 --> 00:15:41,189
+think I'm able to get you like 500,
+maybe 750 more. I don't know if I can
+
+1116
+00:15:41,189 --> 00:15:41,199
+maybe 750 more. I don't know if I can
+ 
+
+1117
+00:15:41,199 --> 00:15:43,670
+maybe 750 more. I don't know if I can
+get you another 1300, but I'm going to
+
+1118
+00:15:43,670 --> 00:15:43,680
+get you another 1300, but I'm going to
+ 
+
+1119
+00:15:43,680 --> 00:15:46,629
+get you another 1300, but I'm going to
+see if I can how close I can get to that
+
+1120
+00:15:46,629 --> 00:15:46,639
+see if I can how close I can get to that
+ 
+
+1121
+00:15:46,639 --> 00:15:48,150
+see if I can how close I can get to that
+$1,300.
+
+1122
+00:15:48,150 --> 00:15:48,160
+$1,300.
+ 
+
+1123
+00:15:48,160 --> 00:15:49,509
+$1,300.
+>> Okay, let's see what you can do. I
+
+1124
+00:15:49,509 --> 00:15:49,519
+>> Okay, let's see what you can do. I
+ 
+
+1125
+00:15:49,519 --> 00:15:50,629
+>> Okay, let's see what you can do. I
+appreciate you trying, man. I appreciate
+
+1126
+00:15:50,629 --> 00:15:50,639
+appreciate you trying, man. I appreciate
+ 
+
+1127
+00:15:50,639 --> 00:15:51,990
+appreciate you trying, man. I appreciate
+$300 away, man.
+
+1128
+00:15:51,990 --> 00:15:52,000
+$300 away, man.
+ 
+
+1129
+00:15:52,000 --> 00:15:52,870
+$300 away, man.
+>> I know. I get it.
+
+1130
+00:15:52,870 --> 00:15:52,880
+>> I know. I get it.
+ 
+
+1131
+00:15:52,880 --> 00:15:53,829
+>> I know. I get it.
+>> $300.
+
+1132
+00:15:53,829 --> 00:15:53,839
+>> $300.
+ 
+
+1133
+00:15:53,839 --> 00:15:56,069
+>> $300.
+>> I get it. Yeah. There's 67.980 plus tax
+
+1134
+00:15:56,069 --> 00:15:56,079
+>> I get it. Yeah. There's 67.980 plus tax
+ 
+
+1135
+00:15:56,079 --> 00:15:57,829
+>> I get it. Yeah. There's 67.980 plus tax
+title license though. So
+
+1136
+00:15:57,829 --> 00:15:57,839
+title license though. So
+ 
+
+1137
+00:15:57,839 --> 00:15:59,110
+title license though. So
+>> I don't know about the taxes and all
+
+1138
+00:15:59,110 --> 00:15:59,120
+>> I don't know about the taxes and all
+ 
+
+1139
+00:15:59,120 --> 00:16:00,230
+>> I don't know about the taxes and all
+that. I can tell you if I can sell you
+
+1140
+00:16:00,230 --> 00:16:00,240
+that. I can tell you if I can sell you
+ 
+
+1141
+00:16:00,240 --> 00:16:03,269
+that. I can tell you if I can sell you
+the truck for 68 even, you know, then
+
+1142
+00:16:03,269 --> 00:16:03,279
+the truck for 68 even, you know, then
+ 
+
+1143
+00:16:03,279 --> 00:16:05,189
+the truck for 68 even, you know, then
+tax licensing, you know, that's on Uncle
+
+1144
+00:16:05,189 --> 00:16:05,199
+tax licensing, you know, that's on Uncle
+ 
+
+1145
+00:16:05,199 --> 00:16:05,509
+tax licensing, you know, that's on Uncle
+Sam.
+
+1146
+00:16:05,509 --> 00:16:05,519
+Sam.
+ 
+
+1147
+00:16:05,519 --> 00:16:07,430
+Sam.
+>> That's $20 more expensive than this one.
+
+1148
+00:16:07,430 --> 00:16:07,440
+>> That's $20 more expensive than this one.
+ 
+
+1149
+00:16:07,440 --> 00:16:11,670
+>> That's $20 more expensive than this one.
+>> Yeah. So Okay. $520. Okay.
+
+1150
+00:16:11,670 --> 00:16:11,680
+>> Yeah. So Okay. $520. Okay.
+ 
+
+1151
+00:16:11,680 --> 00:16:13,829
+>> Yeah. So Okay. $520. Okay.
+>> Yeah. Like I said, you're you're $520
+
+1152
+00:16:13,829 --> 00:16:13,839
+>> Yeah. Like I said, you're you're $520
+ 
+
+1153
+00:16:13,839 --> 00:16:15,269
+>> Yeah. Like I said, you're you're $520
+more expens. So I'm trying to I'm trying
+
+1154
+00:16:15,269 --> 00:16:15,279
+more expens. So I'm trying to I'm trying
+ 
+
+1155
+00:16:15,279 --> 00:16:16,389
+more expens. So I'm trying to I'm trying
+to be you're trying to you're trying to
+
+1156
+00:16:16,389 --> 00:16:16,399
+to be you're trying to you're trying to
+ 
+
+1157
+00:16:16,399 --> 00:16:17,670
+to be you're trying to you're trying to
+beat that. You told me what it was going
+
+1158
+00:16:17,670 --> 00:16:17,680
+beat that. You told me what it was going
+ 
+
+1159
+00:16:17,680 --> 00:16:19,189
+beat that. You told me what it was going
+to take for me to never call this
+
+1160
+00:16:19,189 --> 00:16:19,199
+to take for me to never call this
+ 
+
+1161
+00:16:19,199 --> 00:16:20,470
+to take for me to never call this
+dealership ever again. I'm going to go
+
+1162
+00:16:20,470 --> 00:16:20,480
+dealership ever again. I'm going to go
+ 
+
+1163
+00:16:20,480 --> 00:16:21,509
+dealership ever again. I'm going to go
+somebody. We're going to put the pain
+
+1164
+00:16:21,509 --> 00:16:21,519
+somebody. We're going to put the pain
+ 
+
+1165
+00:16:21,519 --> 00:16:22,550
+somebody. We're going to put the pain
+through this dealership. They're gonna
+
+1166
+00:16:22,550 --> 00:16:22,560
+through this dealership. They're gonna
+ 
+
+1167
+00:16:22,560 --> 00:16:23,749
+through this dealership. They're gonna
+be thinking about Tommy for the rest of
+
+1168
+00:16:23,749 --> 00:16:23,759
+be thinking about Tommy for the rest of
+ 
+
+1169
+00:16:23,759 --> 00:16:25,350
+be thinking about Tommy for the rest of
+their life. It's got to be 10%.
+
+1170
+00:16:25,350 --> 00:16:25,360
+their life. It's got to be 10%.
+ 
+
+1171
+00:16:25,360 --> 00:16:27,509
+their life. It's got to be 10%.
+>> Okay. Okay. Let me see what this
+
+1172
+00:16:27,509 --> 00:16:27,519
+>> Okay. Okay. Let me see what this
+ 
+
+1173
+00:16:27,519 --> 00:16:29,350
+>> Okay. Okay. Let me see what this
+truck's even gonna be here. Let's see.
+
+1174
+00:16:29,350 --> 00:16:29,360
+truck's even gonna be here. Let's see.
+ 
+
+1175
+00:16:29,360 --> 00:16:31,269
+truck's even gonna be here. Let's see.
+>> I think he said like any day now.
+
+1176
+00:16:31,269 --> 00:16:31,279
+>> I think he said like any day now.
+ 
+
+1177
+00:16:31,279 --> 00:16:33,350
+>> I think he said like any day now.
+>> Let's see. Let's do that first. I can't
+
+1178
+00:16:33,350 --> 00:16:33,360
+>> Let's see. Let's do that first. I can't
+ 
+
+1179
+00:16:33,360 --> 00:16:35,030
+>> Let's see. Let's do that first. I can't
+mess this up. My manager's like, "Hey,
+
+1180
+00:16:35,030 --> 00:16:35,040
+mess this up. My manager's like, "Hey,
+ 
+
+1181
+00:16:35,040 --> 00:16:36,710
+mess this up. My manager's like, "Hey,
+Christian. I got this customer for you.
+
+1182
+00:16:36,710 --> 00:16:36,720
+Christian. I got this customer for you.
+ 
+
+1183
+00:16:36,720 --> 00:16:38,310
+Christian. I got this customer for you.
+He's ready to go. He's going to buy it
+
+1184
+00:16:38,310 --> 00:16:38,320
+He's ready to go. He's going to buy it
+ 
+
+1185
+00:16:38,320 --> 00:16:40,150
+He's ready to go. He's going to buy it
+right now. Don't don't mess it up." And
+
+1186
+00:16:40,150 --> 00:16:40,160
+right now. Don't don't mess it up." And
+ 
+
+1187
+00:16:40,160 --> 00:16:42,069
+right now. Don't don't mess it up." And
+I come back and Tomy's like, "Christian,
+
+1188
+00:16:42,069 --> 00:16:42,079
+I come back and Tomy's like, "Christian,
+ 
+
+1189
+00:16:42,079 --> 00:16:44,310
+I come back and Tomy's like, "Christian,
+we're like $2,500 away from a deal. What
+
+1190
+00:16:44,310 --> 00:16:44,320
+we're like $2,500 away from a deal. What
+ 
+
+1191
+00:16:44,320 --> 00:16:46,069
+we're like $2,500 away from a deal. What
+are you talking about?" Okay. Oh, yeah.
+
+1192
+00:16:46,069 --> 00:16:46,079
+are you talking about?" Okay. Oh, yeah.
+ 
+
+1193
+00:16:46,079 --> 00:16:47,829
+are you talking about?" Okay. Oh, yeah.
+This thing's going to be here like any
+
+1194
+00:16:47,829 --> 00:16:47,839
+This thing's going to be here like any
+ 
+
+1195
+00:16:47,839 --> 00:16:49,590
+This thing's going to be here like any
+day now. It's sitting at the Port of
+
+1196
+00:16:49,590 --> 00:16:49,600
+day now. It's sitting at the Port of
+ 
+
+1197
+00:16:49,600 --> 00:16:51,110
+day now. It's sitting at the Port of
+Portland. So, that means this should be
+
+1198
+00:16:51,110 --> 00:16:51,120
+Portland. So, that means this should be
+ 
+
+1199
+00:16:51,120 --> 00:16:53,829
+Portland. So, that means this should be
+at my dealership probably. Yeah. End of
+
+1200
+00:16:53,829 --> 00:16:53,839
+at my dealership probably. Yeah. End of
+ 
+
+1201
+00:16:53,839 --> 00:16:56,230
+at my dealership probably. Yeah. End of
+the week. Okay. All right, Tommy. Let's
+
+1202
+00:16:56,230 --> 00:16:56,240
+the week. Okay. All right, Tommy. Let's
+ 
+
+1203
+00:16:56,240 --> 00:16:58,470
+the week. Okay. All right, Tommy. Let's
+say I get you the money. You're like,
+
+1204
+00:16:58,470 --> 00:16:58,480
+say I get you the money. You're like,
+ 
+
+1205
+00:16:58,480 --> 00:17:00,949
+say I get you the money. You're like,
+"Yep, let's do it." Can you be here this
+
+1206
+00:17:00,949 --> 00:17:00,959
+"Yep, let's do it." Can you be here this
+ 
+
+1207
+00:17:00,959 --> 00:17:02,310
+"Yep, let's do it." Can you be here this
+weekend or what are we thinking?
+
+1208
+00:17:02,310 --> 00:17:02,320
+weekend or what are we thinking?
+ 
+
+1209
+00:17:02,320 --> 00:17:03,749
+weekend or what are we thinking?
+>> Yeah, we can come. Yeah, I can put a
+
+1210
+00:17:03,749 --> 00:17:03,759
+>> Yeah, we can come. Yeah, I can put a
+ 
+
+1211
+00:17:03,759 --> 00:17:06,549
+>> Yeah, we can come. Yeah, I can put a
+deposit on it tonight and put it um come
+
+1212
+00:17:06,549 --> 00:17:06,559
+deposit on it tonight and put it um come
+ 
+
+1213
+00:17:06,559 --> 00:17:07,750
+deposit on it tonight and put it um come
+in tomorrow.
+
+1214
+00:17:07,750 --> 00:17:07,760
+in tomorrow.
+ 
+
+1215
+00:17:07,760 --> 00:17:08,230
+in tomorrow.
+>> Okay.
+
+1216
+00:17:08,230 --> 00:17:08,240
+>> Okay.
+ 
+
+1217
+00:17:08,240 --> 00:17:09,909
+>> Okay.
+>> If you're off tomorrow, the next day, I
+
+1218
+00:17:09,909 --> 00:17:09,919
+>> If you're off tomorrow, the next day, I
+ 
+
+1219
+00:17:09,919 --> 00:17:12,549
+>> If you're off tomorrow, the next day, I
+mean, I'm I'm flex,
+
+1220
+00:17:12,549 --> 00:17:12,559
+mean, I'm I'm flex,
+ 
+
+1221
+00:17:12,559 --> 00:17:14,150
+mean, I'm I'm flex,
+Thursday. So, I'm here the whole
+
+1222
+00:17:14,150 --> 00:17:14,160
+Thursday. So, I'm here the whole
+ 
+
+1223
+00:17:14,160 --> 00:17:15,669
+Thursday. So, I'm here the whole
+weekend, Friday, Saturday, Sunday,
+
+1224
+00:17:15,669 --> 00:17:15,679
+weekend, Friday, Saturday, Sunday,
+ 
+
+1225
+00:17:15,679 --> 00:17:17,590
+weekend, Friday, Saturday, Sunday,
+whatever. Uh we we can make it work.
+
+1226
+00:17:17,590 --> 00:17:17,600
+whatever. Uh we we can make it work.
+ 
+
+1227
+00:17:17,600 --> 00:17:19,029
+whatever. Uh we we can make it work.
+Like I said, it should be here like any
+
+1228
+00:17:19,029 --> 00:17:19,039
+Like I said, it should be here like any
+ 
+
+1229
+00:17:19,039 --> 00:17:21,270
+Like I said, it should be here like any
+day now. So I don't but so but that that
+
+1230
+00:17:21,270 --> 00:17:21,280
+day now. So I don't but so but that that
+ 
+
+1231
+00:17:21,280 --> 00:17:23,270
+day now. So I don't but so but that that
+that's that's a mood point anyways. I
+
+1232
+00:17:23,270 --> 00:17:23,280
+that's that's a mood point anyways. I
+ 
+
+1233
+00:17:23,280 --> 00:17:24,710
+that's that's a mood point anyways. I
+can go grab it whenever since that's
+
+1234
+00:17:24,710 --> 00:17:24,720
+can go grab it whenever since that's
+ 
+
+1235
+00:17:24,720 --> 00:17:26,549
+can go grab it whenever since that's
+it's at the port. But let me see if I
+
+1236
+00:17:26,549 --> 00:17:26,559
+it's at the port. But let me see if I
+ 
+
+1237
+00:17:26,559 --> 00:17:29,510
+it's at the port. But let me see if I
+can get you $13 more $100. We can forget
+
+1238
+00:17:29,510 --> 00:17:29,520
+can get you $13 more $100. We can forget
+ 
+
+1239
+00:17:29,520 --> 00:17:31,510
+can get you $13 more $100. We can forget
+about the other dealership and we we can
+
+1240
+00:17:31,510 --> 00:17:31,520
+about the other dealership and we we can
+ 
+
+1241
+00:17:31,520 --> 00:17:33,990
+about the other dealership and we we can
+make you drive all the way to beautiful
+
+1242
+00:17:33,990 --> 00:17:34,000
+make you drive all the way to beautiful
+ 
+
+1243
+00:17:34,000 --> 00:17:35,430
+make you drive all the way to beautiful
+Portland, Oregon. Okay.
+
+1244
+00:17:35,430 --> 00:17:35,440
+Portland, Oregon. Okay.
+ 
+
+1245
+00:17:35,440 --> 00:17:37,190
+Portland, Oregon. Okay.
+>> I love it. It's beautiful down there.
+
+1246
+00:17:37,190 --> 00:17:37,200
+>> I love it. It's beautiful down there.
+ 
+
+1247
+00:17:37,200 --> 00:17:38,710
+>> I love it. It's beautiful down there.
+>> Oh, especially right now.
+
+1248
+00:17:38,710 --> 00:17:38,720
+>> Oh, especially right now.
+ 
+
+1249
+00:17:38,720 --> 00:17:40,710
+>> Oh, especially right now.
+>> I love it, dude. I I don't have any
+
+1250
+00:17:40,710 --> 00:17:40,720
+>> I love it, dude. I I don't have any
+ 
+
+1251
+00:17:40,720 --> 00:17:41,430
+>> I love it, dude. I I don't have any
+reason to go.
+
+1252
+00:17:41,430 --> 00:17:41,440
+reason to go.
+ 
+
+1253
+00:17:41,440 --> 00:17:43,270
+reason to go.
+>> Yeah. You you want to check out the the
+
+1254
+00:17:43,270 --> 00:17:43,280
+>> Yeah. You you want to check out the the
+ 
+
+1255
+00:17:43,280 --> 00:17:45,350
+>> Yeah. You you want to check out the the
+madness that the news says that's going
+
+1256
+00:17:45,350 --> 00:17:45,360
+madness that the news says that's going
+ 
+
+1257
+00:17:45,360 --> 00:17:45,909
+madness that the news says that's going
+on.
+
+1258
+00:17:45,909 --> 00:17:45,919
+on.
+ 
+
+1259
+00:17:45,919 --> 00:17:47,270
+on.
+>> Oh. Oh jeez. I didn't think about that.
+
+1260
+00:17:47,270 --> 00:17:47,280
+>> Oh. Oh jeez. I didn't think about that.
+ 
+
+1261
+00:17:47,280 --> 00:17:50,070
+>> Oh. Oh jeez. I didn't think about that.
+Ah, it's fine. We'll we'll be fine.
+
+1262
+00:17:50,070 --> 00:17:50,080
+Ah, it's fine. We'll we'll be fine.
+ 
+
+1263
+00:17:50,080 --> 00:17:51,909
+Ah, it's fine. We'll we'll be fine.
+All right, Tommy, let me give you a call
+
+1264
+00:17:51,909 --> 00:17:51,919
+All right, Tommy, let me give you a call
+ 
+
+1265
+00:17:51,919 --> 00:17:53,590
+All right, Tommy, let me give you a call
+back. All right, give me like five
+
+1266
+00:17:53,590 --> 00:17:53,600
+back. All right, give me like five
+ 
+
+1267
+00:17:53,600 --> 00:17:54,070
+back. All right, give me like five
+minutes.
+
+1268
+00:17:54,070 --> 00:17:54,080
+minutes.
+ 
+
+1269
+00:17:54,080 --> 00:17:54,950
+minutes.
+>> Okay, sounds good.
+
+1270
+00:17:54,950 --> 00:17:54,960
+>> Okay, sounds good.
+ 
+
+1271
+00:17:54,960 --> 00:17:56,230
+>> Okay, sounds good.
+>> All right, thank you. Bye.
+
+1272
+00:17:56,230 --> 00:17:56,240
+>> All right, thank you. Bye.
+ 
+
+1273
+00:17:56,240 --> 00:17:58,390
+>> All right, thank you. Bye.
+>> No problem. I want to talk about this,
+
+1274
+00:17:58,390 --> 00:17:58,400
+>> No problem. I want to talk about this,
+ 
+
+1275
+00:17:58,400 --> 00:18:00,710
+>> No problem. I want to talk about this,
+guys. Competition drives the price down.
+
+1276
+00:18:00,710 --> 00:18:00,720
+guys. Competition drives the price down.
+ 
+
+1277
+00:18:00,720 --> 00:18:02,789
+guys. Competition drives the price down.
+That's it. It's not rocket science. It's
+
+1278
+00:18:02,789 --> 00:18:02,799
+That's it. It's not rocket science. It's
+ 
+
+1279
+00:18:02,799 --> 00:18:04,870
+That's it. It's not rocket science. It's
+nothing crazy. Competition. Putting two
+
+1280
+00:18:04,870 --> 00:18:04,880
+nothing crazy. Competition. Putting two
+ 
+
+1281
+00:18:04,880 --> 00:18:06,310
+nothing crazy. Competition. Putting two
+dealerships against each other. Given
+
+1282
+00:18:06,310 --> 00:18:06,320
+dealerships against each other. Given
+ 
+
+1283
+00:18:06,320 --> 00:18:08,390
+dealerships against each other. Given
+the numbers, call it a day.
+
+1284
+00:18:08,390 --> 00:18:08,400
+the numbers, call it a day.
+ 
+
+1285
+00:18:08,400 --> 00:18:09,430
+the numbers, call it a day.
+>> Christian,
+
+1286
+00:18:09,430 --> 00:18:09,440
+>> Christian,
+ 
+
+1287
+00:18:09,440 --> 00:18:11,270
+>> Christian,
+>> call me. I thought you I thought I was
+
+1288
+00:18:11,270 --> 00:18:11,280
+>> call me. I thought you I thought I was
+ 
+
+1289
+00:18:11,280 --> 00:18:12,310
+>> call me. I thought you I thought I was
+going to be the one who's going to get
+
+1290
+00:18:12,310 --> 00:18:12,320
+going to be the one who's going to get
+ 
+
+1291
+00:18:12,320 --> 00:18:13,830
+going to be the one who's going to get
+ignored though, but when I missed your
+
+1292
+00:18:13,830 --> 00:18:13,840
+ignored though, but when I missed your
+ 
+
+1293
+00:18:13,840 --> 00:18:14,390
+ignored though, but when I missed your
+call,
+
+1294
+00:18:14,390 --> 00:18:14,400
+call,
+ 
+
+1295
+00:18:14,400 --> 00:18:15,990
+call,
+>> I I called you cuz I'm trying to figure
+
+1296
+00:18:15,990 --> 00:18:16,000
+>> I I called you cuz I'm trying to figure
+ 
+
+1297
+00:18:16,000 --> 00:18:17,430
+>> I I called you cuz I'm trying to figure
+out these guys are calling me left and
+
+1298
+00:18:17,430 --> 00:18:17,440
+out these guys are calling me left and
+ 
+
+1299
+00:18:17,440 --> 00:18:18,789
+out these guys are calling me left and
+right. It's like the girl is like,
+
+1300
+00:18:18,789 --> 00:18:18,799
+right. It's like the girl is like,
+ 
+
+1301
+00:18:18,799 --> 00:18:20,150
+right. It's like the girl is like,
+"Dude, come on. Come on." I'm like,
+
+1302
+00:18:20,150 --> 00:18:20,160
+"Dude, come on. Come on." I'm like,
+ 
+
+1303
+00:18:20,160 --> 00:18:21,590
+"Dude, come on. Come on." I'm like,
+"Dude, I'm trying to ghost him right
+
+1304
+00:18:21,590 --> 00:18:21,600
+"Dude, I'm trying to ghost him right
+ 
+
+1305
+00:18:21,600 --> 00:18:23,270
+"Dude, I'm trying to ghost him right
+now.
+
+1306
+00:18:23,270 --> 00:18:23,280
+now.
+ 
+
+1307
+00:18:23,280 --> 00:18:26,470
+now.
+>> I I'm still working on it, man." Um, so
+
+1308
+00:18:26,470 --> 00:18:26,480
+>> I I'm still working on it, man." Um, so
+ 
+
+1309
+00:18:26,480 --> 00:18:28,870
+>> I I'm still working on it, man." Um, so
+he he put me on ice for a second. Some
+
+1310
+00:18:28,870 --> 00:18:28,880
+he he put me on ice for a second. Some
+ 
+
+1311
+00:18:28,880 --> 00:18:29,990
+he he put me on ice for a second. Some
+customers showed up. So he's like,
+
+1312
+00:18:29,990 --> 00:18:30,000
+customers showed up. So he's like,
+ 
+
+1313
+00:18:30,000 --> 00:18:31,190
+customers showed up. So he's like,
+"Christian, give me a minute." He's
+
+1314
+00:18:31,190 --> 00:18:31,200
+"Christian, give me a minute." He's
+ 
+
+1315
+00:18:31,200 --> 00:18:32,470
+"Christian, give me a minute." He's
+like, "I think we can put a deal
+
+1316
+00:18:32,470 --> 00:18:32,480
+like, "I think we can put a deal
+ 
+
+1317
+00:18:32,480 --> 00:18:33,669
+like, "I think we can put a deal
+together, but like just give me a
+
+1318
+00:18:33,669 --> 00:18:33,679
+together, but like just give me a
+ 
+
+1319
+00:18:33,679 --> 00:18:35,270
+together, but like just give me a
+minute." So I that's why I didn't call
+
+1320
+00:18:35,270 --> 00:18:35,280
+minute." So I that's why I didn't call
+ 
+
+1321
+00:18:35,280 --> 00:18:36,630
+minute." So I that's why I didn't call
+you back right away. And that's and
+
+1322
+00:18:36,630 --> 00:18:36,640
+you back right away. And that's and
+ 
+
+1323
+00:18:36,640 --> 00:18:39,110
+you back right away. And that's and
+that's on me. So hopefully longer do you
+
+1324
+00:18:39,110 --> 00:18:39,120
+that's on me. So hopefully longer do you
+ 
+
+1325
+00:18:39,120 --> 00:18:40,390
+that's on me. So hopefully longer do you
+think otherwise I'm going to just go buy
+
+1326
+00:18:40,390 --> 00:18:40,400
+think otherwise I'm going to just go buy
+ 
+
+1327
+00:18:40,400 --> 00:18:41,270
+think otherwise I'm going to just go buy
+this other one.
+
+1328
+00:18:41,270 --> 00:18:41,280
+this other one.
+ 
+
+1329
+00:18:41,280 --> 00:18:42,549
+this other one.
+>> With that one close to you,
+
+1330
+00:18:42,549 --> 00:18:42,559
+>> With that one close to you,
+ 
+
+1331
+00:18:42,559 --> 00:18:44,710
+>> With that one close to you,
+>> they're both I'm Dude, I'm down to go to
+
+1332
+00:18:44,710 --> 00:18:44,720
+>> they're both I'm Dude, I'm down to go to
+ 
+
+1333
+00:18:44,720 --> 00:18:45,830
+>> they're both I'm Dude, I'm down to go to
+If you give me this deal, I'm down to go
+
+1334
+00:18:45,830 --> 00:18:45,840
+If you give me this deal, I'm down to go
+ 
+
+1335
+00:18:45,840 --> 00:18:47,110
+If you give me this deal, I'm down to go
+to Portland. Like we don't care. We like
+
+1336
+00:18:47,110 --> 00:18:47,120
+to Portland. Like we don't care. We like
+ 
+
+1337
+00:18:47,120 --> 00:18:47,510
+to Portland. Like we don't care. We like
+Portland.
+
+1338
+00:18:47,510 --> 00:18:47,520
+Portland.
+ 
+
+1339
+00:18:47,520 --> 00:18:48,710
+Portland.
+>> All right, give me one second. I'm going
+
+1340
+00:18:48,710 --> 00:18:48,720
+>> All right, give me one second. I'm going
+ 
+
+1341
+00:18:48,720 --> 00:18:49,990
+>> All right, give me one second. I'm going
+to Here, stay on the phone.
+
+1342
+00:18:49,990 --> 00:18:50,000
+to Here, stay on the phone.
+ 
+
+1343
+00:18:50,000 --> 00:18:51,110
+to Here, stay on the phone.
+>> This is two going to call a day. Come
+
+1344
+00:18:51,110 --> 00:18:51,120
+>> This is two going to call a day. Come
+ 
+
+1345
+00:18:51,120 --> 00:18:51,350
+>> This is two going to call a day. Come
+on.
+
+1346
+00:18:51,350 --> 00:18:51,360
+on.
+ 
+
+1347
+00:18:51,360 --> 00:18:53,350
+on.
+>> I got Tommy on the phone. He's beating
+
+1348
+00:18:53,350 --> 00:18:53,360
+>> I got Tommy on the phone. He's beating
+ 
+
+1349
+00:18:53,360 --> 00:18:54,950
+>> I got Tommy on the phone. He's beating
+me up. He's beating me up. Rick,
+
+1350
+00:18:54,950 --> 00:18:54,960
+me up. He's beating me up. Rick,
+ 
+
+1351
+00:18:54,960 --> 00:18:56,390
+me up. He's beating me up. Rick,
+>> beating him up. Punching him left,
+
+1352
+00:18:56,390 --> 00:18:56,400
+>> beating him up. Punching him left,
+ 
+
+1353
+00:18:56,400 --> 00:18:58,630
+>> beating him up. Punching him left,
+right,
+
+1354
+00:18:58,630 --> 00:18:58,640
+right,
+ 
+
+1355
+00:18:58,640 --> 00:19:00,950
+right,
+>> he's still at 672. I can't get him to
+
+1356
+00:19:00,950 --> 00:19:00,960
+>> he's still at 672. I can't get him to
+ 
+
+1357
+00:19:00,960 --> 00:19:04,950
+>> he's still at 672. I can't get him to
+budge. I know you told me 685. No,
+
+1358
+00:19:04,950 --> 00:19:04,960
+budge. I know you told me 685. No,
+ 
+
+1359
+00:19:04,960 --> 00:19:06,230
+budge. I know you told me 685. No,
+>> 68.
+
+1360
+00:19:06,230 --> 00:19:06,240
+>> 68.
+ 
+
+1361
+00:19:06,240 --> 00:19:07,750
+>> 68.
+>> Another 500 bucks.
+
+1362
+00:19:07,750 --> 00:19:07,760
+>> Another 500 bucks.
+ 
+
+1363
+00:19:07,760 --> 00:19:09,190
+>> Another 500 bucks.
+>> See, tell about get fired because of
+
+1364
+00:19:09,190 --> 00:19:09,200
+>> See, tell about get fired because of
+ 
+
+1365
+00:19:09,200 --> 00:19:10,390
+>> See, tell about get fired because of
+you. I just want you to know that.
+
+1366
+00:19:10,390 --> 00:19:10,400
+you. I just want you to know that.
+ 
+
+1367
+00:19:10,400 --> 00:19:13,029
+you. I just want you to know that.
+>> Yeah, I have 67. I already have 67980.
+
+1368
+00:19:13,029 --> 00:19:13,039
+>> Yeah, I have 67. I already have 67980.
+ 
+
+1369
+00:19:13,039 --> 00:19:14,070
+>> Yeah, I have 67. I already have 67980.
+You telling that? Thought we're trying
+
+1370
+00:19:14,070 --> 00:19:14,080
+You telling that? Thought we're trying
+ 
+
+1371
+00:19:14,080 --> 00:19:15,430
+You telling that? Thought we're trying
+to ghost somebody here. That's what
+
+1372
+00:19:15,430 --> 00:19:15,440
+to ghost somebody here. That's what
+ 
+
+1373
+00:19:15,440 --> 00:19:16,150
+to ghost somebody here. That's what
+we're trying to do. We're trying to
+
+1374
+00:19:16,150 --> 00:19:16,160
+we're trying to do. We're trying to
+ 
+
+1375
+00:19:16,160 --> 00:19:17,029
+we're trying to do. We're trying to
+ghost somebody.
+
+1376
+00:19:17,029 --> 00:19:17,039
+ghost somebody.
+ 
+
+1377
+00:19:17,039 --> 00:19:19,510
+ghost somebody.
+>> No, no. I'm trying I'm trying to get you
+
+1378
+00:19:19,510 --> 00:19:19,520
+>> No, no. I'm trying I'm trying to get you
+ 
+
+1379
+00:19:19,520 --> 00:19:21,510
+>> No, no. I'm trying I'm trying to get you
+to buy a car from from here.
+
+1380
+00:19:21,510 --> 00:19:21,520
+to buy a car from from here.
+ 
+
+1381
+00:19:21,520 --> 00:19:22,470
+to buy a car from from here.
+>> That's what I'm trying to do.
+
+1382
+00:19:22,470 --> 00:19:22,480
+>> That's what I'm trying to do.
+ 
+
+1383
+00:19:22,480 --> 00:19:23,990
+>> That's what I'm trying to do.
+>> You know what's crazy, too? You'll get
+
+1384
+00:19:23,990 --> 00:19:24,000
+>> You know what's crazy, too? You'll get
+ 
+
+1385
+00:19:24,000 --> 00:19:27,110
+>> You know what's crazy, too? You'll get
+your first oil change for free.
+
+1386
+00:19:27,110 --> 00:19:27,120
+your first oil change for free.
+ 
+
+1387
+00:19:27,120 --> 00:19:28,630
+your first oil change for free.
+>> That's worth like 50 bucks. Okay, fine.
+
+1388
+00:19:28,630 --> 00:19:28,640
+>> That's worth like 50 bucks. Okay, fine.
+ 
+
+1389
+00:19:28,640 --> 00:19:29,830
+>> That's worth like 50 bucks. Okay, fine.
+You can give me,
+
+1390
+00:19:29,830 --> 00:19:29,840
+You can give me,
+ 
+
+1391
+00:19:29,840 --> 00:19:31,669
+You can give me,
+>> you know, 50 bucks less. You win. Good.
+
+1392
+00:19:31,669 --> 00:19:31,679
+>> you know, 50 bucks less. You win. Good.
+ 
+
+1393
+00:19:31,679 --> 00:19:33,110
+>> you know, 50 bucks less. You win. Good.
+Good negotiation skills.
+
+1394
+00:19:33,110 --> 00:19:33,120
+Good negotiation skills.
+ 
+
+1395
+00:19:33,120 --> 00:19:38,070
+Good negotiation skills.
+>> What was the number again? Sorry.
+
+1396
+00:19:38,070 --> 00:19:38,080
+
+ 
+
+1397
+00:19:38,080 --> 00:19:42,230
+
+>> I see what you're doing. Uh 68,000 plus
+
+1398
+00:19:42,230 --> 00:19:42,240
+>> I see what you're doing. Uh 68,000 plus
+ 
+
+1399
+00:19:42,240 --> 00:19:45,430
+>> I see what you're doing. Uh 68,000 plus
+>> 68,000 even. So, $20 more expensive than
+
+1400
+00:19:45,430 --> 00:19:45,440
+>> 68,000 even. So, $20 more expensive than
+ 
+
+1401
+00:19:45,440 --> 00:19:46,549
+>> 68,000 even. So, $20 more expensive than
+the deal I have.
+
+1402
+00:19:46,549 --> 00:19:46,559
+the deal I have.
+ 
+
+1403
+00:19:46,559 --> 00:19:48,549
+the deal I have.
+>> You in there? Don't bring
+
+1404
+00:19:48,549 --> 00:19:48,559
+>> You in there? Don't bring
+ 
+
+1405
+00:19:48,559 --> 00:19:50,470
+>> You in there? Don't bring
+>> $20. Are we Are we gonna Are we going to
+
+1406
+00:19:50,470 --> 00:19:50,480
+>> $20. Are we Are we gonna Are we going to
+ 
+
+1407
+00:19:50,480 --> 00:19:52,870
+>> $20. Are we Are we gonna Are we going to
+do this for 20 bucks? All right. $21.
+
+1408
+00:19:52,870 --> 00:19:52,880
+do this for 20 bucks? All right. $21.
+ 
+
+1409
+00:19:52,880 --> 00:19:54,630
+do this for 20 bucks? All right. $21.
+>> I told you the number. I needed to ghost
+
+1410
+00:19:54,630 --> 00:19:54,640
+>> I told you the number. I needed to ghost
+ 
+
+1411
+00:19:54,640 --> 00:19:56,870
+>> I told you the number. I needed to ghost
+a man. Dang, man. This sucks. I really
+
+1412
+00:19:56,870 --> 00:19:56,880
+a man. Dang, man. This sucks. I really
+ 
+
+1413
+00:19:56,880 --> 00:19:57,830
+a man. Dang, man. This sucks. I really
+like you, Christian.
+
+1414
+00:19:57,830 --> 00:19:57,840
+like you, Christian.
+ 
+
+1415
+00:19:57,840 --> 00:20:00,230
+like you, Christian.
+>> Man, call me. Oh, he's looking at me
+
+1416
+00:20:00,230 --> 00:20:00,240
+>> Man, call me. Oh, he's looking at me
+ 
+
+1417
+00:20:00,240 --> 00:20:02,470
+>> Man, call me. Oh, he's looking at me
+like it's my last day here. Come on.
+
+1418
+00:20:02,470 --> 00:20:02,480
+like it's my last day here. Come on.
+ 
+
+1419
+00:20:02,480 --> 00:20:03,909
+like it's my last day here. Come on.
+>> What do you mean it's not your last day
+
+1420
+00:20:03,909 --> 00:20:03,919
+>> What do you mean it's not your last day
+ 
+
+1421
+00:20:03,919 --> 00:20:05,270
+>> What do you mean it's not your last day
+here? You're about to sell a car.
+
+1422
+00:20:05,270 --> 00:20:05,280
+here? You're about to sell a car.
+ 
+
+1423
+00:20:05,280 --> 00:20:06,789
+here? You're about to sell a car.
+>> Tell me it's only the seventh of the
+
+1424
+00:20:06,789 --> 00:20:06,799
+>> Tell me it's only the seventh of the
+ 
+
+1425
+00:20:06,799 --> 00:20:07,750
+>> Tell me it's only the seventh of the
+month. Come on.
+
+1426
+00:20:07,750 --> 00:20:07,760
+month. Come on.
+ 
+
+1427
+00:20:07,760 --> 00:20:08,870
+month. Come on.
+>> So what? You're going to wait till the
+
+1428
+00:20:08,870 --> 00:20:08,880
+>> So what? You're going to wait till the
+ 
+
+1429
+00:20:08,880 --> 00:20:09,750
+>> So what? You're going to wait till the
+30th of the month and then tell me
+
+1430
+00:20:09,750 --> 00:20:09,760
+30th of the month and then tell me
+ 
+
+1431
+00:20:09,760 --> 00:20:10,549
+30th of the month and then tell me
+you're going to do the deal and I
+
+1432
+00:20:10,549 --> 00:20:10,559
+you're going to do the deal and I
+ 
+
+1433
+00:20:10,559 --> 00:20:12,630
+you're going to do the deal and I
+already bought a car. So now you know
+
+1434
+00:20:12,630 --> 00:20:12,640
+already bought a car. So now you know
+ 
+
+1435
+00:20:12,640 --> 00:20:14,070
+already bought a car. So now you know
+I'm buying a car. I'm buying a car. Like
+
+1436
+00:20:14,070 --> 00:20:14,080
+I'm buying a car. I'm buying a car. Like
+ 
+
+1437
+00:20:14,080 --> 00:20:15,510
+I'm buying a car. I'm buying a car. Like
+I said, I have this other deal. It's a
+
+1438
+00:20:15,510 --> 00:20:15,520
+I said, I have this other deal. It's a
+ 
+
+1439
+00:20:15,520 --> 00:20:16,630
+I said, I have this other deal. It's a
+strong deal. I don't have to drive to
+
+1440
+00:20:16,630 --> 00:20:16,640
+strong deal. I don't have to drive to
+ 
+
+1441
+00:20:16,640 --> 00:20:18,150
+strong deal. I don't have to drive to
+Portland for it. So, I'm willing to
+
+1442
+00:20:18,150 --> 00:20:18,160
+Portland for it. So, I'm willing to
+ 
+
+1443
+00:20:18,160 --> 00:20:19,510
+Portland for it. So, I'm willing to
+drive Portland. I like Portland. I don't
+
+1444
+00:20:19,510 --> 00:20:19,520
+drive Portland. I like Portland. I don't
+ 
+
+1445
+00:20:19,520 --> 00:20:21,190
+drive Portland. I like Portland. I don't
+mind Portland, but I'm not willing to
+
+1446
+00:20:21,190 --> 00:20:21,200
+mind Portland, but I'm not willing to
+ 
+
+1447
+00:20:21,200 --> 00:20:22,549
+mind Portland, but I'm not willing to
+drive Portland for a dollar, you know?
+
+1448
+00:20:22,549 --> 00:20:22,559
+drive Portland for a dollar, you know?
+ 
+
+1449
+00:20:22,559 --> 00:20:23,750
+drive Portland for a dollar, you know?
+It doesn't make any sense.
+
+1450
+00:20:23,750 --> 00:20:23,760
+It doesn't make any sense.
+ 
+
+1451
+00:20:23,760 --> 00:20:25,430
+It doesn't make any sense.
+>> Oh my goodness. See what I can do for
+
+1452
+00:20:25,430 --> 00:20:25,440
+>> Oh my goodness. See what I can do for
+ 
+
+1453
+00:20:25,440 --> 00:20:25,909
+>> Oh my goodness. See what I can do for
+you.
+
+1454
+00:20:25,909 --> 00:20:25,919
+you.
+ 
+
+1455
+00:20:25,919 --> 00:20:28,230
+you.
+>> No. $20. I'll buy you lunch. You You'll
+
+1456
+00:20:28,230 --> 00:20:28,240
+>> No. $20. I'll buy you lunch. You You'll
+ 
+
+1457
+00:20:28,240 --> 00:20:30,950
+>> No. $20. I'll buy you lunch. You You'll
+get home with a nice cool pick of gas.
+
+1458
+00:20:30,950 --> 00:20:30,960
+get home with a nice cool pick of gas.
+ 
+
+1459
+00:20:30,960 --> 00:20:32,710
+get home with a nice cool pick of gas.
+Should I'm all in. That's the problem,
+
+1460
+00:20:32,710 --> 00:20:32,720
+Should I'm all in. That's the problem,
+ 
+
+1461
+00:20:32,720 --> 00:20:34,070
+Should I'm all in. That's the problem,
+Tommy. I'm all in.
+
+1462
+00:20:34,070 --> 00:20:34,080
+Tommy. I'm all in.
+ 
+
+1463
+00:20:34,080 --> 00:20:39,029
+Tommy. I'm all in.
+>> So, the best deal you have is 67979
+
+1464
+00:20:39,029 --> 00:20:39,039
+
+ 
+
+1465
+00:20:39,039 --> 00:20:40,230
+
+and a free lunch.
+
+1466
+00:20:40,230 --> 00:20:40,240
+and a free lunch.
+ 
+
+1467
+00:20:40,240 --> 00:20:41,909
+and a free lunch.
+>> Yes. So, I can beat that other deal.
+
+1468
+00:20:41,909 --> 00:20:41,919
+>> Yes. So, I can beat that other deal.
+ 
+
+1469
+00:20:41,919 --> 00:20:43,750
+>> Yes. So, I can beat that other deal.
+I'll beat the other deal by a dollar.
+
+1470
+00:20:43,750 --> 00:20:43,760
+I'll beat the other deal by a dollar.
+ 
+
+1471
+00:20:43,760 --> 00:20:45,110
+I'll beat the other deal by a dollar.
+>> So, what's the total discounts right
+
+1472
+00:20:45,110 --> 00:20:45,120
+>> So, what's the total discounts right
+ 
+
+1473
+00:20:45,120 --> 00:20:47,830
+>> So, what's the total discounts right
+now? It's like 65 something. 6600.
+
+1474
+00:20:47,830 --> 00:20:47,840
+now? It's like 65 something. 6600.
+ 
+
+1475
+00:20:47,840 --> 00:20:50,710
+now? It's like 65 something. 6600.
+>> 66.91 is the total discount.
+
+1476
+00:20:50,710 --> 00:20:50,720
+>> 66.91 is the total discount.
+ 
+
+1477
+00:20:50,720 --> 00:20:53,750
+>> 66.91 is the total discount.
+>> 66.91. Okay. Well, I can't I can't ghost
+
+1478
+00:20:53,750 --> 00:20:53,760
+>> 66.91. Okay. Well, I can't I can't ghost
+ 
+
+1479
+00:20:53,760 --> 00:20:55,110
+>> 66.91. Okay. Well, I can't I can't ghost
+the dealership for that. Give me like 5
+
+1480
+00:20:55,110 --> 00:20:55,120
+the dealership for that. Give me like 5
+ 
+
+1481
+00:20:55,120 --> 00:20:56,470
+the dealership for that. Give me like 5
+minutes. I'm going to decide if it's
+
+1482
+00:20:56,470 --> 00:20:56,480
+minutes. I'm going to decide if it's
+ 
+
+1483
+00:20:56,480 --> 00:20:57,430
+minutes. I'm going to decide if it's
+worth it. I'm going to talk to my
+
+1484
+00:20:57,430 --> 00:20:57,440
+worth it. I'm going to talk to my
+ 
+
+1485
+00:20:57,440 --> 00:20:59,110
+worth it. I'm going to talk to my
+partner and we'll make a decision. I'll
+
+1486
+00:20:59,110 --> 00:20:59,120
+partner and we'll make a decision. I'll
+ 
+
+1487
+00:20:59,120 --> 00:20:59,909
+partner and we'll make a decision. I'll
+call you right back.
+
+1488
+00:20:59,909 --> 00:20:59,919
+call you right back.
+ 
+
+1489
+00:20:59,919 --> 00:21:01,510
+call you right back.
+>> All right, Tommy. I I like you, by the
+
+1490
+00:21:01,510 --> 00:21:01,520
+>> All right, Tommy. I I like you, by the
+ 
+
+1491
+00:21:01,520 --> 00:21:02,789
+>> All right, Tommy. I I like you, by the
+way. I just want you to know that.
+
+1492
+00:21:02,789 --> 00:21:02,799
+way. I just want you to know that.
+ 
+
+1493
+00:21:02,799 --> 00:21:04,870
+way. I just want you to know that.
+>> I know. And no add-ons, no fees, just
+
+1494
+00:21:04,870 --> 00:21:04,880
+>> I know. And no add-ons, no fees, just
+ 
+
+1495
+00:21:04,880 --> 00:21:06,390
+>> I know. And no add-ons, no fees, just
+tax title license.
+
+1496
+00:21:06,390 --> 00:21:06,400
+tax title license.
+ 
+
+1497
+00:21:06,400 --> 00:21:07,430
+tax title license.
+>> Yeah.
+
+1498
+00:21:07,430 --> 00:21:07,440
+>> Yeah.
+ 
+
+1499
+00:21:07,440 --> 00:21:08,710
+>> Yeah.
+>> You hesitated for a minute. Don't scare
+
+1500
+00:21:08,710 --> 00:21:08,720
+>> You hesitated for a minute. Don't scare
+ 
+
+1501
+00:21:08,720 --> 00:21:10,950
+>> You hesitated for a minute. Don't scare
+me. Don't scare me. The other dealership
+
+1502
+00:21:10,950 --> 00:21:10,960
+me. Don't scare me. The other dealership
+ 
+
+1503
+00:21:10,960 --> 00:21:12,549
+me. Don't scare me. The other dealership
+is going to charge you some crazy stuff,
+
+1504
+00:21:12,549 --> 00:21:12,559
+is going to charge you some crazy stuff,
+ 
+
+1505
+00:21:12,559 --> 00:21:13,190
+is going to charge you some crazy stuff,
+just so you know.
+
+1506
+00:21:13,190 --> 00:21:13,200
+just so you know.
+ 
+
+1507
+00:21:13,200 --> 00:21:14,470
+just so you know.
+>> No, they gave me they gave me an out the
+
+1508
+00:21:14,470 --> 00:21:14,480
+>> No, they gave me they gave me an out the
+ 
+
+1509
+00:21:14,480 --> 00:21:15,909
+>> No, they gave me they gave me an out the
+door number. I have the out the door. I
+
+1510
+00:21:15,909 --> 00:21:15,919
+door number. I have the out the door. I
+ 
+
+1511
+00:21:15,919 --> 00:21:16,950
+door number. I have the out the door. I
+have this right in front of me.
+
+1512
+00:21:16,950 --> 00:21:16,960
+have this right in front of me.
+ 
+
+1513
+00:21:16,960 --> 00:21:18,950
+have this right in front of me.
+>> Okay. So, if you call me back and if if
+
+1514
+00:21:18,950 --> 00:21:18,960
+>> Okay. So, if you call me back and if if
+ 
+
+1515
+00:21:18,960 --> 00:21:20,149
+>> Okay. So, if you call me back and if if
+you like that number, then I'll give you
+
+1516
+00:21:20,149 --> 00:21:20,159
+you like that number, then I'll give you
+ 
+
+1517
+00:21:20,159 --> 00:21:21,909
+you like that number, then I'll give you
+an out the door number. I I have to I'll
+
+1518
+00:21:21,909 --> 00:21:21,919
+an out the door number. I I have to I'll
+ 
+
+1519
+00:21:21,919 --> 00:21:23,029
+an out the door number. I I have to I'll
+figure out the taxes and stuff.
+
+1520
+00:21:23,029 --> 00:21:23,039
+figure out the taxes and stuff.
+ 
+
+1521
+00:21:23,039 --> 00:21:24,149
+figure out the taxes and stuff.
+>> Well, I'm imagine this other dealership
+
+1522
+00:21:24,149 --> 00:21:24,159
+>> Well, I'm imagine this other dealership
+ 
+
+1523
+00:21:24,159 --> 00:21:25,350
+>> Well, I'm imagine this other dealership
+is probably going to call me and give me
+
+1524
+00:21:25,350 --> 00:21:25,360
+is probably going to call me and give me
+ 
+
+1525
+00:21:25,360 --> 00:21:26,710
+is probably going to call me and give me
+give me the number to ghost you and then
+
+1526
+00:21:26,710 --> 00:21:26,720
+give me the number to ghost you and then
+ 
+
+1527
+00:21:26,720 --> 00:21:27,909
+give me the number to ghost you and then
+you're going to get ghosted, man. And
+
+1528
+00:21:27,909 --> 00:21:27,919
+you're going to get ghosted, man. And
+ 
+
+1529
+00:21:27,919 --> 00:21:28,950
+you're going to get ghosted, man. And
+then it's going to remind you when you
+
+1530
+00:21:28,950 --> 00:21:28,960
+then it's going to remind you when you
+ 
+
+1531
+00:21:28,960 --> 00:21:29,990
+then it's going to remind you when you
+were dating. Remember those good old
+
+1532
+00:21:29,990 --> 00:21:30,000
+were dating. Remember those good old
+ 
+
+1533
+00:21:30,000 --> 00:21:30,390
+were dating. Remember those good old
+days?
+
+1534
+00:21:30,390 --> 00:21:30,400
+days?
+ 
+
+1535
+00:21:30,400 --> 00:21:32,630
+days?
+>> Yeah, those were not fun. That's why
+
+1536
+00:21:32,630 --> 00:21:32,640
+>> Yeah, those were not fun. That's why
+ 
+
+1537
+00:21:32,640 --> 00:21:33,430
+>> Yeah, those were not fun. That's why
+>> I don't want to I don't want to get
+
+1538
+00:21:33,430 --> 00:21:33,440
+>> I don't want to I don't want to get
+ 
+
+1539
+00:21:33,440 --> 00:21:34,470
+>> I don't want to I don't want to get
+ghosted by you. You don't want to get
+
+1540
+00:21:34,470 --> 00:21:34,480
+ghosted by you. You don't want to get
+ 
+
+1541
+00:21:34,480 --> 00:21:35,750
+ghosted by you. You don't want to get
+ghosted by me. I wish you just give me
+
+1542
+00:21:35,750 --> 00:21:35,760
+ghosted by me. I wish you just give me
+ 
+
+1543
+00:21:35,760 --> 00:21:37,110
+ghosted by me. I wish you just give me
+the deal and then we don't we don't have
+
+1544
+00:21:37,110 --> 00:21:37,120
+the deal and then we don't we don't have
+ 
+
+1545
+00:21:37,120 --> 00:21:38,710
+the deal and then we don't we don't have
+to ghost each other, you know? I can't I
+
+1546
+00:21:38,710 --> 00:21:38,720
+to ghost each other, you know? I can't I
+ 
+
+1547
+00:21:38,720 --> 00:21:40,630
+to ghost each other, you know? I can't I
+can't give you that deal. I just can't.
+
+1548
+00:21:40,630 --> 00:21:40,640
+can't give you that deal. I just can't.
+ 
+
+1549
+00:21:40,640 --> 00:21:41,750
+can't give you that deal. I just can't.
+>> This would be like better this would be
+
+1550
+00:21:41,750 --> 00:21:41,760
+>> This would be like better this would be
+ 
+
+1551
+00:21:41,760 --> 00:21:43,350
+>> This would be like better this would be
+a better movie than The Notebook.
+
+1552
+00:21:43,350 --> 00:21:43,360
+a better movie than The Notebook.
+ 
+
+1553
+00:21:43,360 --> 00:21:44,789
+a better movie than The Notebook.
+Imagine it being a better movie than The
+
+1554
+00:21:44,789 --> 00:21:44,799
+Imagine it being a better movie than The
+ 
+
+1555
+00:21:44,799 --> 00:21:46,149
+Imagine it being a better movie than The
+Notebook. People would be talking about
+
+1556
+00:21:46,149 --> 00:21:46,159
+Notebook. People would be talking about
+ 
+
+1557
+00:21:46,159 --> 00:21:47,830
+Notebook. People would be talking about
+day Christian and Tommy came to a
+
+1558
+00:21:47,830 --> 00:21:47,840
+day Christian and Tommy came to a
+ 
+
+1559
+00:21:47,840 --> 00:21:48,390
+day Christian and Tommy came to a
+Cardial.
+
+1560
+00:21:48,390 --> 00:21:48,400
+Cardial.
+ 
+
+1561
+00:21:48,400 --> 00:21:49,669
+Cardial.
+>> Tommy, what do you do for a living?
+
+1562
+00:21:49,669 --> 00:21:49,679
+>> Tommy, what do you do for a living?
+ 
+
+1563
+00:21:49,679 --> 00:21:50,630
+>> Tommy, what do you do for a living?
+>> I talk to people.
+
+1564
+00:21:50,630 --> 00:21:50,640
+>> I talk to people.
+ 
+
+1565
+00:21:50,640 --> 00:21:51,909
+>> I talk to people.
+>> You talk to people. I see that you're
+
+1566
+00:21:51,909 --> 00:21:51,919
+>> You talk to people. I see that you're
+ 
+
+1567
+00:21:51,919 --> 00:21:54,789
+>> You talk to people. I see that you're
+very good at talking to people. Okay.
+
+1568
+00:21:54,789 --> 00:21:54,799
+very good at talking to people. Okay.
+ 
+
+1569
+00:21:54,799 --> 00:21:56,950
+very good at talking to people. Okay.
+Okay. And what what? Give me a little
+
+1570
+00:21:56,950 --> 00:21:56,960
+Okay. And what what? Give me a little
+ 
+
+1571
+00:21:56,960 --> 00:21:58,789
+Okay. And what what? Give me a little
+bit more. I need I need I need I need an
+
+1572
+00:21:58,789 --> 00:21:58,799
+bit more. I need I need I need I need an
+ 
+
+1573
+00:21:58,799 --> 00:21:59,830
+bit more. I need I need I need I need an
+analogy.
+
+1574
+00:21:59,830 --> 00:21:59,840
+analogy.
+ 
+
+1575
+00:21:59,840 --> 00:22:01,430
+analogy.
+>> Call a day. 7K call a day.
+
+1576
+00:22:01,430 --> 00:22:01,440
+>> Call a day. 7K call a day.
+ 
+
+1577
+00:22:01,440 --> 00:22:02,789
+>> Call a day. 7K call a day.
+>> You what? What' you say?
+
+1578
+00:22:02,789 --> 00:22:02,799
+>> You what? What' you say?
+ 
+
+1579
+00:22:02,799 --> 00:22:05,909
+>> You what? What' you say?
+>> 7K call a day. It rhymes. 7K calls.
+
+1580
+00:22:05,909 --> 00:22:05,919
+>> 7K call a day. It rhymes. 7K calls.
+ 
+
+1581
+00:22:05,919 --> 00:22:10,310
+>> 7K call a day. It rhymes. 7K calls.
+>> 7K call it a day. 7K600
+
+1582
+00:22:10,310 --> 00:22:10,320
+>> 7K call it a day. 7K600
+ 
+
+1583
+00:22:10,320 --> 00:22:12,070
+>> 7K call it a day. 7K600
+7K call it a day. I'm coming down. I'm
+
+1584
+00:22:12,070 --> 00:22:12,080
+7K call it a day. I'm coming down. I'm
+ 
+
+1585
+00:22:12,080 --> 00:22:14,950
+7K call it a day. I'm coming down. I'm
+being nice cuz I like you and honestly I
+
+1586
+00:22:14,950 --> 00:22:14,960
+being nice cuz I like you and honestly I
+ 
+
+1587
+00:22:14,960 --> 00:22:16,149
+being nice cuz I like you and honestly I
+want the notebook ending and I
+
+1588
+00:22:16,149 --> 00:22:16,159
+want the notebook ending and I
+ 
+
+1589
+00:22:16,159 --> 00:22:17,510
+want the notebook ending and I
+understand sometimes.
+
+1590
+00:22:17,510 --> 00:22:17,520
+understand sometimes.
+ 
+
+1591
+00:22:17,520 --> 00:22:21,190
+understand sometimes.
+>> 7K if if if you finance I'll do 7K.
+
+1592
+00:22:21,190 --> 00:22:21,200
+>> 7K if if if you finance I'll do 7K.
+ 
+
+1593
+00:22:21,200 --> 00:22:22,630
+>> 7K if if if you finance I'll do 7K.
+>> But I'm financing at the low rate.
+
+1594
+00:22:22,630 --> 00:22:22,640
+>> But I'm financing at the low rate.
+ 
+
+1595
+00:22:22,640 --> 00:22:23,110
+>> But I'm financing at the low rate.
+>> That's fine.
+
+1596
+00:22:23,110 --> 00:22:23,120
+>> That's fine.
+ 
+
+1597
+00:22:23,120 --> 00:22:24,710
+>> That's fine.
+>> Fine. Send me the numbers. Lock it up
+
+1598
+00:22:24,710 --> 00:22:24,720
+>> Fine. Send me the numbers. Lock it up
+ 
+
+1599
+00:22:24,720 --> 00:22:25,190
+>> Fine. Send me the numbers. Lock it up
+right now.
+
+1600
+00:22:25,190 --> 00:22:25,200
+right now.
+ 
+
+1601
+00:22:25,200 --> 00:22:27,750
+right now.
+>> Okay. Perfect.
+
+1602
+00:22:27,750 --> 00:22:27,760
+>> Okay. Perfect.
+ 
+
+1603
+00:22:27,760 --> 00:22:29,430
+>> Okay. Perfect.
+>> Okay. Send me those numbers right now.
+
+1604
+00:22:29,430 --> 00:22:29,440
+>> Okay. Send me those numbers right now.
+ 
+
+1605
+00:22:29,440 --> 00:22:31,510
+>> Okay. Send me those numbers right now.
+We're going to We'll put a deposit on it
+
+1606
+00:22:31,510 --> 00:22:31,520
+We're going to We'll put a deposit on it
+ 
+
+1607
+00:22:31,520 --> 00:22:33,350
+We're going to We'll put a deposit on it
+and we will lock this deal up.
+
+1608
+00:22:33,350 --> 00:22:33,360
+and we will lock this deal up.
+ 
+
+1609
+00:22:33,360 --> 00:22:34,630
+and we will lock this deal up.
+>> All right. When you want to come in,
+
+1610
+00:22:34,630 --> 00:22:34,640
+>> All right. When you want to come in,
+ 
+
+1611
+00:22:34,640 --> 00:22:35,510
+>> All right. When you want to come in,
+>> I'm talking to my business partner right
+
+1612
+00:22:35,510 --> 00:22:35,520
+>> I'm talking to my business partner right
+ 
+
+1613
+00:22:35,520 --> 00:22:36,710
+>> I'm talking to my business partner right
+now. Give me five minutes. Send me those
+
+1614
+00:22:36,710 --> 00:22:36,720
+now. Give me five minutes. Send me those
+ 
+
+1615
+00:22:36,720 --> 00:22:37,909
+now. Give me five minutes. Send me those
+numbers and we'll talk. I'm calling them
+
+1616
+00:22:37,909 --> 00:22:37,919
+numbers and we'll talk. I'm calling them
+ 
+
+1617
+00:22:37,919 --> 00:22:38,149
+numbers and we'll talk. I'm calling them
+right now.
+
+1618
+00:22:38,149 --> 00:22:38,159
+right now.
+ 
+
+1619
+00:22:38,159 --> 00:22:39,270
+right now.
+>> Are you going to put in your personal
+
+1620
+00:22:39,270 --> 00:22:39,280
+>> Are you going to put in your personal
+ 
+
+1621
+00:22:39,280 --> 00:22:40,470
+>> Are you going to put in your personal
+name or a business?
+
+1622
+00:22:40,470 --> 00:22:40,480
+name or a business?
+ 
+
+1623
+00:22:40,480 --> 00:22:41,430
+name or a business?
+>> I'm going to talk to him right now about
+
+1624
+00:22:41,430 --> 00:22:41,440
+>> I'm going to talk to him right now about
+ 
+
+1625
+00:22:41,440 --> 00:22:42,390
+>> I'm going to talk to him right now about
+which one we're going to do. We'll get
+
+1626
+00:22:42,390 --> 00:22:42,400
+which one we're going to do. We'll get
+ 
+
+1627
+00:22:42,400 --> 00:22:43,990
+which one we're going to do. We'll get
+that. But we can put in personal if that
+
+1628
+00:22:43,990 --> 00:22:44,000
+that. But we can put in personal if that
+ 
+
+1629
+00:22:44,000 --> 00:22:45,110
+that. But we can put in personal if that
+if that that's what we need for the
+
+1630
+00:22:45,110 --> 00:22:45,120
+if that that's what we need for the
+ 
+
+1631
+00:22:45,120 --> 00:22:46,310
+if that that's what we need for the
+rate.
+
+1632
+00:22:46,310 --> 00:22:46,320
+rate.
+ 
+
+1633
+00:22:46,320 --> 00:22:47,110
+rate.
+>> We're open.
+
+1634
+00:22:47,110 --> 00:22:47,120
+>> We're open.
+ 
+
+1635
+00:22:47,120 --> 00:22:49,190
+>> We're open.
+>> Okay. Shoot me your address for your
+
+1636
+00:22:49,190 --> 00:22:49,200
+>> Okay. Shoot me your address for your
+ 
+
+1637
+00:22:49,200 --> 00:22:51,190
+>> Okay. Shoot me your address for your
+taxes. Okay. The complete address.
+
+1638
+00:22:51,190 --> 00:22:51,200
+taxes. Okay. The complete address.
+ 
+
+1639
+00:22:51,200 --> 00:22:51,990
+taxes. Okay. The complete address.
+>> Okay, that's fine.
+
+1640
+00:22:51,990 --> 00:22:52,000
+>> Okay, that's fine.
+ 
+
+1641
+00:22:52,000 --> 00:22:52,549
+>> Okay, that's fine.
+>> Okay.
+
+1642
+00:22:52,549 --> 00:22:52,559
+>> Okay.
+ 
+
+1643
+00:22:52,559 --> 00:22:54,549
+>> Okay.
+>> Okay. Sounds good. Um, is this the
+
+1644
+00:22:54,549 --> 00:22:54,559
+>> Okay. Sounds good. Um, is this the
+ 
+
+1645
+00:22:54,559 --> 00:22:55,350
+>> Okay. Sounds good. Um, is this the
+number to text?
+
+1646
+00:22:55,350 --> 00:22:55,360
+number to text?
+ 
+
+1647
+00:22:55,360 --> 00:22:56,149
+number to text?
+>> Yeah, that's fine.
+
+1648
+00:22:56,149 --> 00:22:56,159
+>> Yeah, that's fine.
+ 
+
+1649
+00:22:56,159 --> 00:22:58,710
+>> Yeah, that's fine.
+>> All right, cool. Give me Yep. I will
+
+1650
+00:22:58,710 --> 00:22:58,720
+>> All right, cool. Give me Yep. I will
+ 
+
+1651
+00:22:58,720 --> 00:22:59,750
+>> All right, cool. Give me Yep. I will
+send that right now.
+
+1652
+00:22:59,750 --> 00:22:59,760
+send that right now.
+ 
+
+1653
+00:22:59,760 --> 00:23:00,789
+send that right now.
+>> All right. Thank you, Tommy.
+
+1654
+00:23:00,789 --> 00:23:00,799
+>> All right. Thank you, Tommy.
+ 
+
+1655
+00:23:00,799 --> 00:23:01,750
+>> All right. Thank you, Tommy.
+>> Okay, sounds good.
+
+1656
+00:23:01,750 --> 00:23:01,760
+>> Okay, sounds good.
+ 
+
+1657
+00:23:01,760 --> 00:23:02,070
+>> Okay, sounds good.
+>> Bye.
+
+1658
+00:23:02,070 --> 00:23:02,080
+>> Bye.
+ 
+
+1659
+00:23:02,080 --> 00:23:04,390
+>> Bye.
+>> Bye. I'm debating if he knows. I don't
+
+1660
+00:23:04,390 --> 00:23:04,400
+>> Bye. I'm debating if he knows. I don't
+ 
+
+1661
+00:23:04,400 --> 00:23:06,390
+>> Bye. I'm debating if he knows. I don't
+know if he knows, right? I don't know if
+
+1662
+00:23:06,390 --> 00:23:06,400
+know if he knows, right? I don't know if
+ 
+
+1663
+00:23:06,400 --> 00:23:07,990
+know if he knows, right? I don't know if
+he knows. I got to get the client
+
+1664
+00:23:07,990 --> 00:23:08,000
+he knows. I got to get the client
+ 
+
+1665
+00:23:08,000 --> 00:23:09,750
+he knows. I got to get the client
+verified. Client, I think, likes this
+
+1666
+00:23:09,750 --> 00:23:09,760
+verified. Client, I think, likes this
+ 
+
+1667
+00:23:09,760 --> 00:23:11,909
+verified. Client, I think, likes this
+car a little bit more, but 7K, call it a
+
+1668
+00:23:11,909 --> 00:23:11,919
+car a little bit more, but 7K, call it a
+ 
+
+1669
+00:23:11,919 --> 00:23:13,830
+car a little bit more, but 7K, call it a
+day. And this is this is what, right?
+
+1670
+00:23:13,830 --> 00:23:13,840
+day. And this is this is what, right?
+ 
+
+1671
+00:23:13,840 --> 00:23:15,270
+day. And this is this is what, right?
+Like, I could have just gone through, he
+
+1672
+00:23:15,270 --> 00:23:15,280
+Like, I could have just gone through, he
+ 
+
+1673
+00:23:15,280 --> 00:23:16,470
+Like, I could have just gone through, he
+would have gone through. We're going
+
+1674
+00:23:16,470 --> 00:23:16,480
+would have gone through. We're going
+ 
+
+1675
+00:23:16,480 --> 00:23:18,310
+would have gone through. We're going
+back and forth, back and forth, back and
+
+1676
+00:23:18,310 --> 00:23:18,320
+back and forth, back and forth, back and
+ 
+
+1677
+00:23:18,320 --> 00:23:20,710
+back and forth, back and forth, back and
+forth. And again, I'm pushing him to his
+
+1678
+00:23:20,710 --> 00:23:20,720
+forth. And again, I'm pushing him to his
+ 
+
+1679
+00:23:20,720 --> 00:23:22,789
+forth. And again, I'm pushing him to his
+limit. And and I think this is where
+
+1680
+00:23:22,789 --> 00:23:22,799
+limit. And and I think this is where
+ 
+
+1681
+00:23:22,799 --> 00:23:24,870
+limit. And and I think this is where
+people make a mistake, right? Like I
+
+1682
+00:23:24,870 --> 00:23:24,880
+people make a mistake, right? Like I
+ 
+
+1683
+00:23:24,880 --> 00:23:26,789
+people make a mistake, right? Like I
+make a lot of jokes and a lot of funny.
+
+1684
+00:23:26,789 --> 00:23:26,799
+make a lot of jokes and a lot of funny.
+ 
+
+1685
+00:23:26,799 --> 00:23:29,590
+make a lot of jokes and a lot of funny.
+I do it in a way that pushes the deal
+
+1686
+00:23:29,590 --> 00:23:29,600
+I do it in a way that pushes the deal
+ 
+
+1687
+00:23:29,600 --> 00:23:31,350
+I do it in a way that pushes the deal
+forward. Like in this one here where
+
+1688
+00:23:31,350 --> 00:23:31,360
+forward. Like in this one here where
+ 
+
+1689
+00:23:31,360 --> 00:23:32,549
+forward. Like in this one here where
+we're talking about the notebook and
+
+1690
+00:23:32,549 --> 00:23:32,559
+we're talking about the notebook and
+ 
+
+1691
+00:23:32,559 --> 00:23:33,830
+we're talking about the notebook and
+making jokes. A lot of people are like
+
+1692
+00:23:33,830 --> 00:23:33,840
+making jokes. A lot of people are like
+ 
+
+1693
+00:23:33,840 --> 00:23:36,390
+making jokes. A lot of people are like
+Tommy I don't I don't know. I don't
+
+1694
+00:23:36,390 --> 00:23:36,400
+Tommy I don't I don't know. I don't
+ 
+
+1695
+00:23:36,400 --> 00:23:37,590
+Tommy I don't I don't know. I don't
+know. Like that that seems
+
+1696
+00:23:37,590 --> 00:23:37,600
+know. Like that that seems
+ 
+
+1697
+00:23:37,600 --> 00:23:39,270
+know. Like that that seems
+condescending. Like it's funny. It's in
+
+1698
+00:23:39,270 --> 00:23:39,280
+condescending. Like it's funny. It's in
+ 
+
+1699
+00:23:39,280 --> 00:23:40,630
+condescending. Like it's funny. It's in
+the moment. It's like let's dude let's
+
+1700
+00:23:40,630 --> 00:23:40,640
+the moment. It's like let's dude let's
+ 
+
+1701
+00:23:40,640 --> 00:23:41,990
+the moment. It's like let's dude let's
+figure this out. It's a joke. It's good.
+
+1702
+00:23:41,990 --> 00:23:42,000
+figure this out. It's a joke. It's good.
+ 
+
+1703
+00:23:42,000 --> 00:23:43,750
+figure this out. It's a joke. It's good.
+Let's lighten the mode. Call it a day.
+
+1704
+00:23:43,750 --> 00:23:43,760
+Let's lighten the mode. Call it a day.
+ 
+
+1705
+00:23:43,760 --> 00:23:46,630
+Let's lighten the mode. Call it a day.
+7K. Call it a day. Client is in chat.
+
+1706
+00:23:46,630 --> 00:23:46,640
+7K. Call it a day. Client is in chat.
+ 
+
+1707
+00:23:46,640 --> 00:23:48,470
+7K. Call it a day. Client is in chat.
+Client is saying, "Dude, I'm not even
+
+1708
+00:23:48,470 --> 00:23:48,480
+Client is saying, "Dude, I'm not even
+ 
+
+1709
+00:23:48,480 --> 00:23:49,750
+Client is saying, "Dude, I'm not even
+kidding. My client just said, "By the
+
+1710
+00:23:49,750 --> 00:23:49,760
+kidding. My client just said, "By the
+ 
+
+1711
+00:23:49,760 --> 00:23:51,909
+kidding. My client just said, "By the
+way, these two dealerships are the same
+
+1712
+00:23:51,909 --> 00:23:51,919
+way, these two dealerships are the same
+ 
+
+1713
+00:23:51,919 --> 00:23:53,990
+way, these two dealerships are the same
+distance for me." He said, "I'm watching
+
+1714
+00:23:53,990 --> 00:23:54,000
+distance for me." He said, "I'm watching
+ 
+
+1715
+00:23:54,000 --> 00:23:55,830
+distance for me." He said, "I'm watching
+live hoping for the Portland deal. Any
+
+1716
+00:23:55,830 --> 00:23:55,840
+live hoping for the Portland deal. Any
+ 
+
+1717
+00:23:55,840 --> 00:23:57,350
+live hoping for the Portland deal. Any
+way I can get VIN on there. I found the
+
+1718
+00:23:57,350 --> 00:23:57,360
+way I can get VIN on there. I found the
+ 
+
+1719
+00:23:57,360 --> 00:23:59,830
+way I can get VIN on there. I found the
+VIN. I like the car. The distance is the
+
+1720
+00:23:59,830 --> 00:23:59,840
+VIN. I like the car. The distance is the
+ 
+
+1721
+00:23:59,840 --> 00:24:01,029
+VIN. I like the car. The distance is the
+same. I like I want to work with
+
+1722
+00:24:01,029 --> 00:24:01,039
+same. I like I want to work with
+ 
+
+1723
+00:24:01,039 --> 00:24:02,870
+same. I like I want to work with
+Christian. Boom. Okay. So, I'm going to
+
+1724
+00:24:02,870 --> 00:24:02,880
+Christian. Boom. Okay. So, I'm going to
+ 
+
+1725
+00:24:02,880 --> 00:24:04,630
+Christian. Boom. Okay. So, I'm going to
+give the address. This is the only time
+
+1726
+00:24:04,630 --> 00:24:04,640
+give the address. This is the only time
+ 
+
+1727
+00:24:04,640 --> 00:24:05,830
+give the address. This is the only time
+where we start giving some personal
+
+1728
+00:24:05,830 --> 00:24:05,840
+where we start giving some personal
+ 
+
+1729
+00:24:05,840 --> 00:24:07,110
+where we start giving some personal
+information. This looks like a done
+
+1730
+00:24:07,110 --> 00:24:07,120
+information. This looks like a done
+ 
+
+1731
+00:24:07,120 --> 00:24:08,950
+information. This looks like a done
+deal. So, we're going to give this
+
+1732
+00:24:08,950 --> 00:24:08,960
+deal. So, we're going to give this
+ 
+
+1733
+00:24:08,960 --> 00:24:11,750
+deal. So, we're going to give this
+address to the person. We got this deal
+
+1734
+00:24:11,750 --> 00:24:11,760
+address to the person. We got this deal
+ 
+
+1735
+00:24:11,760 --> 00:24:13,430
+address to the person. We got this deal
+done. We got two deals done on the
+
+1736
+00:24:13,430 --> 00:24:13,440
+done. We got two deals done on the
+ 
+
+1737
+00:24:13,440 --> 00:24:16,789
+done. We got two deals done on the
+stream. Just a recap. Mazda CX50 Hybrid.
+
+1738
+00:24:16,789 --> 00:24:16,799
+stream. Just a recap. Mazda CX50 Hybrid.
+ 
+
+1739
+00:24:16,799 --> 00:24:18,310
+stream. Just a recap. Mazda CX50 Hybrid.
+We're able to get a lot of different
+
+1740
+00:24:18,310 --> 00:24:18,320
+We're able to get a lot of different
+ 
+
+1741
+00:24:18,320 --> 00:24:19,430
+We're able to get a lot of different
+offers. I'm going to compare them with
+
+1742
+00:24:19,430 --> 00:24:19,440
+offers. I'm going to compare them with
+ 
+
+1743
+00:24:19,440 --> 00:24:21,430
+offers. I'm going to compare them with
+my client, but local and out of state
+
+1744
+00:24:21,430 --> 00:24:21,440
+my client, but local and out of state
+ 
+
+1745
+00:24:21,440 --> 00:24:24,710
+my client, but local and out of state
+13% off plus rebates. Remember, we
+
+1746
+00:24:24,710 --> 00:24:24,720
+13% off plus rebates. Remember, we
+ 
+
+1747
+00:24:24,720 --> 00:24:26,149
+13% off plus rebates. Remember, we
+learned today when we talk about
+
+1748
+00:24:26,149 --> 00:24:26,159
+learned today when we talk about
+ 
+
+1749
+00:24:26,159 --> 00:24:27,990
+learned today when we talk about
+discounts, we want to make sure it's
+
+1750
+00:24:27,990 --> 00:24:28,000
+discounts, we want to make sure it's
+ 
+
+1751
+00:24:28,000 --> 00:24:30,390
+discounts, we want to make sure it's
+discount without any rebates. That's how
+
+1752
+00:24:30,390 --> 00:24:30,400
+discount without any rebates. That's how
+ 
+
+1753
+00:24:30,400 --> 00:24:32,710
+discount without any rebates. That's how
+we do that, right? Discount plus
+
+1754
+00:24:32,710 --> 00:24:32,720
+we do that, right? Discount plus
+ 
+
+1755
+00:24:32,720 --> 00:24:35,590
+we do that, right? Discount plus
+rebates. On the second deal, we got just
+
+1756
+00:24:35,590 --> 00:24:35,600
+rebates. On the second deal, we got just
+ 
+
+1757
+00:24:35,600 --> 00:24:38,950
+rebates. On the second deal, we got just
+under 10%, like 9.7%
+
+1758
+00:24:38,950 --> 00:24:38,960
+under 10%, like 9.7%
+ 
+
+1759
+00:24:38,960 --> 00:24:41,669
+under 10%, like 9.7%
+off of an F-150. There's three in the
+
+1760
+00:24:41,669 --> 00:24:41,679
+off of an F-150. There's three in the
+ 
+
+1761
+00:24:41,679 --> 00:24:43,510
+off of an F-150. There's three in the
+state that matched the client's spec.
+
+1762
+00:24:43,510 --> 00:24:43,520
+state that matched the client's spec.
+ 
+
+1763
+00:24:43,520 --> 00:24:45,510
+state that matched the client's spec.
+They had very particular options. We had
+
+1764
+00:24:45,510 --> 00:24:45,520
+They had very particular options. We had
+ 
+
+1765
+00:24:45,520 --> 00:24:47,590
+They had very particular options. We had
+an offer for 6K. Bump that all the way
+
+1766
+00:24:47,590 --> 00:24:47,600
+an offer for 6K. Bump that all the way
+ 
+
+1767
+00:24:47,600 --> 00:24:49,909
+an offer for 6K. Bump that all the way
+up to 7,400. The original offer we got
+
+1768
+00:24:49,909 --> 00:24:49,919
+up to 7,400. The original offer we got
+ 
+
+1769
+00:24:49,919 --> 00:24:51,750
+up to 7,400. The original offer we got
+was 4K off. So, we ended up getting
+
+1770
+00:24:51,750 --> 00:24:51,760
+was 4K off. So, we ended up getting
+ 
+
+1771
+00:24:51,760 --> 00:24:54,630
+was 4K off. So, we ended up getting
+$3,000 more. and the perfect car for the
+
+1772
+00:24:54,630 --> 00:24:54,640
+$3,000 more. and the perfect car for the
+ 
+
+1773
+00:24:54,640 --> 00:24:57,350
+$3,000 more. and the perfect car for the
+client. Big win there. Done. Got it.
+
+1774
+00:24:57,350 --> 00:24:57,360
+client. Big win there. Done. Got it.
+ 
+
+1775
+00:24:57,360 --> 00:25:00,470
+client. Big win there. Done. Got it.
+Sending to business partner now. I
+
+1776
+00:25:00,470 --> 00:25:00,480
+Sending to business partner now. I
+ 
+
+1777
+00:25:00,480 --> 00:25:03,430
+Sending to business partner now. I
+appreciate each and every single one of
+
+1778
+00:25:03,430 --> 00:25:03,440
+appreciate each and every single one of
+ 
+
+1779
+00:25:03,440 --> 00:25:05,029
+appreciate each and every single one of
+you. Thank you for dealing with all the
+
+1780
+00:25:05,029 --> 00:25:05,039
+you. Thank you for dealing with all the
+ 
+
+1781
+00:25:05,039 --> 00:25:06,390
+you. Thank you for dealing with all the
+fun things. Thank you for the good.
+
+1782
+00:25:06,390 --> 00:25:06,400
+fun things. Thank you for the good.
+ 
+
+1783
+00:25:06,400 --> 00:25:07,750
+fun things. Thank you for the good.
+Thank you for the bad. Tell your friends
+
+1784
+00:25:07,750 --> 00:25:07,760
+Thank you for the bad. Tell your friends
+ 
+
+1785
+00:25:07,760 --> 00:25:09,430
+Thank you for the bad. Tell your friends
+and family. Tell your mom, your uncle,
+
+1786
+00:25:09,430 --> 00:25:09,440
+and family. Tell your mom, your uncle,
+ 
+
+1787
+00:25:09,440 --> 00:25:10,950
+and family. Tell your mom, your uncle,
+your brother-in-law about us. I
+
+1788
+00:25:10,950 --> 00:25:10,960
+your brother-in-law about us. I
+ 
+
+1789
+00:25:10,960 --> 00:25:11,990
+your brother-in-law about us. I
+appreciate all of you guys. Dead
+
+1790
+00:25:11,990 --> 00:25:12,000
+appreciate all of you guys. Dead
+ 
+
+1791
+00:25:12,000 --> 00:25:15,760
+appreciate all of you guys. Dead
+serious. That means a lot.
+
+1792
+00:25:15,760 --> 00:25:15,770
+serious. That means a lot.
+ 
+
+1793
+00:25:15,770 --> 00:25:20,750
+serious. That means a lot.
+[Music]
+
